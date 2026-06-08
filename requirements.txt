@@ -1,0 +1,39 @@
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+
+# Validation & config
+pydantic==2.10.3
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+
+# Database
+sqlalchemy==2.0.36
+aiosqlite==0.20.0
+greenlet>=3.0.0
+
+# ML — plate recognition
+fast-alpr==0.4.0
+onnxruntime>=1.24.1          # CPU; swap for onnxruntime-gpu on CUDA servers
+
+# ML — face recognition
+insightface==0.7.3
+# onnxruntime already listed above
+
+# ML — vehicle detection & classification
+ultralytics==8.3.55
+opencv-python-headless==4.10.0.84
+
+# Image processing
+Pillow==11.0.0
+numpy==1.26.4
+
+# Scheduling (retention)
+apscheduler==3.10.4
+
+# HTTP client (detect-url)
+httpx==0.28.1
+
+# Auth
+passlib==1.7.4
