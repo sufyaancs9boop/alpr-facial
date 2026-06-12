@@ -1,14 +1,15 @@
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import String, Float, Boolean, DateTime
 from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.types import JSON, DateTime
 from database import Base
-
+from sqlalchemy.dialects.postgresql import UUID
 
 class DetectionEvent(Base):
     __tablename__ = "detection_events"
 
-    id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     plateText: Mapped[str] = mapped_column(String, nullable=False, index=True)
     confidence: Mapped[float] = mapped_column(Float, nullable=False)
     personId: Mapped[str | None] = mapped_column(String, nullable=True)
@@ -27,4 +28,7 @@ class DetectionEvent(Base):
     cameraId: Mapped[str | None] = mapped_column(String, nullable=True)
     cameraName: Mapped[str | None] = mapped_column(String, nullable=True)
     gunDetected: Mapped[bool] = mapped_column(Boolean, default=False)
-    timestamp: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, index=True)
+    timestamp: Mapped[datetime] = mapped_column(
+    DateTime(timezone=True),  # Store timezone info
+    default=lambda: datetime.now(timezone.utc)  # UTC timezone
+)

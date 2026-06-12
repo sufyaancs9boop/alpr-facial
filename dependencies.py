@@ -32,12 +32,12 @@ def get_db_factory():
 
 
 def get_alpr_service() -> "AlprService":
-    return _alpr_service
+    return _alpr_service # type: ignore
 
 
 def get_watchlist_service() -> "WatchlistService":
-    return _watchlist_service
+    return _watchlist_service # type: ignore
 
 
 def get_camera_worker_service() -> "CameraWorkerService":
-    return _camera_worker_service
+    return _camera_worker_service # type: ignore

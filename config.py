@@ -13,6 +13,15 @@ class Settings(BaseSettings):
     ENABLE_VEHICLE_DETECTION: bool = True
     ENABLE_FACE_DETECTION: bool = True
     PERSIST_FACE_EVENTS: bool = True
+    
+    # Database Configuration (PostgreSQL)
+    # TESTING: defaults to localhost PostgreSQL (docker-compose)
+    DATABASE_URL: str = "postgresql+asyncpg://alpr_user:alpr_password@localhost:5432/alpr"
+    DB_HOST: str = "localhost"
+    DB_PORT: int = 5432
+    DB_NAME: str = "alpr"
+    DB_USER: str = "alpr_user"
+    DB_PASSWORD: str = "alpr_password"  # TODO: Production — use secrets management (AWS Secrets Manager, etc.)
 
     model_config = {"env_file": ".env", "extra": "ignore"}
 

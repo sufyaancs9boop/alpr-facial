@@ -1,0 +1,130 @@
+version: '3.8'
+
+
+# TESTING: Run "docker-compose up" to start PostgreSQL + ALPR API
+# PRODUCTION: Not recommended — use Kubernetes or cloud-managed services
+
+
+services:
+  # PostgreSQL Database (TESTING ONLY)
+  # PRODUCTION: Use AWS RDS, GCP Cloud SQL, or Azure Database for PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    container_name: alpr_postgres
+    environment:
+      POSTGRES_USER: alpr_user
+      POSTGRES_PASSWORD: alpr_password
+      POSTGRES_DB: alpr
+      # PRODUCTION: Use strong passwords, rotate regularly
+      # PRODUCTION: Enable encryption (TLS connection), backups (automated snapshots)
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U alpr_user -d alpr"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - alpr_network
+    # PRODUCTION NOTES:
+    # - Remove this service; use managed PostgreSQL instead
+    # - Set up automated backups (daily, with retention)
+    # - Enable encrypted connections (require SSL/TLS)
+    # - Configure connection pooling (pgBouncer, AWS RDS Proxy)
+    # - Set up read replicas for HA
+
+  # ALPR API Server
+  alpr:
+    build: .
+    container_name: alpr_api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Database connection (points to PostgreSQL service)
+      DATABASE_URL: postgresql+asyncpg://alpr_user:alpr_password@postgres:5432/alpr
+      PORT: 3000
+      API_PREFIX: api
+      
+      # Features
+      ENABLE_FACE_DETECTION: "true"
+      ENABLE_VEHICLE_DETECTION: "true"
+      PERSIST_FACE_EVENTS: "true"
+      
+      # Data management
+      RETENTION_DAYS: "90"
+      MAX_FILE_SIZE_MB: "20"
+      
+      # Models directory
+      MODELS_DIR: /app/data/models
+      
+      # Authentication (TESTING: disabled; PRODUCTION: set strong keys)
+      API_KEYS: ""
+      
+      # PRODUCTION: Add these
+      # SENTRY_DSN: https://key@sentry.io/project
+      # LOG_LEVEL: INFO
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data              # Model cache, local storage
+      - ./logs:/app/logs              # PRODUCTION: Use centralized logging instead
+    networks:
+      - alpr_network
+    restart: unless-stopped            # TESTING: auto-restart on crash
+    # PRODUCTION NOTES:
+    # - Scale to multiple instances (replicas: 3-5)
+    # - Use resource limits (cpu: 2, memory: 4GB)
+    # - Add liveness/readiness probes
+    # - Use secrets management (AWS Secrets Manager, Kubernetes Secrets)
+    # - Configure logging (ELK, Splunk, Datadog)
+    # - Add health checks (Prometheus metrics)
+
+networks:
+  alpr_network:
+    driver: bridge
+    # PRODUCTION: Use custom network with security groups/firewall rules
+
+volumes:
+  postgres_data:
+    driver: local
+    # PRODUCTION: Use persistent volumes (AWS EBS, GCP Persistent Disk)
+    # PRODUCTION: Configure backups and snapshots
+    # PRODUCTION: Enable encryption at rest
+
+# ============================================================================
+# USAGE
+# ============================================================================
+# Start all services:
+#   docker-compose up -d
+#
+# View logs:
+#   docker-compose logs -f alpr
+#   docker-compose logs -f postgres
+#
+# Test API:
+#   curl http://localhost:3000/api/alpr/health
+#
+# Access PostgreSQL:
+#   docker exec -it alpr_postgres psql -U alpr_user -d alpr -c "\dt"
+#
+# Stop all services:
+#   docker-compose down
+#
+# ============================================================================
+# PRODUCTION CHECKLIST
+# ============================================================================
+# ✓ Use managed PostgreSQL service (not docker-compose)
+# ✓ Enable encryption (SSL/TLS for connections)
+# ✓ Configure automated backups (daily, with retention)
+# ✓ Set up read replicas for HA/DR
+# ✓ Use connection pooling (pgBouncer, AWS RDS Proxy)
+# ✓ Scale API to 3+ replicas (load balanced)
+# ✓ Add monitoring (Prometheus, CloudWatch)
+# ✓ Add centralized logging (ELK, Splunk, Datadog)
+# ✓ Use secrets management (AWS Secrets Manager, Kubernetes Secrets)
+# ✓ Configure rate limiting and auto-scaling
+# ✓ Set up alerting (PagerDuty, Opsgenie)
+# ============================================================================

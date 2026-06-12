@@ -10,7 +10,8 @@ python-dotenv==1.0.1
 
 # Database
 sqlalchemy==2.0.36
-aiosqlite==0.20.0
+asyncpg==0.29.0              # PostgreSQL async driver (fast, native asyncio support)
+psycopg2-binary==2.9.9       # PostgreSQL adapter (alternative, for compatibility)
 greenlet>=3.0.0
 
 # ML — plate recognition
@@ -28,7 +29,6 @@ opencv-python-headless==4.10.0.84
 # Image processing
 Pillow==11.0.0
 numpy==1.26.4
-
 # Scheduling (retention)
 apscheduler==3.10.4
 

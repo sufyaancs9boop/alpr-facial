@@ -3,12 +3,12 @@ from datetime import datetime
 from sqlalchemy import String, Boolean, DateTime, Integer, Float, JSON
 from sqlalchemy.orm import Mapped, mapped_column
 from database import Base
-
+from sqlalchemy.dialects.postgresql import UUID
 
 class Camera(Base):
     __tablename__ = "cameras"
 
-    id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: str(uuid.uuid4()))
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name: Mapped[str] = mapped_column(String, nullable=False)
     url: Mapped[str] = mapped_column(String, nullable=False)
     region: Mapped[str] = mapped_column(String, default="NORTH_AMERICAN")
