@@ -1,4 +1,4 @@
-version: '3.8'
+
 
 
 # TESTING: Run "docker-compose up" to start PostgreSQL + ALPR API

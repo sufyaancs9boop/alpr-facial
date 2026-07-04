@@ -15,8 +15,25 @@ import io
 
 logger = logging.getLogger(__name__)
 
-# Pakistani plate regex (same as plate.util.ts)
-_PLATE_RE = re.compile(r"^[A-Z]{2,4}\d{3,8}$")
+# Regional plate patterns. Pakistan is the default set; other regions can be
+# added here without changing filter call sites.
+PLATE_PATTERNS = {
+    "PAKISTAN": [
+        re.compile(r"^[A-Z]{2,4}\d{3,8}$"),
+        re.compile(r"^[A-Z]{2,4}[-\s]?\d{3,8}$"),
+        re.compile(r"^[A-Z]{2,3}[-\s]?\d{2}[-\s]?\d{3,4}$"),
+        re.compile(r"^[A-Z]{2,3}[-\s]?\d{3,4}[-\s]?[A-Z]$"),
+        re.compile(r"^[A-Z]{3}[-\s]?\d{1,4}$"),
+        re.compile(r"^\d{2}[-\s]?[A-Z]{1,3}[-\s]?\d{3,4}$"),
+    ],
+}
+
+REGION_ALIASES = {
+    "PK": "PAKISTAN",
+    "PAK": "PAKISTAN",
+    "PAKISTANI": "PAKISTAN",
+    "NORTH_AMERICAN": "PAKISTAN",
+}
 
 # Pre-filter thresholds (mirrored from alpr.service.ts)
 MIN_PLATE_PX_WIDTH = 40
@@ -46,11 +63,80 @@ def normalize_plate(text: str) -> str:
     return re.sub(r"[\s\-_]", "", text).upper()
 
 
-def is_valid_pakistani_plate(normalized: str) -> bool:
-    return bool(_PLATE_RE.match(normalized))
+def normalize_region(region: Optional[str] = None) -> str:
+    if not region:
+        try:
+            from config import settings
+            region = settings.DEFAULT_PLATE_REGION
+        except Exception:
+            region = "PAKISTAN"
+    key = re.sub(r"[\s\-]+", "_", str(region).strip().upper())
+    return REGION_ALIASES.get(key, key)
 
 
-def passes_pre_filters(result: PlateResult) -> bool:
+def is_valid_plate(text: str, region: Optional[str] = None) -> bool:
+    region_key = normalize_region(region)
+    patterns = PLATE_PATTERNS.get(region_key) or PLATE_PATTERNS["PAKISTAN"]
+    raw = (text or "").strip().upper()
+    normalized = normalize_plate(raw)
+    return any(pattern.match(raw) or pattern.match(normalized) for pattern in patterns)
+
+
+def is_valid_pakistani_plate(text: str) -> bool:
+    return is_valid_plate(text, "PAKISTAN")
+
+
+def _intersection_over_union(a: BoundingBox, b: BoundingBox) -> float:
+    ax2 = a.x + a.width
+    ay2 = a.y + a.height
+    bx2 = b.x + b.width
+    by2 = b.y + b.height
+    ix1 = max(a.x, b.x)
+    iy1 = max(a.y, b.y)
+    ix2 = min(ax2, bx2)
+    iy2 = min(ay2, by2)
+    iw = max(0.0, ix2 - ix1)
+    ih = max(0.0, iy2 - iy1)
+    intersection = iw * ih
+    union = a.width * a.height + b.width * b.height - intersection
+    return intersection / union if union > 0 else 0.0
+
+
+def _center_distance_ratio(a: BoundingBox, b: BoundingBox) -> float:
+    acx = a.x + a.width / 2
+    acy = a.y + a.height / 2
+    bcx = b.x + b.width / 2
+    bcy = b.y + b.height / 2
+    distance = ((acx - bcx) ** 2 + (acy - bcy) ** 2) ** 0.5
+    scale = max(a.width, a.height, b.width, b.height, 1.0)
+    return distance / scale
+
+
+def deduplicate_plates(
+    plates: list[PlateResult],
+    iou_threshold: Optional[float] = None,
+    center_distance_ratio: Optional[float] = None,
+) -> list[PlateResult]:
+    if iou_threshold is None or center_distance_ratio is None:
+        from config import settings
+        if iou_threshold is None:
+            iou_threshold = settings.ALPR_DEDUP_IOU_THRESHOLD
+        if center_distance_ratio is None:
+            center_distance_ratio = settings.ALPR_DEDUP_CENTER_DISTANCE_RATIO
+
+    winners: list[PlateResult] = []
+    for plate in sorted(plates, key=lambda p: p.confidence, reverse=True):
+        overlaps = any(
+            _intersection_over_union(plate.bounding_box, kept.bounding_box) >= iou_threshold
+            or _center_distance_ratio(plate.bounding_box, kept.bounding_box) <= center_distance_ratio
+            for kept in winners
+        )
+        if not overlaps:
+            winners.append(plate)
+    return winners
+
+
+def passes_pre_filters(result: PlateResult, region: Optional[str] = None) -> bool:
     bb = result.bounding_box
     w, h = bb.width, max(bb.height, 1)
     ratio = w / h
@@ -65,7 +151,7 @@ def passes_pre_filters(result: PlateResult) -> bool:
         logger.debug("PREFILTER SKIP [portrait] '%s' w/h=%.2f", result.text, ratio)
         return False
     normalized = normalize_plate(result.text)
-    if not is_valid_pakistani_plate(normalized):
+    if not is_valid_plate(result.text, region):
         logger.debug("PREFILTER SKIP [regex] '%s' → '%s'", result.text, normalized)
         return False
     logger.debug("PREFILTER PASS '%s' w=%.0fpx conf=%.0f%%", normalized, w, result.confidence * 100)
@@ -159,4 +245,6 @@ class PlateDetector:
             )
             results.append(plate)
 
-        return results
+        # TODO: Add temporal dedup here if a frame-to-frame tracker becomes part
+        # of the detector layer. Current temporal grouping lives in services.
+        return deduplicate_plates(results)

@@ -11,7 +11,7 @@ class Camera(Base):
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name: Mapped[str] = mapped_column(String, nullable=False)
     url: Mapped[str] = mapped_column(String, nullable=False)
-    region: Mapped[str] = mapped_column(String, default="NORTH_AMERICAN")
+    region: Mapped[str] = mapped_column(String, default="PAKISTAN")
     frameStep: Mapped[int] = mapped_column(Integer, default=5)
     active: Mapped[bool] = mapped_column(Boolean, default=True)
     lat: Mapped[float | None] = mapped_column(Float, nullable=True)

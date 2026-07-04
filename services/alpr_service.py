@@ -133,7 +133,7 @@ class AlprService:
     async def detect_from_bytes(
         self, image_bytes: bytes, session_id: Optional[str] = None,
         camera_id: Optional[str] = None, camera_name: Optional[str] = None,
-        generate_thumbnail: bool = True,
+        generate_thumbnail: bool = True, camera_region: Optional[str] = None,
     ) -> DetectionResult:
         start = time.time()
         plates_raw, faces_raw, vehicles_raw = await detect_image(image_bytes, generate_thumbnail)
@@ -147,10 +147,10 @@ class AlprService:
         if session_id:
             return await self._process_into_session(
                 session_id, plates_out, faces_out, vehicles_out,
-                elapsed_ms, camera_id, camera_name,
+                elapsed_ms, camera_id, camera_name, camera_region,
             )
 
-        await self._process_and_log(plates_out, faces_out, "image")
+        await self._process_and_log(plates_out, faces_out, "image", camera_region)
         return DetectionResult(
             success=True, count=len(plates_out) + len(faces_out),
             plates=plates_out, faces=faces_out, vehicles=vehicles_out,
@@ -160,12 +160,12 @@ class AlprService:
     async def _process_into_session(
         self, session_id: str, plates: list[PlateOut], faces: list[FaceOut],
         vehicles: list[VehicleOut], elapsed_ms: int,
-        camera_id=None, camera_name=None,
+        camera_id=None, camera_name=None, camera_region=None,
     ) -> DetectionResult:
         tracker = self._get_or_create_session(session_id, camera_id, camera_name)
         session = self._sessions[session_id]
 
-        valid = [p for p in plates if self._passes_pre_filters_out(p)]
+        valid = [p for p in plates if self._passes_pre_filters_out(p, camera_region)]
         for plate in valid:
             tp = self._out_to_tracker_plate(plate)
             tracker.observe(tp)
@@ -181,8 +181,11 @@ class AlprService:
             processing_time_ms=elapsed_ms,
         )
 
-    async def _process_and_log(self, plates: list[PlateOut], faces: list[FaceOut], source: str):
-        valid = [p for p in plates if self._passes_pre_filters_out(p)]
+    async def _process_and_log(
+        self, plates: list[PlateOut], faces: list[FaceOut], source: str,
+        camera_region: Optional[str] = None,
+    ):
+        valid = [p for p in plates if self._passes_pre_filters_out(p, camera_region)]
         for plate in valid:
             await self._log_and_alert(plate, source)
         if settings.PERSIST_FACE_EVENTS:
@@ -192,7 +195,7 @@ class AlprService:
     # ── Stream / video generators ────────────────────────────────────────────
 
     async def detect_video_stream(
-        self, video_bytes: bytes, frame_step: int = 5,
+        self, video_bytes: bytes, frame_step: int = 5, camera_region: Optional[str] = None,
     ) -> AsyncGenerator[dict, None]:
         async for frame_idx, plates_raw, faces_raw, vehicles_raw in detect_video_frames(
             video_bytes, frame_step
@@ -202,6 +205,8 @@ class AlprService:
             faces_out = await self._enrich_faces(faces_raw)
             vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
             for plate in plates_out:
+                if not self._passes_pre_filters_out(plate, camera_region):
+                    continue
                 committed = self._tracker.observe(self._out_to_tracker_plate(plate))
                 for winner in committed:
                     await self._log_committed(winner, "video")
@@ -221,7 +226,7 @@ class AlprService:
     async def detect_live_stream(
         self, url: str, frame_step: int = 5,
         camera_id: Optional[str] = None, camera_name: Optional[str] = None,
-        should_continue=None,
+        camera_region: Optional[str] = None, should_continue=None,
     ) -> AsyncGenerator[dict, None]:
         source = "camera" if camera_id else "stream"
         async for frame_idx, plates_raw, faces_raw, vehicles_raw in detect_stream_frames(
@@ -232,6 +237,8 @@ class AlprService:
             faces_out = await self._enrich_faces(faces_raw)
             vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
             for plate in plates_out:
+                if not self._passes_pre_filters_out(plate, camera_region):
+                    continue
                 committed = self._tracker.observe(self._out_to_tracker_plate(plate))
                 for winner in committed:
                     await self._log_committed(winner, source, camera_id, camera_name)
@@ -291,7 +298,7 @@ class AlprService:
             thumbnail=v.thumbnail,
         )
 
-    def _passes_pre_filters_out(self, p: PlateOut) -> bool:
+    def _passes_pre_filters_out(self, p: PlateOut, region: Optional[str] = None) -> bool:
         from ml.plate_detector import PlateResult, BoundingBox, passes_pre_filters
         bb_dict = p.bounding_box
         pr = PlateResult(
@@ -300,7 +307,7 @@ class AlprService:
             quality=p.quality,
             bounding_box=BoundingBox(**bb_dict),
         )
-        return passes_pre_filters(pr)
+        return passes_pre_filters(pr, region)
 
     # ── Logging / alerts ─────────────────────────────────────────────────────
 

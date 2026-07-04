@@ -13,6 +13,9 @@ class Settings(BaseSettings):
     ENABLE_VEHICLE_DETECTION: bool = True
     ENABLE_FACE_DETECTION: bool = True
     PERSIST_FACE_EVENTS: bool = True
+    DEFAULT_PLATE_REGION: str = "PAKISTAN"
+    ALPR_DEDUP_IOU_THRESHOLD: float = 0.5
+    ALPR_DEDUP_CENTER_DISTANCE_RATIO: float = 0.25
     
     # Database Configuration (PostgreSQL)
     # TESTING: defaults to localhost PostgreSQL (docker-compose)

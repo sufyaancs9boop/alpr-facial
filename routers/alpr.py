@@ -35,6 +35,7 @@ async def detect_image(
     session_id: Optional[str] = Query(None, alias="sessionId"),
     camera_id: Optional[str] = Query(None, alias="cameraId"),
     camera_name: Optional[str] = Query(None, alias="cameraName"),
+    camera_region: Optional[str] = Query(None, alias="cameraRegion"),
     thumbnail: bool = Query(True),
     frame_step: int = Query(5, alias="frameStep"),
 ):
@@ -50,6 +51,7 @@ async def detect_image(
     result = await alpr.detect_from_bytes(
         data, session_id=session_id,
         camera_id=camera_id, camera_name=camera_name,
+        camera_region=camera_region,
         generate_thumbnail=thumbnail,
     )
     return _result_to_dict(result)
@@ -70,7 +72,11 @@ async def detect_url(body: dict):
         raise HTTPException(413, "Remote image exceeds size limit")
 
     alpr = get_alpr_service()
-    result = await alpr.detect_from_bytes(data, generate_thumbnail=body.get("thumbnail", True))
+    result = await alpr.detect_from_bytes(
+        data,
+        generate_thumbnail=body.get("thumbnail", True),
+        camera_region=body.get("cameraRegion") or body.get("region"),
+    )
     return _result_to_dict(result)
 
 
@@ -79,13 +85,18 @@ async def detect_video(
     video: UploadFile = File(...),
     frame_step: int = Query(5, alias="frameStep"),
     thumbnail: bool = Query(True),
+    camera_region: Optional[str] = Query(None, alias="cameraRegion"),
 ):
     data = await video.read()
     alpr = get_alpr_service()
 
     async def event_stream():
         try:
-            async for frame in alpr.detect_video_stream(data, frame_step=frame_step):
+            async for frame in alpr.detect_video_stream(
+                data,
+                frame_step=frame_step,
+                camera_region=camera_region,
+            ):
                 yield f"event: detection\ndata: {json.dumps(frame)}\n\n"
         except Exception as exc:
             logger.error("Video detection error: %s", exc)
@@ -106,7 +117,11 @@ async def detect_stream(body: dict):
 
     async def event_stream():
         try:
-            async for frame in alpr.detect_live_stream(url, frame_step=frame_step):
+            async for frame in alpr.detect_live_stream(
+                url,
+                frame_step=frame_step,
+                camera_region=body.get("cameraRegion") or body.get("region"),
+            ):
                 yield f"event: detection\ndata: {json.dumps(frame)}\n\n"
         except Exception as exc:
             logger.error("Stream detection error: %s", exc)

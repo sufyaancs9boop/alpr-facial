@@ -62,6 +62,7 @@ class CameraWorkerService:
                     frame_step=frame_step,
                     camera_id=camera.id,
                     camera_name=camera.name,
+                    camera_region=camera.region,
                     should_continue=should_continue,
                 ):
                     if not should_continue():
