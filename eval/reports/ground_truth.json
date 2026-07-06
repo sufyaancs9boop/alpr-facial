@@ -1,0 +1,149 @@
+[
+  {
+    "image": "PXL_20260519_123621046.RAW-02.ORIGINAL.dng",
+    "plates": []
+  },
+  {
+    "image": "img001.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 2734,
+          "y": 2878,
+          "width": 162,
+          "height": 83
+        },
+        "text": "BJZ537"
+      },
+      {
+        "bbox": {
+          "x": 1575.14,
+          "y": 2377.08,
+          "width": 246.9,
+          "height": 127.9
+        },
+        "text": "MNV2354"
+      }
+    ]
+  },
+  {
+    "image": "img002.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 1219.7,
+          "y": 1588.53,
+          "width": 181.77,
+          "height": 97.88
+        },
+        "text": "RIA 3222"
+      }
+    ]
+  },
+  {
+    "image": "img003.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 1704.45,
+          "y": 1724.54,
+          "width": 151,
+          "height": 58
+        },
+        "text": "G4328"
+      }
+    ]
+  },
+  {
+    "image": "img004.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 2543,
+          "y": 1533,
+          "width": 124,
+          "height": 61
+        },
+        "text": "AEC400"
+      }
+    ]
+  },
+  {
+    "image": "img005.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 1389.9,
+          "y": 2115.96,
+          "width": 234.54,
+          "height": 124.76
+        },
+        "text": "HFA7618"
+      }
+    ]
+  },
+  {
+    "image": "img006.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 1603,
+          "y": 2191,
+          "width": 130,
+          "height": 69
+        },
+        "text": "BLD651"
+      }
+    ]
+  },
+  {
+    "image": "img007.jpg",
+    "plates": []
+  },
+  {
+    "image": "img008.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 1160,
+          "y": 1081.17,
+          "width": 126.51,
+          "height": 64.5
+        },
+        "text": "215927"
+      }
+    ]
+  },
+  {
+    "image": "img009.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 1058,
+          "y": 1004,
+          "width": 109,
+          "height": 65
+        },
+        "text": "EF 126"
+      }
+    ]
+  },
+  {
+    "image": "img010.jpg",
+    "plates": []
+  },
+  {
+    "image": "img011.jpg",
+    "plates": [
+      {
+        "bbox": {
+          "x": 1902.54,
+          "y": 1309.35,
+          "width": 66.85,
+          "height": 33.42
+        },
+        "text": "BJK1618"
+      }
+    ]
+  }
+]

@@ -3,4 +3,5 @@ data
 venv
 .env
 *.md
+eval/dataset/
 

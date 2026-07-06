@@ -1,0 +1,115 @@
+[
+  {
+    "image": "img001.jpg",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2734.0,
+          "y": 2878.0,
+          "width": 162.0,
+          "height": 83.0
+        },
+        "text": "BJZ537",
+        "confidence": 0.6778966784477234
+      },
+      {
+        "bbox": {
+          "x": 1645.0,
+          "y": 2417.0,
+          "width": 177.0,
+          "height": 68.0
+        },
+        "text": "2NV535",
+        "confidence": 0.4715732932090759
+      }
+    ]
+  },
+  {
+    "image": "img002.jpg",
+    "predictions": []
+  },
+  {
+    "image": "img003.jpg",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1706.0,
+          "y": 1709.0,
+          "width": 151.0,
+          "height": 58.0
+        },
+        "text": "G4328",
+        "confidence": 0.5860236287117004
+      }
+    ]
+  },
+  {
+    "image": "img004.jpg",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2543.0,
+          "y": 1533.0,
+          "width": 124.0,
+          "height": 61.0
+        },
+        "text": "12L9508",
+        "confidence": 0.7601804733276367
+      }
+    ]
+  },
+  {
+    "image": "img005.jpg",
+    "predictions": []
+  },
+  {
+    "image": "img006.jpg",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1603.0,
+          "y": 2191.0,
+          "width": 130.0,
+          "height": 69.0
+        },
+        "text": "185421",
+        "confidence": 0.6522844433784485
+      }
+    ]
+  },
+  {
+    "image": "img007.jpg",
+    "predictions": []
+  },
+  {
+    "image": "img008.jpg",
+    "predictions": []
+  },
+  {
+    "image": "img009.jpg",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1058.0,
+          "y": 1004.0,
+          "width": 109.0,
+          "height": 65.0
+        },
+        "text": "F2H323",
+        "confidence": 0.6074337363243103
+      }
+    ]
+  },
+  {
+    "image": "img010.jpg",
+    "predictions": []
+  },
+  {
+    "image": "img011.jpg",
+    "predictions": []
+  },
+  {
+    "image": "PXL_20260519_123621046.RAW-02.ORIGINAL.dng",
+    "predictions": []
+  }
+]

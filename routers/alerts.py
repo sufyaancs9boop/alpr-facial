@@ -43,12 +43,19 @@ async def stream_alerts():
     queue = notifications.alerts.subscribe()
 
     async def generator():
+        consecutive_timeouts = 0
         try:
             while True:
+                if queue.qsize() > 400:
+                    break
                 try:
                     msg = await asyncio.wait_for(queue.get(), timeout=30)
+                    consecutive_timeouts = 0
                     yield f"event: {msg['type']}\ndata: {json.dumps(msg['data'])}\n\n"
                 except asyncio.TimeoutError:
+                    consecutive_timeouts += 1
+                    if consecutive_timeouts > 2:
+                        break
                     yield ": keepalive\n\n"
         except asyncio.CancelledError:
             pass

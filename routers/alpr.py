@@ -9,6 +9,8 @@ import httpx
 
 from config import settings
 from dependencies import get_alpr_service
+from schemas import DetectURLRequest, DetectStreamRequest, DetectionResponse
+from utils.validation import check_image_dimensions, check_video_size
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/alpr", tags=["ALPR"])
@@ -28,7 +30,7 @@ async def health():
     }
 
 
-@router.post("/detect")
+@router.post("/detect", response_model=DetectionResponse)
 async def detect_image(
     request: Request,
     image: UploadFile = File(...),
@@ -46,6 +48,8 @@ async def detect_image(
     data = await image.read()
     if len(data) > settings.max_file_bytes:
         raise HTTPException(413, f"File exceeds {settings.MAX_FILE_SIZE_MB}MB limit")
+    # Validate image dimensions
+    check_image_dimensions(data)
 
     alpr = get_alpr_service()
     result = await alpr.detect_from_bytes(
@@ -57,9 +61,9 @@ async def detect_image(
     return _result_to_dict(result)
 
 
-@router.post("/detect-url")
-async def detect_url(body: dict):
-    url = body.get("imageUrl")
+@router.post("/detect-url", response_model=DetectionResponse)
+async def detect_url(body: DetectURLRequest):
+    url = body.imageUrl
     if not url:
         raise HTTPException(400, "imageUrl required")
     _validate_url(url)
@@ -70,12 +74,13 @@ async def detect_url(body: dict):
         data = resp.content
     if len(data) > settings.max_file_bytes:
         raise HTTPException(413, "Remote image exceeds size limit")
+    check_image_dimensions(data)
 
     alpr = get_alpr_service()
     result = await alpr.detect_from_bytes(
         data,
-        generate_thumbnail=body.get("thumbnail", True),
-        camera_region=body.get("cameraRegion") or body.get("region"),
+        generate_thumbnail=body.thumbnail, # type: ignore
+        camera_region=body.cameraRegion,
     )
     return _result_to_dict(result)
 
@@ -88,15 +93,21 @@ async def detect_video(
     camera_region: Optional[str] = Query(None, alias="cameraRegion"),
 ):
     data = await video.read()
+    # Validate video size
+    check_video_size(data)
     alpr = get_alpr_service()
 
     async def event_stream():
+        # Disconnect idle/slow clients: allow up to 2 consecutive keepalive timeouts (~60s)
+        consecutive_timeouts = 0
         try:
             async for frame in alpr.detect_video_stream(
                 data,
                 frame_step=frame_step,
                 camera_region=camera_region,
             ):
+                # reset on real data
+                consecutive_timeouts = 0
                 yield f"event: detection\ndata: {json.dumps(frame)}\n\n"
         except Exception as exc:
             logger.error("Video detection error: %s", exc)
@@ -107,21 +118,23 @@ async def detect_video(
     return StreamingResponse(event_stream(), media_type="text/event-stream")
 
 
-@router.post("/detect-stream")
-async def detect_stream(body: dict):
-    url = body.get("url")
+@router.post("/detect-stream", response_model=DetectionResponse)
+async def detect_stream(body: DetectStreamRequest):
+    url = body.url
     if not url:
         raise HTTPException(400, "url required")
-    frame_step = int(body.get("frameStep", 5))
+    frame_step = int(body.frameStep or 5)
     alpr = get_alpr_service()
 
     async def event_stream():
+        consecutive_timeouts = 0
         try:
             async for frame in alpr.detect_live_stream(
                 url,
                 frame_step=frame_step,
-                camera_region=body.get("cameraRegion") or body.get("region"),
+                camera_region=body.cameraRegion,
             ):
+                consecutive_timeouts = 0
                 yield f"event: detection\ndata: {json.dumps(frame)}\n\n"
         except Exception as exc:
             logger.error("Stream detection error: %s", exc)

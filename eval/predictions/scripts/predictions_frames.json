@@ -1,0 +1,6001 @@
+[
+  {
+    "image": "vid001_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1020.0,
+          "y": 707.0,
+          "width": 54.0,
+          "height": 25.0
+        },
+        "text": "VD0130A",
+        "confidence": 0.5040782690048218
+      }
+    ]
+  },
+  {
+    "image": "vid001_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1421.0,
+          "y": 791.0,
+          "width": 81.0,
+          "height": 35.0
+        },
+        "text": "AUU914",
+        "confidence": 0.7258008718490601
+      }
+    ]
+  },
+  {
+    "image": "vid001_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000019.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1033.0,
+          "y": 846.0,
+          "width": 76.0,
+          "height": 38.0
+        },
+        "text": "AEU965",
+        "confidence": 0.667682409286499
+      }
+    ]
+  },
+  {
+    "image": "vid001_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000026.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1732.0,
+          "y": 831.0,
+          "width": 58.0,
+          "height": 36.0
+        },
+        "text": "SB6539",
+        "confidence": 0.46655577421188354
+      },
+      {
+        "bbox": {
+          "x": 795.0,
+          "y": 711.0,
+          "width": 66.0,
+          "height": 26.0
+        },
+        "text": "LF14689",
+        "confidence": 0.4457198977470398
+      }
+    ]
+  },
+  {
+    "image": "vid001_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid001_frame000030.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 860.0,
+          "y": 713.0,
+          "width": 51.0,
+          "height": 27.0
+        },
+        "text": "BMY920",
+        "confidence": 0.54914790391922
+      }
+    ]
+  },
+  {
+    "image": "vid001_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000001.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1123.0,
+          "y": 878.0,
+          "width": 111.0,
+          "height": 67.0
+        },
+        "text": "LEF4869",
+        "confidence": 0.8360351920127869
+      }
+    ]
+  },
+  {
+    "image": "vid002_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000023.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1489.0,
+          "y": 781.0,
+          "width": 77.0,
+          "height": 43.0
+        },
+        "text": "BJG142",
+        "confidence": 0.8071854114532471
+      }
+    ]
+  },
+  {
+    "image": "vid002_frame000024.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 947.0,
+          "y": 674.0,
+          "width": 62.0,
+          "height": 35.0
+        },
+        "text": "ASU48",
+        "confidence": 0.6146316528320312
+      }
+    ]
+  },
+  {
+    "image": "vid002_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid002_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid003_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid003_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid003_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid003_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1555.0,
+          "y": 876.0,
+          "width": 102.0,
+          "height": 50.0
+        },
+        "text": "MQ417",
+        "confidence": 0.7210476398468018
+      }
+    ]
+  },
+  {
+    "image": "vid003_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid003_frame000006.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 980.0,
+          "y": 810.0,
+          "width": 66.0,
+          "height": 35.0
+        },
+        "text": "LEF4869",
+        "confidence": 0.7443121671676636
+      },
+      {
+        "bbox": {
+          "x": 1869.0,
+          "y": 716.0,
+          "width": 48.0,
+          "height": 36.0
+        },
+        "text": "PPE126",
+        "confidence": 0.4550101161003113
+      }
+    ]
+  },
+  {
+    "image": "vid003_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid003_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid003_frame000009.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1757.0,
+          "y": 695.0,
+          "width": 51.0,
+          "height": 32.0
+        },
+        "text": "RIS1266",
+        "confidence": 0.4961782395839691
+      }
+    ]
+  },
+  {
+    "image": "vid004_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid004_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid004_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid004_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid004_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 935.0,
+          "y": 829.0,
+          "width": 85.0,
+          "height": 46.0
+        },
+        "text": "LEF4869",
+        "confidence": 0.7614262104034424
+      }
+    ]
+  },
+  {
+    "image": "vid004_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid004_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 198.0,
+          "y": 996.0,
+          "width": 48.0,
+          "height": 27.0
+        },
+        "text": "BLR1777",
+        "confidence": 0.6722884178161621
+      }
+    ]
+  },
+  {
+    "image": "vid005_frame000012.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 716.0,
+          "y": 912.0,
+          "width": 42.0,
+          "height": 26.0
+        },
+        "text": "AB8001",
+        "confidence": 0.4220535159111023
+      }
+    ]
+  },
+  {
+    "image": "vid005_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid005_frame000018.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 817.0,
+          "y": 754.0,
+          "width": 53.0,
+          "height": 21.0
+        },
+        "text": "TZ699C",
+        "confidence": 0.4518047869205475
+      }
+    ]
+  },
+  {
+    "image": "vid005_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000001.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 248.0,
+          "y": 819.0,
+          "width": 68.0,
+          "height": 34.0
+        },
+        "text": "6K43658",
+        "confidence": 0.6100878119468689
+      }
+    ]
+  },
+  {
+    "image": "vid006_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 431.0,
+          "y": 539.0,
+          "width": 50.0,
+          "height": 29.0
+        },
+        "text": "KAAF005",
+        "confidence": 0.4161604642868042
+      }
+    ]
+  },
+  {
+    "image": "vid006_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 828.0,
+          "y": 739.0,
+          "width": 117.0,
+          "height": 32.0
+        },
+        "text": "3221",
+        "confidence": 0.5608206987380981
+      },
+      {
+        "bbox": {
+          "x": 557.0,
+          "y": 343.0,
+          "width": 59.0,
+          "height": 24.0
+        },
+        "text": "769913",
+        "confidence": 0.4314405620098114
+      }
+    ]
+  },
+  {
+    "image": "vid006_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 926.0,
+          "y": 388.0,
+          "width": 93.0,
+          "height": 25.0
+        },
+        "text": "Z4225",
+        "confidence": 0.6157126426696777
+      },
+      {
+        "bbox": {
+          "x": 649.0,
+          "y": 183.0,
+          "width": 56.0,
+          "height": 27.0
+        },
+        "text": "K450191",
+        "confidence": 0.4319906234741211
+      }
+    ]
+  },
+  {
+    "image": "vid006_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 216.0,
+          "y": 836.0,
+          "width": 87.0,
+          "height": 49.0
+        },
+        "text": "HR558",
+        "confidence": 0.6388319730758667
+      }
+    ]
+  },
+  {
+    "image": "vid006_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 558.0,
+          "y": 176.0,
+          "width": 68.0,
+          "height": 37.0
+        },
+        "text": "L93132",
+        "confidence": 0.6850799322128296
+      }
+    ]
+  },
+  {
+    "image": "vid006_frame000016.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1510.0,
+          "y": 843.0,
+          "width": 112.0,
+          "height": 47.0
+        },
+        "text": "1RMV58",
+        "confidence": 0.6962167620658875
+      }
+    ]
+  },
+  {
+    "image": "vid006_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid006_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000001.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 248.0,
+          "y": 819.0,
+          "width": 68.0,
+          "height": 34.0
+        },
+        "text": "6K43658",
+        "confidence": 0.6100878119468689
+      }
+    ]
+  },
+  {
+    "image": "vid007_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 431.0,
+          "y": 539.0,
+          "width": 50.0,
+          "height": 29.0
+        },
+        "text": "KAAF005",
+        "confidence": 0.4161604642868042
+      }
+    ]
+  },
+  {
+    "image": "vid007_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 828.0,
+          "y": 739.0,
+          "width": 117.0,
+          "height": 32.0
+        },
+        "text": "3221",
+        "confidence": 0.5608206987380981
+      },
+      {
+        "bbox": {
+          "x": 557.0,
+          "y": 343.0,
+          "width": 59.0,
+          "height": 24.0
+        },
+        "text": "769913",
+        "confidence": 0.4314405620098114
+      }
+    ]
+  },
+  {
+    "image": "vid007_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 926.0,
+          "y": 388.0,
+          "width": 93.0,
+          "height": 25.0
+        },
+        "text": "Z4225",
+        "confidence": 0.6157126426696777
+      },
+      {
+        "bbox": {
+          "x": 649.0,
+          "y": 183.0,
+          "width": 56.0,
+          "height": 27.0
+        },
+        "text": "K450191",
+        "confidence": 0.4319906234741211
+      }
+    ]
+  },
+  {
+    "image": "vid007_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 216.0,
+          "y": 836.0,
+          "width": 87.0,
+          "height": 49.0
+        },
+        "text": "HR558",
+        "confidence": 0.6388319730758667
+      }
+    ]
+  },
+  {
+    "image": "vid007_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 558.0,
+          "y": 176.0,
+          "width": 68.0,
+          "height": 37.0
+        },
+        "text": "L93132",
+        "confidence": 0.6850799322128296
+      }
+    ]
+  },
+  {
+    "image": "vid007_frame000016.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1510.0,
+          "y": 843.0,
+          "width": 112.0,
+          "height": 47.0
+        },
+        "text": "1RMV58",
+        "confidence": 0.6962167620658875
+      }
+    ]
+  },
+  {
+    "image": "vid007_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid007_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000001.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 715.0,
+          "y": 97.0,
+          "width": 96.0,
+          "height": 49.0
+        },
+        "text": "DVE853",
+        "confidence": 0.7942025065422058
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 689.0,
+          "y": 33.0,
+          "width": 90.0,
+          "height": 40.0
+        },
+        "text": "DDF722",
+        "confidence": 0.620888352394104
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1381.0,
+          "y": 1048.0,
+          "width": 140.0,
+          "height": 34.0
+        },
+        "text": "LDV000",
+        "confidence": 0.5583704710006714
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 558.0,
+          "y": 844.0,
+          "width": 121.0,
+          "height": 62.0
+        },
+        "text": "NNU12",
+        "confidence": 0.8499116897583008
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000012.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1351.0,
+          "y": 484.0,
+          "width": 78.0,
+          "height": 45.0
+        },
+        "text": "ADY112",
+        "confidence": 0.7881274223327637
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1294.0,
+          "y": 308.0,
+          "width": 73.0,
+          "height": 30.0
+        },
+        "text": "KH600",
+        "confidence": 0.43822798132896423
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000016.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 746.0,
+          "y": 543.0,
+          "width": 76.0,
+          "height": 33.0
+        },
+        "text": "IHF741",
+        "confidence": 0.6875199675559998
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000018.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1208.0,
+          "y": 532.0,
+          "width": 54.0,
+          "height": 31.0
+        },
+        "text": "LMO939",
+        "confidence": 0.5207498073577881
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000022.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 80.0,
+          "y": 381.0,
+          "width": 95.0,
+          "height": 32.0
+        },
+        "text": "MI1912",
+        "confidence": 0.7077600955963135
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000023.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 643.0,
+          "y": 969.0,
+          "width": 79.0,
+          "height": 37.0
+        },
+        "text": "DP523",
+        "confidence": 0.649356484413147
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000024.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1244.0,
+          "y": 620.0,
+          "width": 74.0,
+          "height": 39.0
+        },
+        "text": "LD0710",
+        "confidence": 0.7980204820632935
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000026.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1203.0,
+          "y": 783.0,
+          "width": 79.0,
+          "height": 40.0
+        },
+        "text": "086E70",
+        "confidence": 0.776246964931488
+      },
+      {
+        "bbox": {
+          "x": 670.0,
+          "y": 410.0,
+          "width": 65.0,
+          "height": 33.0
+        },
+        "text": "E0X19",
+        "confidence": 0.5094397664070129
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000033.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 620.0,
+          "y": 474.0,
+          "width": 55.0,
+          "height": 28.0
+        },
+        "text": "BU11722",
+        "confidence": 0.4380202293395996
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000034.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1207.0,
+          "y": 539.0,
+          "width": 54.0,
+          "height": 28.0
+        },
+        "text": "A0630",
+        "confidence": 0.6803117990493774
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000035.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1239.0,
+          "y": 108.0,
+          "width": 41.0,
+          "height": 22.0
+        },
+        "text": "BT0534O",
+        "confidence": 0.573338508605957
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000036.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000037.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000038.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000039.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000040.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 682.0,
+          "y": 617.0,
+          "width": 57.0,
+          "height": 33.0
+        },
+        "text": "S25008",
+        "confidence": 0.6429493427276611
+      },
+      {
+        "bbox": {
+          "x": 920.0,
+          "y": 58.0,
+          "width": 91.0,
+          "height": 28.0
+        },
+        "text": "FK0912",
+        "confidence": 0.577575147151947
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000041.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000042.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000043.png",
+    "predictions": []
+  },
+  {
+    "image": "vid008_frame000044.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 734.0,
+          "y": 385.0,
+          "width": 70.0,
+          "height": 31.0
+        },
+        "text": "1P337",
+        "confidence": 0.682986855506897
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000045.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1199.0,
+          "y": 536.0,
+          "width": 71.0,
+          "height": 43.0
+        },
+        "text": "AFCAMM",
+        "confidence": 0.7809711694717407
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000046.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 587.0,
+          "y": 733.0,
+          "width": 82.0,
+          "height": 38.0
+        },
+        "text": "FHF889",
+        "confidence": 0.8025673627853394
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000047.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 777.0,
+          "y": 103.0,
+          "width": 55.0,
+          "height": 26.0
+        },
+        "text": "WCT788",
+        "confidence": 0.5747448801994324
+      }
+    ]
+  },
+  {
+    "image": "vid008_frame000048.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1050.0,
+          "y": 234.0,
+          "width": 70.0,
+          "height": 24.0
+        },
+        "text": "19K21",
+        "confidence": 0.5468102097511292
+      }
+    ]
+  },
+  {
+    "image": "vid009_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1258.0,
+          "y": 697.0,
+          "width": 62.0,
+          "height": 28.0
+        },
+        "text": "ACZ881",
+        "confidence": 0.7133165597915649
+      }
+    ]
+  },
+  {
+    "image": "vid009_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1174.0,
+          "y": 149.0,
+          "width": 63.0,
+          "height": 27.0
+        },
+        "text": "L7113",
+        "confidence": 0.5595110058784485
+      }
+    ]
+  },
+  {
+    "image": "vid009_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000010.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 864.0,
+          "y": 323.0,
+          "width": 92.0,
+          "height": 40.0
+        },
+        "text": "BGK798",
+        "confidence": 0.6681985259056091
+      }
+    ]
+  },
+  {
+    "image": "vid009_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000012.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1323.0,
+          "y": 716.0,
+          "width": 67.0,
+          "height": 27.0
+        },
+        "text": "BKZ888",
+        "confidence": 0.5609143972396851
+      }
+    ]
+  },
+  {
+    "image": "vid009_frame000013.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1268.0,
+          "y": 751.0,
+          "width": 51.0,
+          "height": 26.0
+        },
+        "text": "T966131",
+        "confidence": 0.7173623442649841
+      }
+    ]
+  },
+  {
+    "image": "vid009_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000017.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 875.0,
+          "y": 151.0,
+          "width": 58.0,
+          "height": 21.0
+        },
+        "text": "FN3813",
+        "confidence": 0.4123059809207916
+      }
+    ]
+  },
+  {
+    "image": "vid009_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid009_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1151.0,
+          "y": 396.0,
+          "width": 47.0,
+          "height": 26.0
+        },
+        "text": "M6171",
+        "confidence": 0.4257875680923462
+      }
+    ]
+  },
+  {
+    "image": "vid010_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000006.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1254.0,
+          "y": 991.0,
+          "width": 71.0,
+          "height": 36.0
+        },
+        "text": "AA0679",
+        "confidence": 0.7344619035720825
+      }
+    ]
+  },
+  {
+    "image": "vid010_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1119.0,
+          "y": 490.0,
+          "width": 56.0,
+          "height": 32.0
+        },
+        "text": "DHD9922",
+        "confidence": 0.5522027611732483
+      }
+    ]
+  },
+  {
+    "image": "vid010_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000010.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1250.0,
+          "y": 1020.0,
+          "width": 68.0,
+          "height": 34.0
+        },
+        "text": "2BU1600",
+        "confidence": 0.7292236685752869
+      }
+    ]
+  },
+  {
+    "image": "vid010_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid010_frame000013.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 637.0,
+          "y": 789.0,
+          "width": 61.0,
+          "height": 32.0
+        },
+        "text": "V861",
+        "confidence": 0.7259782552719116
+      }
+    ]
+  },
+  {
+    "image": "vid010_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 694.0,
+          "y": 616.0,
+          "width": 53.0,
+          "height": 30.0
+        },
+        "text": "MF66026",
+        "confidence": 0.6717954874038696
+      }
+    ]
+  },
+  {
+    "image": "vid010_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid011_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 942.0,
+          "y": 715.0,
+          "width": 47.0,
+          "height": 26.0
+        },
+        "text": "N5D738L",
+        "confidence": 0.45939940214157104
+      }
+    ]
+  },
+  {
+    "image": "vid012_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 678.0,
+          "y": 983.0,
+          "width": 54.0,
+          "height": 29.0
+        },
+        "text": "E2253",
+        "confidence": 0.4439297616481781
+      }
+    ]
+  },
+  {
+    "image": "vid012_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000019.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 608.0,
+          "y": 753.0,
+          "width": 64.0,
+          "height": 23.0
+        },
+        "text": "8C9596B",
+        "confidence": 0.41717177629470825
+      }
+    ]
+  },
+  {
+    "image": "vid012_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000027.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1194.0,
+          "y": 434.0,
+          "width": 44.0,
+          "height": 23.0
+        },
+        "text": "KV6491",
+        "confidence": 0.5445688962936401
+      }
+    ]
+  },
+  {
+    "image": "vid012_frame000028.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1189.0,
+          "y": 677.0,
+          "width": 50.0,
+          "height": 27.0
+        },
+        "text": "LN3998",
+        "confidence": 0.47520503401756287
+      }
+    ]
+  },
+  {
+    "image": "vid012_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000033.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000034.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000035.png",
+    "predictions": []
+  },
+  {
+    "image": "vid012_frame000036.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 418.0,
+          "y": 802.0,
+          "width": 83.0,
+          "height": 25.0
+        },
+        "text": "FV7893",
+        "confidence": 0.4975188076496124
+      }
+    ]
+  },
+  {
+    "image": "vid013_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid013_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid014_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid014_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid014_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 787.0,
+          "y": 458.0,
+          "width": 51.0,
+          "height": 26.0
+        },
+        "text": "K3N8015",
+        "confidence": 0.5100489258766174
+      }
+    ]
+  },
+  {
+    "image": "vid014_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 812.0,
+          "y": 512.0,
+          "width": 54.0,
+          "height": 32.0
+        },
+        "text": "AVT889",
+        "confidence": 0.6804165840148926
+      }
+    ]
+  },
+  {
+    "image": "vid014_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 891.0,
+          "y": 563.0,
+          "width": 73.0,
+          "height": 42.0
+        },
+        "text": "AVT889",
+        "confidence": 0.7097052931785583
+      },
+      {
+        "bbox": {
+          "x": 1470.0,
+          "y": 537.0,
+          "width": 59.0,
+          "height": 36.0
+        },
+        "text": "LFF113",
+        "confidence": 0.6853733062744141
+      }
+    ]
+  },
+  {
+    "image": "vid014_frame000006.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1257.0,
+          "y": 701.0,
+          "width": 110.0,
+          "height": 61.0
+        },
+        "text": "AVT889",
+        "confidence": 0.8428954482078552
+      }
+    ]
+  },
+  {
+    "image": "vid014_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 701.0,
+          "y": 556.0,
+          "width": 71.0,
+          "height": 33.0
+        },
+        "text": "BNX732",
+        "confidence": 0.4938569664955139
+      }
+    ]
+  },
+  {
+    "image": "vid014_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 887.0,
+          "y": 696.0,
+          "width": 93.0,
+          "height": 44.0
+        },
+        "text": "BNX732",
+        "confidence": 0.8324360251426697
+      }
+    ]
+  },
+  {
+    "image": "vid015_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid015_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid015_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid015_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid015_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid015_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid016_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid017_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid017_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid017_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 196.0,
+          "y": 253.0,
+          "width": 24.0,
+          "height": 7.0
+        },
+        "text": "E62611",
+        "confidence": 0.5428488254547119
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 301.0,
+          "y": 292.0,
+          "width": 23.0,
+          "height": 10.0
+        },
+        "text": "747810",
+        "confidence": 0.7626994848251343
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000026.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 396.0,
+          "y": 283.0,
+          "width": 15.0,
+          "height": 8.0
+        },
+        "text": "3RC50B",
+        "confidence": 0.40455546975135803
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000030.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 319.0,
+          "y": 267.0,
+          "width": 10.0,
+          "height": 9.0
+        },
+        "text": "1J83136",
+        "confidence": 0.4062980115413666
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000033.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000034.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000035.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000036.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000037.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 263.0,
+          "y": 273.0,
+          "width": 14.0,
+          "height": 9.0
+        },
+        "text": "LJ6413",
+        "confidence": 0.4764423966407776
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000038.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 375.0,
+          "y": 339.0,
+          "width": 21.0,
+          "height": 15.0
+        },
+        "text": "LR3733",
+        "confidence": 0.7860159873962402
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000039.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 225.0,
+          "y": 263.0,
+          "width": 12.0,
+          "height": 7.0
+        },
+        "text": "1J33136",
+        "confidence": 0.5555277466773987
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000040.png",
+    "predictions": []
+  },
+  {
+    "image": "vid018_frame000041.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 359.0,
+          "y": 333.0,
+          "width": 19.0,
+          "height": 11.0
+        },
+        "text": "242531",
+        "confidence": 0.6763260364532471
+      }
+    ]
+  },
+  {
+    "image": "vid018_frame000042.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000033.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000034.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000035.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000036.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000037.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000038.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000039.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000040.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000041.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000042.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000043.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000044.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000045.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000046.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000047.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000048.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000049.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000050.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000051.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000052.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000053.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000054.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000055.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000056.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000057.png",
+    "predictions": []
+  },
+  {
+    "image": "vid019_frame000058.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000033.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000034.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000035.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000036.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000037.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000038.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000039.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000040.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000041.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000042.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000043.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000044.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000045.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000046.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000047.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000048.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000049.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000050.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000051.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000052.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000053.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000054.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000055.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000056.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000057.png",
+    "predictions": []
+  },
+  {
+    "image": "vid020_frame000058.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 351.0,
+          "y": 226.0,
+          "width": 18.0,
+          "height": 10.0
+        },
+        "text": "BT5R1L1",
+        "confidence": 0.5453424453735352
+      }
+    ]
+  },
+  {
+    "image": "vid021_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid021_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 351.0,
+          "y": 226.0,
+          "width": 18.0,
+          "height": 10.0
+        },
+        "text": "BT5R1L1",
+        "confidence": 0.5453424453735352
+      }
+    ]
+  },
+  {
+    "image": "vid022_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid022_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 78.0,
+          "y": 283.0,
+          "width": 14.0,
+          "height": 10.0
+        },
+        "text": "58641B1",
+        "confidence": 0.44712692499160767
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 416.0,
+          "y": 314.0,
+          "width": 15.0,
+          "height": 16.0
+        },
+        "text": "FC4092",
+        "confidence": 0.48325115442276
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 48.0,
+          "y": 283.0,
+          "width": 16.0,
+          "height": 9.0
+        },
+        "text": "LB2418",
+        "confidence": 0.5401239991188049
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 239.0,
+          "y": 278.0,
+          "width": 28.0,
+          "height": 11.0
+        },
+        "text": "4721",
+        "confidence": 0.6338616609573364
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000010.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 58.0,
+          "y": 268.0,
+          "width": 12.0,
+          "height": 10.0
+        },
+        "text": "346712",
+        "confidence": 0.4003600776195526
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 62.0,
+          "y": 263.0,
+          "width": 15.0,
+          "height": 10.0
+        },
+        "text": "B467136",
+        "confidence": 0.45379838347435
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000013.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 82.0,
+          "y": 269.0,
+          "width": 13.0,
+          "height": 9.0
+        },
+        "text": "98S412",
+        "confidence": 0.40665900707244873
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 89.0,
+          "y": 263.0,
+          "width": 14.0,
+          "height": 9.0
+        },
+        "text": "BSL416",
+        "confidence": 0.4902932941913605
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000020.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 99.0,
+          "y": 253.0,
+          "width": 15.0,
+          "height": 11.0
+        },
+        "text": "BG2418",
+        "confidence": 0.4782368540763855
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid023_frame000022.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 104.0,
+          "y": 262.0,
+          "width": 13.0,
+          "height": 10.0
+        },
+        "text": "8BL41",
+        "confidence": 0.5341770648956299
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000023.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 105.0,
+          "y": 262.0,
+          "width": 13.0,
+          "height": 10.0
+        },
+        "text": "BA8415",
+        "confidence": 0.5762655735015869
+      }
+    ]
+  },
+  {
+    "image": "vid023_frame000024.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 108.0,
+          "y": 262.0,
+          "width": 12.0,
+          "height": 11.0
+        },
+        "text": "34L61B",
+        "confidence": 0.5174418091773987
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 78.0,
+          "y": 283.0,
+          "width": 14.0,
+          "height": 10.0
+        },
+        "text": "58641B1",
+        "confidence": 0.44712692499160767
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 416.0,
+          "y": 314.0,
+          "width": 15.0,
+          "height": 16.0
+        },
+        "text": "FC4092",
+        "confidence": 0.48325115442276
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 48.0,
+          "y": 283.0,
+          "width": 16.0,
+          "height": 9.0
+        },
+        "text": "LB2418",
+        "confidence": 0.5401239991188049
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 239.0,
+          "y": 278.0,
+          "width": 28.0,
+          "height": 11.0
+        },
+        "text": "4721",
+        "confidence": 0.6338616609573364
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000010.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 58.0,
+          "y": 268.0,
+          "width": 12.0,
+          "height": 10.0
+        },
+        "text": "346712",
+        "confidence": 0.4003600776195526
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 62.0,
+          "y": 263.0,
+          "width": 15.0,
+          "height": 10.0
+        },
+        "text": "B467136",
+        "confidence": 0.45379838347435
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000013.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 82.0,
+          "y": 269.0,
+          "width": 13.0,
+          "height": 9.0
+        },
+        "text": "98S412",
+        "confidence": 0.40665900707244873
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 89.0,
+          "y": 263.0,
+          "width": 14.0,
+          "height": 9.0
+        },
+        "text": "BSL416",
+        "confidence": 0.4902932941913605
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000020.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 99.0,
+          "y": 253.0,
+          "width": 15.0,
+          "height": 11.0
+        },
+        "text": "BG2418",
+        "confidence": 0.4782368540763855
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid024_frame000022.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 104.0,
+          "y": 262.0,
+          "width": 13.0,
+          "height": 10.0
+        },
+        "text": "8BL41",
+        "confidence": 0.5341770648956299
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000023.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 105.0,
+          "y": 262.0,
+          "width": 13.0,
+          "height": 10.0
+        },
+        "text": "BA8415",
+        "confidence": 0.5762655735015869
+      }
+    ]
+  },
+  {
+    "image": "vid024_frame000024.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 108.0,
+          "y": 262.0,
+          "width": 12.0,
+          "height": 11.0
+        },
+        "text": "34L61B",
+        "confidence": 0.5174418091773987
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 242.0,
+          "y": 256.0,
+          "width": 18.0,
+          "height": 9.0
+        },
+        "text": "BO24165",
+        "confidence": 0.4128667116165161
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 349.0,
+          "y": 324.0,
+          "width": 25.0,
+          "height": 19.0
+        },
+        "text": "LZN1306",
+        "confidence": 0.8032119274139404
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000019.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 250.0,
+          "y": 253.0,
+          "width": 21.0,
+          "height": 8.0
+        },
+        "text": "LD213",
+        "confidence": 0.5907174348831177
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000020.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 434.0,
+          "y": 323.0,
+          "width": 26.0,
+          "height": 22.0
+        },
+        "text": "EA8513",
+        "confidence": 0.8583371639251709
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000024.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 201.0,
+          "y": 228.0,
+          "width": 14.0,
+          "height": 8.0
+        },
+        "text": "EJ6313",
+        "confidence": 0.587917685508728
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000026.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 272.0,
+          "y": 262.0,
+          "width": 18.0,
+          "height": 11.0
+        },
+        "text": "F83213",
+        "confidence": 0.7879648208618164
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000027.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 303.0,
+          "y": 273.0,
+          "width": 19.0,
+          "height": 14.0
+        },
+        "text": "F0199",
+        "confidence": 0.7876850366592407
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000028.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 356.0,
+          "y": 296.0,
+          "width": 22.0,
+          "height": 18.0
+        },
+        "text": "AFV4468",
+        "confidence": 0.8791844844818115
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000029.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 457.0,
+          "y": 344.0,
+          "width": 23.0,
+          "height": 16.0
+        },
+        "text": "249211",
+        "confidence": 0.6559574007987976
+      }
+    ]
+  },
+  {
+    "image": "vid025_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000033.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000034.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000035.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000036.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000037.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000038.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000039.png",
+    "predictions": []
+  },
+  {
+    "image": "vid025_frame000040.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 218.0,
+          "y": 271.0,
+          "width": 16.0,
+          "height": 8.0
+        },
+        "text": "B86735",
+        "confidence": 0.6468807458877563
+      }
+    ]
+  },
+  {
+    "image": "vid026_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 298.0,
+          "y": 339.0,
+          "width": 26.0,
+          "height": 15.0
+        },
+        "text": "VV18780",
+        "confidence": 0.8206793069839478
+      }
+    ]
+  },
+  {
+    "image": "vid026_frame000016.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 335.0,
+          "y": 278.0,
+          "width": 15.0,
+          "height": 9.0
+        },
+        "text": "B169325",
+        "confidence": 0.7383512258529663
+      }
+    ]
+  },
+  {
+    "image": "vid026_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid026_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 218.0,
+          "y": 271.0,
+          "width": 16.0,
+          "height": 8.0
+        },
+        "text": "B86735",
+        "confidence": 0.6468807458877563
+      }
+    ]
+  },
+  {
+    "image": "vid027_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 298.0,
+          "y": 339.0,
+          "width": 26.0,
+          "height": 15.0
+        },
+        "text": "VV18780",
+        "confidence": 0.8206793069839478
+      }
+    ]
+  },
+  {
+    "image": "vid027_frame000016.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 335.0,
+          "y": 278.0,
+          "width": 15.0,
+          "height": 9.0
+        },
+        "text": "B169325",
+        "confidence": 0.7383512258529663
+      }
+    ]
+  },
+  {
+    "image": "vid027_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid027_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2508.0,
+          "y": 2066.0,
+          "width": 169.0,
+          "height": 59.0
+        },
+        "text": "PR6885A",
+        "confidence": 0.6177047491073608
+      }
+    ]
+  },
+  {
+    "image": "vid028_frame000009.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2524.0,
+          "y": 2075.0,
+          "width": 115.0,
+          "height": 65.0
+        },
+        "text": "SED577",
+        "confidence": 0.4705631732940674
+      }
+    ]
+  },
+  {
+    "image": "vid028_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid028_frame000013.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1367.0,
+          "y": 1734.0,
+          "width": 122.0,
+          "height": 49.0
+        },
+        "text": "H827000",
+        "confidence": 0.6557957530021667
+      }
+    ]
+  },
+  {
+    "image": "vid029_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid029_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid029_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 951.0,
+          "y": 775.0,
+          "width": 49.0,
+          "height": 27.0
+        },
+        "text": "FZ2113",
+        "confidence": 0.4491802752017975
+      }
+    ]
+  },
+  {
+    "image": "vid029_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid029_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1923.0,
+          "y": 215.0,
+          "width": 103.0,
+          "height": 56.0
+        },
+        "text": "E92133",
+        "confidence": 0.592404305934906
+      }
+    ]
+  },
+  {
+    "image": "vid030_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1000.0,
+          "y": 1267.0,
+          "width": 130.0,
+          "height": 55.0
+        },
+        "text": "10B110",
+        "confidence": 0.7241301536560059
+      },
+      {
+        "bbox": {
+          "x": 2122.0,
+          "y": 1529.0,
+          "width": 144.0,
+          "height": 75.0
+        },
+        "text": "BOK5225",
+        "confidence": 0.6880888342857361
+      }
+    ]
+  },
+  {
+    "image": "vid030_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000017.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2586.0,
+          "y": 1722.0,
+          "width": 109.0,
+          "height": 51.0
+        },
+        "text": "O1271S",
+        "confidence": 0.497043639421463
+      }
+    ]
+  },
+  {
+    "image": "vid030_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000023.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1638.0,
+          "y": 2065.0,
+          "width": 120.0,
+          "height": 52.0
+        },
+        "text": "IZ134CC",
+        "confidence": 0.5636411309242249
+      }
+    ]
+  },
+  {
+    "image": "vid030_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid030_frame000030.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2370.0,
+          "y": 604.0,
+          "width": 84.0,
+          "height": 43.0
+        },
+        "text": "B46153",
+        "confidence": 0.5140210390090942
+      }
+    ]
+  },
+  {
+    "image": "vid030_frame000031.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2417.0,
+          "y": 919.0,
+          "width": 90.0,
+          "height": 48.0
+        },
+        "text": "RX5433",
+        "confidence": 0.5185806751251221
+      }
+    ]
+  },
+  {
+    "image": "vid030_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid031_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid031_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1767.0,
+          "y": 1871.0,
+          "width": 113.0,
+          "height": 58.0
+        },
+        "text": "V923487",
+        "confidence": 0.6623712778091431
+      }
+    ]
+  },
+  {
+    "image": "vid031_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1657.0,
+          "y": 1192.0,
+          "width": 90.0,
+          "height": 53.0
+        },
+        "text": "1J23M61",
+        "confidence": 0.48480501770973206
+      }
+    ]
+  },
+  {
+    "image": "vid031_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1493.0,
+          "y": 1347.0,
+          "width": 112.0,
+          "height": 61.0
+        },
+        "text": "EU517L",
+        "confidence": 0.48101291060447693
+      }
+    ]
+  },
+  {
+    "image": "vid031_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid031_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid031_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid031_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2640.0,
+          "y": 1901.0,
+          "width": 101.0,
+          "height": 58.0
+        },
+        "text": "166353",
+        "confidence": 0.5830350518226624
+      }
+    ]
+  },
+  {
+    "image": "vid031_frame000009.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2239.0,
+          "y": 1258.0,
+          "width": 104.0,
+          "height": 51.0
+        },
+        "text": "BA13700",
+        "confidence": 0.5194770693778992
+      },
+      {
+        "bbox": {
+          "x": 1597.0,
+          "y": 1988.0,
+          "width": 123.0,
+          "height": 67.0
+        },
+        "text": "64645B",
+        "confidence": 0.4177979826927185
+      }
+    ]
+  },
+  {
+    "image": "vid031_frame000010.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1547.0,
+          "y": 1406.0,
+          "width": 123.0,
+          "height": 55.0
+        },
+        "text": "1G6925T",
+        "confidence": 0.5338818430900574
+      }
+    ]
+  },
+  {
+    "image": "vid032_frame000001.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1856.0,
+          "y": 216.0,
+          "width": 136.0,
+          "height": 61.0
+        },
+        "text": "EO8418",
+        "confidence": 0.44813379645347595
+      }
+    ]
+  },
+  {
+    "image": "vid032_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1972.0,
+          "y": 751.0,
+          "width": 120.0,
+          "height": 65.0
+        },
+        "text": "CG63K",
+        "confidence": 0.770784854888916
+      }
+    ]
+  },
+  {
+    "image": "vid032_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1879.0,
+          "y": 2005.0,
+          "width": 160.0,
+          "height": 80.0
+        },
+        "text": "GY100",
+        "confidence": 0.5088372826576233
+      }
+    ]
+  },
+  {
+    "image": "vid032_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 3114.0,
+          "y": 933.0,
+          "width": 132.0,
+          "height": 75.0
+        },
+        "text": "ZRA999",
+        "confidence": 0.7971245646476746
+      },
+      {
+        "bbox": {
+          "x": 1771.0,
+          "y": 228.0,
+          "width": 113.0,
+          "height": 50.0
+        },
+        "text": "1A20580",
+        "confidence": 0.43929487466812134
+      }
+    ]
+  },
+  {
+    "image": "vid032_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000017.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 3101.0,
+          "y": 946.0,
+          "width": 93.0,
+          "height": 48.0
+        },
+        "text": "FL3216",
+        "confidence": 0.4734998345375061
+      }
+    ]
+  },
+  {
+    "image": "vid032_frame000018.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 3448.0,
+          "y": 1488.0,
+          "width": 153.0,
+          "height": 73.0
+        },
+        "text": "KIS899",
+        "confidence": 0.7531724572181702
+      }
+    ]
+  },
+  {
+    "image": "vid032_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid032_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid033_frame000020.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1619.0,
+          "y": 2038.0,
+          "width": 149.0,
+          "height": 61.0
+        },
+        "text": "AA0181",
+        "confidence": 0.712486982345581
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 766.0,
+          "y": 1607.0,
+          "width": 167.0,
+          "height": 77.0
+        },
+        "text": "CHF371",
+        "confidence": 0.45041346549987793
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000009.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1694.0,
+          "y": 872.0,
+          "width": 134.0,
+          "height": 61.0
+        },
+        "text": "F21697",
+        "confidence": 0.5322997570037842
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1973.0,
+          "y": 2085.0,
+          "width": 139.0,
+          "height": 81.0
+        },
+        "text": "NB3110",
+        "confidence": 0.44722333550453186
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000018.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1565.0,
+          "y": 362.0,
+          "width": 117.0,
+          "height": 66.0
+        },
+        "text": "N2375",
+        "confidence": 0.7690678834915161
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000019.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 724.0,
+          "y": 1149.0,
+          "width": 125.0,
+          "height": 60.0
+        },
+        "text": "516A",
+        "confidence": 0.5955215096473694
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000020.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 907.0,
+          "y": 376.0,
+          "width": 119.0,
+          "height": 61.0
+        },
+        "text": "74351",
+        "confidence": 0.7115778923034668
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000022.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1167.0,
+          "y": 1916.0,
+          "width": 176.0,
+          "height": 78.0
+        },
+        "text": "NKD459",
+        "confidence": 0.40281715989112854
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000023.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1169.0,
+          "y": 597.0,
+          "width": 157.0,
+          "height": 65.0
+        },
+        "text": "NX381RA",
+        "confidence": 0.7548678517341614
+      }
+    ]
+  },
+  {
+    "image": "vid034_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid034_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000012.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 980.0,
+          "y": 950.0,
+          "width": 51.0,
+          "height": 28.0
+        },
+        "text": "WL5293",
+        "confidence": 0.5471094250679016
+      }
+    ]
+  },
+  {
+    "image": "vid035_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid035_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid036_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid036_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2922.0,
+          "y": 1189.0,
+          "width": 164.0,
+          "height": 66.0
+        },
+        "text": "AMX7888",
+        "confidence": 0.6324413418769836
+      }
+    ]
+  },
+  {
+    "image": "vid036_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 3189.0,
+          "y": 1787.0,
+          "width": 239.0,
+          "height": 77.0
+        },
+        "text": "TVJ1193",
+        "confidence": 0.729257345199585
+      }
+    ]
+  },
+  {
+    "image": "vid036_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2873.0,
+          "y": 547.0,
+          "width": 174.0,
+          "height": 60.0
+        },
+        "text": "ZN4135",
+        "confidence": 0.5144045948982239
+      }
+    ]
+  },
+  {
+    "image": "vid036_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2889.0,
+          "y": 1859.0,
+          "width": 166.0,
+          "height": 69.0
+        },
+        "text": "PPD486",
+        "confidence": 0.6763700842857361
+      }
+    ]
+  },
+  {
+    "image": "vid036_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid036_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid036_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2642.0,
+          "y": 989.0,
+          "width": 125.0,
+          "height": 67.0
+        },
+        "text": "LY0680",
+        "confidence": 0.6417370438575745
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000011.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1291.0,
+          "y": 697.0,
+          "width": 121.0,
+          "height": 59.0
+        },
+        "text": "E05598",
+        "confidence": 0.6764351725578308
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000012.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 822.0,
+          "y": 548.0,
+          "width": 224.0,
+          "height": 58.0
+        },
+        "text": "P85895",
+        "confidence": 0.5097836852073669
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000015.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1954.0,
+          "y": 701.0,
+          "width": 234.0,
+          "height": 54.0
+        },
+        "text": "XRM8991",
+        "confidence": 0.44386738538742065
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000028.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1668.0,
+          "y": 1183.0,
+          "width": 128.0,
+          "height": 48.0
+        },
+        "text": "2716X1",
+        "confidence": 0.5681083798408508
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000031.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000032.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000033.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000034.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000035.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000036.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000037.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000038.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1241.0,
+          "y": 1549.0,
+          "width": 126.0,
+          "height": 58.0
+        },
+        "text": "K2741",
+        "confidence": 0.6580373048782349
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000039.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 942.0,
+          "y": 1180.0,
+          "width": 101.0,
+          "height": 57.0
+        },
+        "text": "HJE193",
+        "confidence": 0.620144784450531
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000040.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2121.0,
+          "y": 1354.0,
+          "width": 102.0,
+          "height": 53.0
+        },
+        "text": "8487HF",
+        "confidence": 0.47096186876296997
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000041.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1186.0,
+          "y": 1708.0,
+          "width": 104.0,
+          "height": 58.0
+        },
+        "text": "M4Z886C",
+        "confidence": 0.5374873280525208
+      }
+    ]
+  },
+  {
+    "image": "vid037_frame000042.png",
+    "predictions": []
+  },
+  {
+    "image": "vid037_frame000043.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000002.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1554.0,
+          "y": 1841.0,
+          "width": 210.0,
+          "height": 97.0
+        },
+        "text": "DU1419",
+        "confidence": 0.743397057056427
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1570.0,
+          "y": 265.0,
+          "width": 163.0,
+          "height": 81.0
+        },
+        "text": "BB283C5",
+        "confidence": 0.7493830323219299
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000004.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 2024.0,
+          "y": 972.0,
+          "width": 144.0,
+          "height": 77.0
+        },
+        "text": "613492",
+        "confidence": 0.7149031758308411
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1205.0,
+          "y": 2103.0,
+          "width": 187.0,
+          "height": 69.0
+        },
+        "text": "AONL16",
+        "confidence": 0.7449498176574707
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000006.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1477.0,
+          "y": 1048.0,
+          "width": 130.0,
+          "height": 80.0
+        },
+        "text": "EL211G",
+        "confidence": 0.503637969493866
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1771.0,
+          "y": 286.0,
+          "width": 132.0,
+          "height": 57.0
+        },
+        "text": "BJ269",
+        "confidence": 0.6385533809661865
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000013.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1030.0,
+          "y": 1376.0,
+          "width": 147.0,
+          "height": 78.0
+        },
+        "text": "XZ3593",
+        "confidence": 0.7238296270370483
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid038_frame000016.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1926.0,
+          "y": 1779.0,
+          "width": 167.0,
+          "height": 85.0
+        },
+        "text": "FA1538",
+        "confidence": 0.7681556940078735
+      }
+    ]
+  },
+  {
+    "image": "vid038_frame000017.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1755.0,
+          "y": 371.0,
+          "width": 141.0,
+          "height": 67.0
+        },
+        "text": "F35973",
+        "confidence": 0.7375249862670898
+      },
+      {
+        "bbox": {
+          "x": 695.0,
+          "y": 2082.0,
+          "width": 169.0,
+          "height": 82.0
+        },
+        "text": "FAB7589",
+        "confidence": 0.5354087352752686
+      }
+    ]
+  },
+  {
+    "image": "vid039_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000003.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1526.0,
+          "y": 698.0,
+          "width": 56.0,
+          "height": 42.0
+        },
+        "text": "AIE722",
+        "confidence": 0.500103235244751
+      }
+    ]
+  },
+  {
+    "image": "vid039_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000006.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1151.0,
+          "y": 659.0,
+          "width": 57.0,
+          "height": 34.0
+        },
+        "text": "FZ32131",
+        "confidence": 0.6899361610412598
+      }
+    ]
+  },
+  {
+    "image": "vid039_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000008.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1267.0,
+          "y": 675.0,
+          "width": 69.0,
+          "height": 37.0
+        },
+        "text": "BBX699",
+        "confidence": 0.648386538028717
+      }
+    ]
+  },
+  {
+    "image": "vid039_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000010.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1667.0,
+          "y": 673.0,
+          "width": 81.0,
+          "height": 50.0
+        },
+        "text": "BJK329",
+        "confidence": 0.6891233921051025
+      }
+    ]
+  },
+  {
+    "image": "vid039_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1886.0,
+          "y": 666.0,
+          "width": 33.0,
+          "height": 50.0
+        },
+        "text": "4C111",
+        "confidence": 0.6229197382926941
+      }
+    ]
+  },
+  {
+    "image": "vid039_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000029.png",
+    "predictions": []
+  },
+  {
+    "image": "vid039_frame000030.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000005.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1282.0,
+          "y": 1339.0,
+          "width": 119.0,
+          "height": 67.0
+        },
+        "text": "BGD50",
+        "confidence": 0.7118765115737915
+      }
+    ]
+  },
+  {
+    "image": "vid040_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000018.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000019.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid040_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1196.0,
+          "y": 1472.0,
+          "width": 131.0,
+          "height": 71.0
+        },
+        "text": "BNX732",
+        "confidence": 0.6759240031242371
+      }
+    ]
+  },
+  {
+    "image": "vid041_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000014.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 1682.0,
+          "y": 1422.0,
+          "width": 132.0,
+          "height": 49.0
+        },
+        "text": "MQ811",
+        "confidence": 0.5030156970024109
+      },
+      {
+        "bbox": {
+          "x": 580.0,
+          "y": 1274.0,
+          "width": 119.0,
+          "height": 53.0
+        },
+        "text": "1OA330",
+        "confidence": 0.40448448061943054
+      }
+    ]
+  },
+  {
+    "image": "vid041_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid041_frame000017.png",
+    "predictions": []
+  },
+  {
+    "image": "vid042_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid042_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid042_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid042_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid042_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid042_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid042_frame000007.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000003.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000004.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000005.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000006.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000007.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 960.0,
+          "y": 1355.0,
+          "width": 122.0,
+          "height": 116.0
+        },
+        "text": "2AS321",
+        "confidence": 0.4391497075557709
+      }
+    ]
+  },
+  {
+    "image": "vid043_frame000008.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000009.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000010.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000011.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000012.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000013.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000014.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000015.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000016.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000017.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 367.0,
+          "y": 1114.0,
+          "width": 75.0,
+          "height": 42.0
+        },
+        "text": "ACH125",
+        "confidence": 0.6597488522529602
+      }
+    ]
+  },
+  {
+    "image": "vid043_frame000018.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 377.0,
+          "y": 1192.0,
+          "width": 98.0,
+          "height": 58.0
+        },
+        "text": "ACH125",
+        "confidence": 0.8068505525588989
+      }
+    ]
+  },
+  {
+    "image": "vid043_frame000019.png",
+    "predictions": [
+      {
+        "bbox": {
+          "x": 788.0,
+          "y": 1454.0,
+          "width": 214.0,
+          "height": 125.0
+        },
+        "text": "ACH125",
+        "confidence": 0.8672813177108765
+      }
+    ]
+  },
+  {
+    "image": "vid043_frame000020.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000021.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000022.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000023.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000024.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000025.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000026.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000027.png",
+    "predictions": []
+  },
+  {
+    "image": "vid043_frame000028.png",
+    "predictions": []
+  },
+  {
+    "image": "vid044_frame000001.png",
+    "predictions": []
+  },
+  {
+    "image": "vid044_frame000002.png",
+    "predictions": []
+  },
+  {
+    "image": "vid044_frame000003.png",
+    "predictions": []
+  }
+]

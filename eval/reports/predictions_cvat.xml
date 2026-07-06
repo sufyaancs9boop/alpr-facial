@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotations>
+  <meta>
+    <task>
+      <id>0</id>
+      <name>images-alpr</name>
+      <size>12</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker />
+      <flipped>False</flipped>
+      <labels>
+        <label>
+          <name>LicensePlate</name>
+          <attributes>
+            <attribute>
+              <name>text</name>
+              <mutable>true</mutable>
+              <input_type>text</input_type>
+              <default />
+              <values />
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+      <segments />
+      <owner />
+      <source>manual</source>
+    </task>
+    <dumped>2026-07-05T11:29:29.347828+00:00</dumped>
+  </meta>
+  <image id="0" name="img001.jpg" width="4032" height="3024">
+    <box label="LicensePlate" occluded="0" xtl="2734.0" ytl="2878.0" xbr="2896.0" ybr="2961.0" z_order="0">
+      <attribute name="text">BJZ537</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="1645.0" ytl="2417.0" xbr="1822.0" ybr="2485.0" z_order="0">
+      <attribute name="text">2NV535</attribute>
+    </box>
+  </image>
+  <image id="1" name="img002.jpg" width="4032" height="3024" />
+  <image id="2" name="img003.jpg" width="4032" height="3024">
+    <box label="LicensePlate" occluded="0" xtl="1706.0" ytl="1709.0" xbr="1857.0" ybr="1767.0" z_order="0">
+      <attribute name="text">G4328</attribute>
+    </box>
+  </image>
+  <image id="3" name="img004.jpg" width="4032" height="3024">
+    <box label="LicensePlate" occluded="0" xtl="2543.0" ytl="1533.0" xbr="2667.0" ybr="1594.0" z_order="0">
+      <attribute name="text">12L9508</attribute>
+    </box>
+  </image>
+  <image id="4" name="img005.jpg" width="4032" height="3024" />
+  <image id="5" name="img006.jpg" width="4032" height="3024">
+    <box label="LicensePlate" occluded="0" xtl="1603.0" ytl="2191.0" xbr="1733.0" ybr="2260.0" z_order="0">
+      <attribute name="text">185421</attribute>
+    </box>
+  </image>
+  <image id="6" name="img007.jpg" width="4032" height="3024" />
+  <image id="7" name="img008.jpg" width="4032" height="3024" />
+  <image id="8" name="img009.jpg" width="4032" height="3024">
+    <box label="LicensePlate" occluded="0" xtl="1058.0" ytl="1004.0" xbr="1167.0" ybr="1069.0" z_order="0">
+      <attribute name="text">F2H323</attribute>
+    </box>
+  </image>
+  <image id="9" name="img010.jpg" width="4032" height="3024" />
+  <image id="10" name="img011.jpg" width="4032" height="2268" />
+  <image id="11" name="PXL_20260519_123621046.RAW-02.ORIGINAL.dng" width="1280" height="720" />
+</annotations>

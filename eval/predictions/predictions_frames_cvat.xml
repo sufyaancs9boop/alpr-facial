@@ -1,0 +1,1775 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotations>
+  <meta>
+    <task>
+      <id>0</id>
+      <name>videos-frames</name>
+      <size>945</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker />
+      <flipped>False</flipped>
+      <labels>
+        <label>
+          <name>LicensePlate</name>
+          <attributes>
+            <attribute>
+              <name>text</name>
+              <mutable>true</mutable>
+              <input_type>text</input_type>
+              <default />
+              <values />
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+      <segments />
+      <owner />
+      <source>manual</source>
+    </task>
+    <dumped>2026-07-06T15:20:34.721205+00:00</dumped>
+  </meta>
+  <image id="0" name="vid001_frame000001.png" width="1920" height="1080" />
+  <image id="1" name="vid001_frame000002.png" width="1920" height="1080" />
+  <image id="2" name="vid001_frame000003.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1020.0" ytl="707.0" xbr="1074.0" ybr="732.0" z_order="0">
+      <attribute name="text">VD0130A</attribute>
+    </box>
+  </image>
+  <image id="3" name="vid001_frame000004.png" width="1920" height="1080" />
+  <image id="4" name="vid001_frame000005.png" width="1920" height="1080" />
+  <image id="5" name="vid001_frame000006.png" width="1920" height="1080" />
+  <image id="6" name="vid001_frame000007.png" width="1920" height="1080" />
+  <image id="7" name="vid001_frame000008.png" width="1920" height="1080" />
+  <image id="8" name="vid001_frame000009.png" width="1920" height="1080" />
+  <image id="9" name="vid001_frame000010.png" width="1920" height="1080" />
+  <image id="10" name="vid001_frame000011.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1421.0" ytl="791.0" xbr="1502.0" ybr="826.0" z_order="0">
+      <attribute name="text">AUU914</attribute>
+    </box>
+  </image>
+  <image id="11" name="vid001_frame000012.png" width="1920" height="1080" />
+  <image id="12" name="vid001_frame000013.png" width="1920" height="1080" />
+  <image id="13" name="vid001_frame000014.png" width="1920" height="1080" />
+  <image id="14" name="vid001_frame000015.png" width="1920" height="1080" />
+  <image id="15" name="vid001_frame000016.png" width="1920" height="1080" />
+  <image id="16" name="vid001_frame000017.png" width="1920" height="1080" />
+  <image id="17" name="vid001_frame000018.png" width="1920" height="1080" />
+  <image id="18" name="vid001_frame000019.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1033.0" ytl="846.0" xbr="1109.0" ybr="884.0" z_order="0">
+      <attribute name="text">AEU965</attribute>
+    </box>
+  </image>
+  <image id="19" name="vid001_frame000020.png" width="1920" height="1080" />
+  <image id="20" name="vid001_frame000021.png" width="1920" height="1080" />
+  <image id="21" name="vid001_frame000022.png" width="1920" height="1080" />
+  <image id="22" name="vid001_frame000023.png" width="1920" height="1080" />
+  <image id="23" name="vid001_frame000024.png" width="1920" height="1080" />
+  <image id="24" name="vid001_frame000025.png" width="1920" height="1080" />
+  <image id="25" name="vid001_frame000026.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1732.0" ytl="831.0" xbr="1790.0" ybr="867.0" z_order="0">
+      <attribute name="text">SB6539</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="795.0" ytl="711.0" xbr="861.0" ybr="737.0" z_order="0">
+      <attribute name="text">LF14689</attribute>
+    </box>
+  </image>
+  <image id="26" name="vid001_frame000027.png" width="1920" height="1080" />
+  <image id="27" name="vid001_frame000028.png" width="1920" height="1080" />
+  <image id="28" name="vid001_frame000029.png" width="1920" height="1080" />
+  <image id="29" name="vid001_frame000030.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="860.0" ytl="713.0" xbr="911.0" ybr="740.0" z_order="0">
+      <attribute name="text">BMY920</attribute>
+    </box>
+  </image>
+  <image id="30" name="vid001_frame000031.png" width="1920" height="1080" />
+  <image id="31" name="vid002_frame000001.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1123.0" ytl="878.0" xbr="1234.0" ybr="945.0" z_order="0">
+      <attribute name="text">LEF4869</attribute>
+    </box>
+  </image>
+  <image id="32" name="vid002_frame000002.png" width="1920" height="1080" />
+  <image id="33" name="vid002_frame000003.png" width="1920" height="1080" />
+  <image id="34" name="vid002_frame000004.png" width="1920" height="1080" />
+  <image id="35" name="vid002_frame000005.png" width="1920" height="1080" />
+  <image id="36" name="vid002_frame000006.png" width="1920" height="1080" />
+  <image id="37" name="vid002_frame000007.png" width="1920" height="1080" />
+  <image id="38" name="vid002_frame000008.png" width="1920" height="1080" />
+  <image id="39" name="vid002_frame000009.png" width="1920" height="1080" />
+  <image id="40" name="vid002_frame000010.png" width="1920" height="1080" />
+  <image id="41" name="vid002_frame000011.png" width="1920" height="1080" />
+  <image id="42" name="vid002_frame000012.png" width="1920" height="1080" />
+  <image id="43" name="vid002_frame000013.png" width="1920" height="1080" />
+  <image id="44" name="vid002_frame000014.png" width="1920" height="1080" />
+  <image id="45" name="vid002_frame000015.png" width="1920" height="1080" />
+  <image id="46" name="vid002_frame000016.png" width="1920" height="1080" />
+  <image id="47" name="vid002_frame000017.png" width="1920" height="1080" />
+  <image id="48" name="vid002_frame000018.png" width="1920" height="1080" />
+  <image id="49" name="vid002_frame000019.png" width="1920" height="1080" />
+  <image id="50" name="vid002_frame000020.png" width="1920" height="1080" />
+  <image id="51" name="vid002_frame000021.png" width="1920" height="1080" />
+  <image id="52" name="vid002_frame000022.png" width="1920" height="1080" />
+  <image id="53" name="vid002_frame000023.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1489.0" ytl="781.0" xbr="1566.0" ybr="824.0" z_order="0">
+      <attribute name="text">BJG142</attribute>
+    </box>
+  </image>
+  <image id="54" name="vid002_frame000024.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="947.0" ytl="674.0" xbr="1009.0" ybr="709.0" z_order="0">
+      <attribute name="text">ASU48</attribute>
+    </box>
+  </image>
+  <image id="55" name="vid002_frame000025.png" width="1920" height="1080" />
+  <image id="56" name="vid002_frame000026.png" width="1920" height="1080" />
+  <image id="57" name="vid002_frame000027.png" width="1920" height="1080" />
+  <image id="58" name="vid002_frame000028.png" width="1920" height="1080" />
+  <image id="59" name="vid002_frame000029.png" width="1920" height="1080" />
+  <image id="60" name="vid002_frame000030.png" width="1920" height="1080" />
+  <image id="61" name="vid002_frame000031.png" width="1920" height="1080" />
+  <image id="62" name="vid003_frame000001.png" width="1920" height="1080" />
+  <image id="63" name="vid003_frame000002.png" width="1920" height="1080" />
+  <image id="64" name="vid003_frame000003.png" width="1920" height="1080" />
+  <image id="65" name="vid003_frame000004.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1555.0" ytl="876.0" xbr="1657.0" ybr="926.0" z_order="0">
+      <attribute name="text">MQ417</attribute>
+    </box>
+  </image>
+  <image id="66" name="vid003_frame000005.png" width="1920" height="1080" />
+  <image id="67" name="vid003_frame000006.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="980.0" ytl="810.0" xbr="1046.0" ybr="845.0" z_order="0">
+      <attribute name="text">LEF4869</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="1869.0" ytl="716.0" xbr="1917.0" ybr="752.0" z_order="0">
+      <attribute name="text">PPE126</attribute>
+    </box>
+  </image>
+  <image id="68" name="vid003_frame000007.png" width="1920" height="1080" />
+  <image id="69" name="vid003_frame000008.png" width="1920" height="1080" />
+  <image id="70" name="vid003_frame000009.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1757.0" ytl="695.0" xbr="1808.0" ybr="727.0" z_order="0">
+      <attribute name="text">RIS1266</attribute>
+    </box>
+  </image>
+  <image id="71" name="vid004_frame000001.png" width="1920" height="1080" />
+  <image id="72" name="vid004_frame000002.png" width="1920" height="1080" />
+  <image id="73" name="vid004_frame000003.png" width="1920" height="1080" />
+  <image id="74" name="vid004_frame000004.png" width="1920" height="1080" />
+  <image id="75" name="vid004_frame000005.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="935.0" ytl="829.0" xbr="1020.0" ybr="875.0" z_order="0">
+      <attribute name="text">LEF4869</attribute>
+    </box>
+  </image>
+  <image id="76" name="vid004_frame000006.png" width="1920" height="1080" />
+  <image id="77" name="vid004_frame000007.png" width="1920" height="1080" />
+  <image id="78" name="vid005_frame000001.png" width="1920" height="1080" />
+  <image id="79" name="vid005_frame000002.png" width="1920" height="1080" />
+  <image id="80" name="vid005_frame000003.png" width="1920" height="1080" />
+  <image id="81" name="vid005_frame000004.png" width="1920" height="1080" />
+  <image id="82" name="vid005_frame000005.png" width="1920" height="1080" />
+  <image id="83" name="vid005_frame000006.png" width="1920" height="1080" />
+  <image id="84" name="vid005_frame000007.png" width="1920" height="1080" />
+  <image id="85" name="vid005_frame000008.png" width="1920" height="1080" />
+  <image id="86" name="vid005_frame000009.png" width="1920" height="1080" />
+  <image id="87" name="vid005_frame000010.png" width="1920" height="1080" />
+  <image id="88" name="vid005_frame000011.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="198.0" ytl="996.0" xbr="246.0" ybr="1023.0" z_order="0">
+      <attribute name="text">BLR1777</attribute>
+    </box>
+  </image>
+  <image id="89" name="vid005_frame000012.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="716.0" ytl="912.0" xbr="758.0" ybr="938.0" z_order="0">
+      <attribute name="text">AB8001</attribute>
+    </box>
+  </image>
+  <image id="90" name="vid005_frame000013.png" width="1920" height="1080" />
+  <image id="91" name="vid005_frame000014.png" width="1920" height="1080" />
+  <image id="92" name="vid005_frame000015.png" width="1920" height="1080" />
+  <image id="93" name="vid005_frame000016.png" width="1920" height="1080" />
+  <image id="94" name="vid005_frame000017.png" width="1920" height="1080" />
+  <image id="95" name="vid005_frame000018.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="817.0" ytl="754.0" xbr="870.0" ybr="775.0" z_order="0">
+      <attribute name="text">TZ699C</attribute>
+    </box>
+  </image>
+  <image id="96" name="vid005_frame000019.png" width="1920" height="1080" />
+  <image id="97" name="vid006_frame000001.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="248.0" ytl="819.0" xbr="316.0" ybr="853.0" z_order="0">
+      <attribute name="text">6K43658</attribute>
+    </box>
+  </image>
+  <image id="98" name="vid006_frame000002.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="431.0" ytl="539.0" xbr="481.0" ybr="568.0" z_order="0">
+      <attribute name="text">KAAF005</attribute>
+    </box>
+  </image>
+  <image id="99" name="vid006_frame000003.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="828.0" ytl="739.0" xbr="945.0" ybr="771.0" z_order="0">
+      <attribute name="text">3221</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="557.0" ytl="343.0" xbr="616.0" ybr="367.0" z_order="0">
+      <attribute name="text">769913</attribute>
+    </box>
+  </image>
+  <image id="100" name="vid006_frame000004.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="926.0" ytl="388.0" xbr="1019.0" ybr="413.0" z_order="0">
+      <attribute name="text">Z4225</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="649.0" ytl="183.0" xbr="705.0" ybr="210.0" z_order="0">
+      <attribute name="text">K450191</attribute>
+    </box>
+  </image>
+  <image id="101" name="vid006_frame000005.png" width="1920" height="1080" />
+  <image id="102" name="vid006_frame000006.png" width="1920" height="1080" />
+  <image id="103" name="vid006_frame000007.png" width="1920" height="1080" />
+  <image id="104" name="vid006_frame000008.png" width="1920" height="1080" />
+  <image id="105" name="vid006_frame000009.png" width="1920" height="1080" />
+  <image id="106" name="vid006_frame000010.png" width="1920" height="1080" />
+  <image id="107" name="vid006_frame000011.png" width="1920" height="1080" />
+  <image id="108" name="vid006_frame000012.png" width="1920" height="1080" />
+  <image id="109" name="vid006_frame000013.png" width="1920" height="1080" />
+  <image id="110" name="vid006_frame000014.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="216.0" ytl="836.0" xbr="303.0" ybr="885.0" z_order="0">
+      <attribute name="text">HR558</attribute>
+    </box>
+  </image>
+  <image id="111" name="vid006_frame000015.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="558.0" ytl="176.0" xbr="626.0" ybr="213.0" z_order="0">
+      <attribute name="text">L93132</attribute>
+    </box>
+  </image>
+  <image id="112" name="vid006_frame000016.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1510.0" ytl="843.0" xbr="1622.0" ybr="890.0" z_order="0">
+      <attribute name="text">1RMV58</attribute>
+    </box>
+  </image>
+  <image id="113" name="vid006_frame000017.png" width="1920" height="1080" />
+  <image id="114" name="vid006_frame000018.png" width="1920" height="1080" />
+  <image id="115" name="vid007_frame000001.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="248.0" ytl="819.0" xbr="316.0" ybr="853.0" z_order="0">
+      <attribute name="text">6K43658</attribute>
+    </box>
+  </image>
+  <image id="116" name="vid007_frame000002.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="431.0" ytl="539.0" xbr="481.0" ybr="568.0" z_order="0">
+      <attribute name="text">KAAF005</attribute>
+    </box>
+  </image>
+  <image id="117" name="vid007_frame000003.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="828.0" ytl="739.0" xbr="945.0" ybr="771.0" z_order="0">
+      <attribute name="text">3221</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="557.0" ytl="343.0" xbr="616.0" ybr="367.0" z_order="0">
+      <attribute name="text">769913</attribute>
+    </box>
+  </image>
+  <image id="118" name="vid007_frame000004.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="926.0" ytl="388.0" xbr="1019.0" ybr="413.0" z_order="0">
+      <attribute name="text">Z4225</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="649.0" ytl="183.0" xbr="705.0" ybr="210.0" z_order="0">
+      <attribute name="text">K450191</attribute>
+    </box>
+  </image>
+  <image id="119" name="vid007_frame000005.png" width="1920" height="1080" />
+  <image id="120" name="vid007_frame000006.png" width="1920" height="1080" />
+  <image id="121" name="vid007_frame000007.png" width="1920" height="1080" />
+  <image id="122" name="vid007_frame000008.png" width="1920" height="1080" />
+  <image id="123" name="vid007_frame000009.png" width="1920" height="1080" />
+  <image id="124" name="vid007_frame000010.png" width="1920" height="1080" />
+  <image id="125" name="vid007_frame000011.png" width="1920" height="1080" />
+  <image id="126" name="vid007_frame000012.png" width="1920" height="1080" />
+  <image id="127" name="vid007_frame000013.png" width="1920" height="1080" />
+  <image id="128" name="vid007_frame000014.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="216.0" ytl="836.0" xbr="303.0" ybr="885.0" z_order="0">
+      <attribute name="text">HR558</attribute>
+    </box>
+  </image>
+  <image id="129" name="vid007_frame000015.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="558.0" ytl="176.0" xbr="626.0" ybr="213.0" z_order="0">
+      <attribute name="text">L93132</attribute>
+    </box>
+  </image>
+  <image id="130" name="vid007_frame000016.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1510.0" ytl="843.0" xbr="1622.0" ybr="890.0" z_order="0">
+      <attribute name="text">1RMV58</attribute>
+    </box>
+  </image>
+  <image id="131" name="vid007_frame000017.png" width="1920" height="1080" />
+  <image id="132" name="vid007_frame000018.png" width="1920" height="1080" />
+  <image id="133" name="vid008_frame000001.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="715.0" ytl="97.0" xbr="811.0" ybr="146.0" z_order="0">
+      <attribute name="text">DVE853</attribute>
+    </box>
+  </image>
+  <image id="134" name="vid008_frame000002.png" width="1920" height="1080" />
+  <image id="135" name="vid008_frame000003.png" width="1920" height="1080" />
+  <image id="136" name="vid008_frame000004.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="689.0" ytl="33.0" xbr="779.0" ybr="73.0" z_order="0">
+      <attribute name="text">DDF722</attribute>
+    </box>
+  </image>
+  <image id="137" name="vid008_frame000005.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1381.0" ytl="1048.0" xbr="1521.0" ybr="1082.0" z_order="0">
+      <attribute name="text">LDV000</attribute>
+    </box>
+  </image>
+  <image id="138" name="vid008_frame000006.png" width="1920" height="1080" />
+  <image id="139" name="vid008_frame000007.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="558.0" ytl="844.0" xbr="679.0" ybr="906.0" z_order="0">
+      <attribute name="text">NNU12</attribute>
+    </box>
+  </image>
+  <image id="140" name="vid008_frame000008.png" width="1920" height="1080" />
+  <image id="141" name="vid008_frame000009.png" width="1920" height="1080" />
+  <image id="142" name="vid008_frame000010.png" width="1920" height="1080" />
+  <image id="143" name="vid008_frame000011.png" width="1920" height="1080" />
+  <image id="144" name="vid008_frame000012.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1351.0" ytl="484.0" xbr="1429.0" ybr="529.0" z_order="0">
+      <attribute name="text">ADY112</attribute>
+    </box>
+  </image>
+  <image id="145" name="vid008_frame000013.png" width="1920" height="1080" />
+  <image id="146" name="vid008_frame000014.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1294.0" ytl="308.0" xbr="1367.0" ybr="338.0" z_order="0">
+      <attribute name="text">KH600</attribute>
+    </box>
+  </image>
+  <image id="147" name="vid008_frame000015.png" width="1920" height="1080" />
+  <image id="148" name="vid008_frame000016.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="746.0" ytl="543.0" xbr="822.0" ybr="576.0" z_order="0">
+      <attribute name="text">IHF741</attribute>
+    </box>
+  </image>
+  <image id="149" name="vid008_frame000017.png" width="1920" height="1080" />
+  <image id="150" name="vid008_frame000018.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1208.0" ytl="532.0" xbr="1262.0" ybr="563.0" z_order="0">
+      <attribute name="text">LMO939</attribute>
+    </box>
+  </image>
+  <image id="151" name="vid008_frame000019.png" width="1920" height="1080" />
+  <image id="152" name="vid008_frame000020.png" width="1920" height="1080" />
+  <image id="153" name="vid008_frame000021.png" width="1920" height="1080" />
+  <image id="154" name="vid008_frame000022.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="80.0" ytl="381.0" xbr="175.0" ybr="413.0" z_order="0">
+      <attribute name="text">MI1912</attribute>
+    </box>
+  </image>
+  <image id="155" name="vid008_frame000023.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="643.0" ytl="969.0" xbr="722.0" ybr="1006.0" z_order="0">
+      <attribute name="text">DP523</attribute>
+    </box>
+  </image>
+  <image id="156" name="vid008_frame000024.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1244.0" ytl="620.0" xbr="1318.0" ybr="659.0" z_order="0">
+      <attribute name="text">LD0710</attribute>
+    </box>
+  </image>
+  <image id="157" name="vid008_frame000025.png" width="1920" height="1080" />
+  <image id="158" name="vid008_frame000026.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1203.0" ytl="783.0" xbr="1282.0" ybr="823.0" z_order="0">
+      <attribute name="text">086E70</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="670.0" ytl="410.0" xbr="735.0" ybr="443.0" z_order="0">
+      <attribute name="text">E0X19</attribute>
+    </box>
+  </image>
+  <image id="159" name="vid008_frame000027.png" width="1920" height="1080" />
+  <image id="160" name="vid008_frame000028.png" width="1920" height="1080" />
+  <image id="161" name="vid008_frame000029.png" width="1920" height="1080" />
+  <image id="162" name="vid008_frame000030.png" width="1920" height="1080" />
+  <image id="163" name="vid008_frame000031.png" width="1920" height="1080" />
+  <image id="164" name="vid008_frame000032.png" width="1920" height="1080" />
+  <image id="165" name="vid008_frame000033.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="620.0" ytl="474.0" xbr="675.0" ybr="502.0" z_order="0">
+      <attribute name="text">BU11722</attribute>
+    </box>
+  </image>
+  <image id="166" name="vid008_frame000034.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1207.0" ytl="539.0" xbr="1261.0" ybr="567.0" z_order="0">
+      <attribute name="text">A0630</attribute>
+    </box>
+  </image>
+  <image id="167" name="vid008_frame000035.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1239.0" ytl="108.0" xbr="1280.0" ybr="130.0" z_order="0">
+      <attribute name="text">BT0534O</attribute>
+    </box>
+  </image>
+  <image id="168" name="vid008_frame000036.png" width="1920" height="1080" />
+  <image id="169" name="vid008_frame000037.png" width="1920" height="1080" />
+  <image id="170" name="vid008_frame000038.png" width="1920" height="1080" />
+  <image id="171" name="vid008_frame000039.png" width="1920" height="1080" />
+  <image id="172" name="vid008_frame000040.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="682.0" ytl="617.0" xbr="739.0" ybr="650.0" z_order="0">
+      <attribute name="text">S25008</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="920.0" ytl="58.0" xbr="1011.0" ybr="86.0" z_order="0">
+      <attribute name="text">FK0912</attribute>
+    </box>
+  </image>
+  <image id="173" name="vid008_frame000041.png" width="1920" height="1080" />
+  <image id="174" name="vid008_frame000042.png" width="1920" height="1080" />
+  <image id="175" name="vid008_frame000043.png" width="1920" height="1080" />
+  <image id="176" name="vid008_frame000044.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="734.0" ytl="385.0" xbr="804.0" ybr="416.0" z_order="0">
+      <attribute name="text">1P337</attribute>
+    </box>
+  </image>
+  <image id="177" name="vid008_frame000045.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1199.0" ytl="536.0" xbr="1270.0" ybr="579.0" z_order="0">
+      <attribute name="text">AFCAMM</attribute>
+    </box>
+  </image>
+  <image id="178" name="vid008_frame000046.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="587.0" ytl="733.0" xbr="669.0" ybr="771.0" z_order="0">
+      <attribute name="text">FHF889</attribute>
+    </box>
+  </image>
+  <image id="179" name="vid008_frame000047.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="777.0" ytl="103.0" xbr="832.0" ybr="129.0" z_order="0">
+      <attribute name="text">WCT788</attribute>
+    </box>
+  </image>
+  <image id="180" name="vid008_frame000048.png" width="1920" height="1080" />
+  <image id="181" name="vid009_frame000001.png" width="1920" height="1080" />
+  <image id="182" name="vid009_frame000002.png" width="1920" height="1080" />
+  <image id="183" name="vid009_frame000003.png" width="1920" height="1080" />
+  <image id="184" name="vid009_frame000004.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1050.0" ytl="234.0" xbr="1120.0" ybr="258.0" z_order="0">
+      <attribute name="text">19K21</attribute>
+    </box>
+  </image>
+  <image id="185" name="vid009_frame000005.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1258.0" ytl="697.0" xbr="1320.0" ybr="725.0" z_order="0">
+      <attribute name="text">ACZ881</attribute>
+    </box>
+  </image>
+  <image id="186" name="vid009_frame000006.png" width="1920" height="1080" />
+  <image id="187" name="vid009_frame000007.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1174.0" ytl="149.0" xbr="1237.0" ybr="176.0" z_order="0">
+      <attribute name="text">L7113</attribute>
+    </box>
+  </image>
+  <image id="188" name="vid009_frame000008.png" width="1920" height="1080" />
+  <image id="189" name="vid009_frame000009.png" width="1920" height="1080" />
+  <image id="190" name="vid009_frame000010.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="864.0" ytl="323.0" xbr="956.0" ybr="363.0" z_order="0">
+      <attribute name="text">BGK798</attribute>
+    </box>
+  </image>
+  <image id="191" name="vid009_frame000011.png" width="1920" height="1080" />
+  <image id="192" name="vid009_frame000012.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1323.0" ytl="716.0" xbr="1390.0" ybr="743.0" z_order="0">
+      <attribute name="text">BKZ888</attribute>
+    </box>
+  </image>
+  <image id="193" name="vid009_frame000013.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1268.0" ytl="751.0" xbr="1319.0" ybr="777.0" z_order="0">
+      <attribute name="text">T966131</attribute>
+    </box>
+  </image>
+  <image id="194" name="vid009_frame000014.png" width="1920" height="1080" />
+  <image id="195" name="vid009_frame000015.png" width="1920" height="1080" />
+  <image id="196" name="vid009_frame000016.png" width="1920" height="1080" />
+  <image id="197" name="vid009_frame000017.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="875.0" ytl="151.0" xbr="933.0" ybr="172.0" z_order="0">
+      <attribute name="text">FN3813</attribute>
+    </box>
+  </image>
+  <image id="198" name="vid009_frame000018.png" width="1920" height="1080" />
+  <image id="199" name="vid009_frame000019.png" width="1920" height="1080" />
+  <image id="200" name="vid009_frame000020.png" width="1920" height="1080" />
+  <image id="201" name="vid010_frame000001.png" width="1920" height="1080" />
+  <image id="202" name="vid010_frame000002.png" width="1920" height="1080" />
+  <image id="203" name="vid010_frame000003.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1151.0" ytl="396.0" xbr="1198.0" ybr="422.0" z_order="0">
+      <attribute name="text">M6171</attribute>
+    </box>
+  </image>
+  <image id="204" name="vid010_frame000004.png" width="1920" height="1080" />
+  <image id="205" name="vid010_frame000005.png" width="1920" height="1080" />
+  <image id="206" name="vid010_frame000006.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1254.0" ytl="991.0" xbr="1325.0" ybr="1027.0" z_order="0">
+      <attribute name="text">AA0679</attribute>
+    </box>
+  </image>
+  <image id="207" name="vid010_frame000007.png" width="1920" height="1080" />
+  <image id="208" name="vid010_frame000008.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1119.0" ytl="490.0" xbr="1175.0" ybr="522.0" z_order="0">
+      <attribute name="text">DHD9922</attribute>
+    </box>
+  </image>
+  <image id="209" name="vid010_frame000009.png" width="1920" height="1080" />
+  <image id="210" name="vid010_frame000010.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1250.0" ytl="1020.0" xbr="1318.0" ybr="1054.0" z_order="0">
+      <attribute name="text">2BU1600</attribute>
+    </box>
+  </image>
+  <image id="211" name="vid010_frame000011.png" width="1920" height="1080" />
+  <image id="212" name="vid010_frame000012.png" width="1920" height="1080" />
+  <image id="213" name="vid010_frame000013.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="637.0" ytl="789.0" xbr="698.0" ybr="821.0" z_order="0">
+      <attribute name="text">V861</attribute>
+    </box>
+  </image>
+  <image id="214" name="vid010_frame000014.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="694.0" ytl="616.0" xbr="747.0" ybr="646.0" z_order="0">
+      <attribute name="text">MF66026</attribute>
+    </box>
+  </image>
+  <image id="215" name="vid010_frame000015.png" width="1920" height="1080" />
+  <image id="216" name="vid011_frame000001.png" width="1920" height="1080" />
+  <image id="217" name="vid011_frame000002.png" width="1920" height="1080" />
+  <image id="218" name="vid011_frame000003.png" width="1920" height="1080" />
+  <image id="219" name="vid011_frame000004.png" width="1920" height="1080" />
+  <image id="220" name="vid011_frame000005.png" width="1920" height="1080" />
+  <image id="221" name="vid011_frame000006.png" width="1920" height="1080" />
+  <image id="222" name="vid011_frame000007.png" width="1920" height="1080" />
+  <image id="223" name="vid011_frame000008.png" width="1920" height="1080" />
+  <image id="224" name="vid011_frame000009.png" width="1920" height="1080" />
+  <image id="225" name="vid011_frame000010.png" width="1920" height="1080" />
+  <image id="226" name="vid012_frame000001.png" width="1920" height="1080" />
+  <image id="227" name="vid012_frame000002.png" width="1920" height="1080" />
+  <image id="228" name="vid012_frame000003.png" width="1920" height="1080" />
+  <image id="229" name="vid012_frame000004.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="942.0" ytl="715.0" xbr="989.0" ybr="741.0" z_order="0">
+      <attribute name="text">N5D738L</attribute>
+    </box>
+  </image>
+  <image id="230" name="vid012_frame000005.png" width="1920" height="1080" />
+  <image id="231" name="vid012_frame000006.png" width="1920" height="1080" />
+  <image id="232" name="vid012_frame000007.png" width="1920" height="1080" />
+  <image id="233" name="vid012_frame000008.png" width="1920" height="1080" />
+  <image id="234" name="vid012_frame000009.png" width="1920" height="1080" />
+  <image id="235" name="vid012_frame000010.png" width="1920" height="1080" />
+  <image id="236" name="vid012_frame000011.png" width="1920" height="1080" />
+  <image id="237" name="vid012_frame000012.png" width="1920" height="1080" />
+  <image id="238" name="vid012_frame000013.png" width="1920" height="1080" />
+  <image id="239" name="vid012_frame000014.png" width="1920" height="1080" />
+  <image id="240" name="vid012_frame000015.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="678.0" ytl="983.0" xbr="732.0" ybr="1012.0" z_order="0">
+      <attribute name="text">E2253</attribute>
+    </box>
+  </image>
+  <image id="241" name="vid012_frame000016.png" width="1920" height="1080" />
+  <image id="242" name="vid012_frame000017.png" width="1920" height="1080" />
+  <image id="243" name="vid012_frame000018.png" width="1920" height="1080" />
+  <image id="244" name="vid012_frame000019.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="608.0" ytl="753.0" xbr="672.0" ybr="776.0" z_order="0">
+      <attribute name="text">8C9596B</attribute>
+    </box>
+  </image>
+  <image id="245" name="vid012_frame000020.png" width="1920" height="1080" />
+  <image id="246" name="vid012_frame000021.png" width="1920" height="1080" />
+  <image id="247" name="vid012_frame000022.png" width="1920" height="1080" />
+  <image id="248" name="vid012_frame000023.png" width="1920" height="1080" />
+  <image id="249" name="vid012_frame000024.png" width="1920" height="1080" />
+  <image id="250" name="vid012_frame000025.png" width="1920" height="1080" />
+  <image id="251" name="vid012_frame000026.png" width="1920" height="1080" />
+  <image id="252" name="vid012_frame000027.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1194.0" ytl="434.0" xbr="1238.0" ybr="457.0" z_order="0">
+      <attribute name="text">KV6491</attribute>
+    </box>
+  </image>
+  <image id="253" name="vid012_frame000028.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1189.0" ytl="677.0" xbr="1239.0" ybr="704.0" z_order="0">
+      <attribute name="text">LN3998</attribute>
+    </box>
+  </image>
+  <image id="254" name="vid012_frame000029.png" width="1920" height="1080" />
+  <image id="255" name="vid012_frame000030.png" width="1920" height="1080" />
+  <image id="256" name="vid012_frame000031.png" width="1920" height="1080" />
+  <image id="257" name="vid012_frame000032.png" width="1920" height="1080" />
+  <image id="258" name="vid012_frame000033.png" width="1920" height="1080" />
+  <image id="259" name="vid012_frame000034.png" width="1920" height="1080" />
+  <image id="260" name="vid012_frame000035.png" width="1920" height="1080" />
+  <image id="261" name="vid012_frame000036.png" width="1920" height="1080" />
+  <image id="262" name="vid013_frame000001.png" width="1080" height="1920" />
+  <image id="263" name="vid013_frame000002.png" width="1080" height="1920" />
+  <image id="264" name="vid013_frame000003.png" width="1080" height="1920" />
+  <image id="265" name="vid013_frame000004.png" width="1080" height="1920" />
+  <image id="266" name="vid013_frame000005.png" width="1080" height="1920" />
+  <image id="267" name="vid013_frame000006.png" width="1080" height="1920" />
+  <image id="268" name="vid013_frame000007.png" width="1080" height="1920" />
+  <image id="269" name="vid013_frame000008.png" width="1080" height="1920" />
+  <image id="270" name="vid013_frame000009.png" width="1080" height="1920" />
+  <image id="271" name="vid013_frame000010.png" width="1080" height="1920" />
+  <image id="272" name="vid013_frame000011.png" width="1080" height="1920" />
+  <image id="273" name="vid013_frame000012.png" width="1080" height="1920" />
+  <image id="274" name="vid013_frame000013.png" width="1080" height="1920" />
+  <image id="275" name="vid013_frame000014.png" width="1080" height="1920" />
+  <image id="276" name="vid013_frame000015.png" width="1080" height="1920">
+    <box label="LicensePlate" occluded="0" xtl="418.0" ytl="802.0" xbr="501.0" ybr="827.0" z_order="0">
+      <attribute name="text">FV7893</attribute>
+    </box>
+  </image>
+  <image id="277" name="vid013_frame000016.png" width="1080" height="1920" />
+  <image id="278" name="vid013_frame000017.png" width="1080" height="1920" />
+  <image id="279" name="vid013_frame000018.png" width="1080" height="1920" />
+  <image id="280" name="vid013_frame000019.png" width="1080" height="1920" />
+  <image id="281" name="vid013_frame000020.png" width="1080" height="1920" />
+  <image id="282" name="vid013_frame000021.png" width="1080" height="1920" />
+  <image id="283" name="vid013_frame000022.png" width="1080" height="1920" />
+  <image id="284" name="vid013_frame000023.png" width="1080" height="1920" />
+  <image id="285" name="vid013_frame000024.png" width="1080" height="1920" />
+  <image id="286" name="vid014_frame000001.png" width="1920" height="1080" />
+  <image id="287" name="vid014_frame000002.png" width="1920" height="1080" />
+  <image id="288" name="vid014_frame000003.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="787.0" ytl="458.0" xbr="838.0" ybr="484.0" z_order="0">
+      <attribute name="text">K3N8015</attribute>
+    </box>
+  </image>
+  <image id="289" name="vid014_frame000004.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="812.0" ytl="512.0" xbr="866.0" ybr="544.0" z_order="0">
+      <attribute name="text">AVT889</attribute>
+    </box>
+  </image>
+  <image id="290" name="vid014_frame000005.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="891.0" ytl="563.0" xbr="964.0" ybr="605.0" z_order="0">
+      <attribute name="text">AVT889</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="1470.0" ytl="537.0" xbr="1529.0" ybr="573.0" z_order="0">
+      <attribute name="text">LFF113</attribute>
+    </box>
+  </image>
+  <image id="291" name="vid014_frame000006.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1257.0" ytl="701.0" xbr="1367.0" ybr="762.0" z_order="0">
+      <attribute name="text">AVT889</attribute>
+    </box>
+  </image>
+  <image id="292" name="vid014_frame000007.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="701.0" ytl="556.0" xbr="772.0" ybr="589.0" z_order="0">
+      <attribute name="text">BNX732</attribute>
+    </box>
+  </image>
+  <image id="293" name="vid014_frame000008.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="887.0" ytl="696.0" xbr="980.0" ybr="740.0" z_order="0">
+      <attribute name="text">BNX732</attribute>
+    </box>
+  </image>
+  <image id="294" name="vid015_frame000001.png" width="1080" height="1920" />
+  <image id="295" name="vid015_frame000002.png" width="1080" height="1920" />
+  <image id="296" name="vid015_frame000003.png" width="1080" height="1920" />
+  <image id="297" name="vid015_frame000004.png" width="1080" height="1920" />
+  <image id="298" name="vid015_frame000005.png" width="1080" height="1920" />
+  <image id="299" name="vid015_frame000006.png" width="1080" height="1920" />
+  <image id="300" name="vid016_frame000001.png" width="1080" height="1920" />
+  <image id="301" name="vid016_frame000002.png" width="1080" height="1920" />
+  <image id="302" name="vid016_frame000003.png" width="1080" height="1920" />
+  <image id="303" name="vid016_frame000004.png" width="1080" height="1920" />
+  <image id="304" name="vid016_frame000005.png" width="1080" height="1920" />
+  <image id="305" name="vid016_frame000006.png" width="1080" height="1920" />
+  <image id="306" name="vid016_frame000007.png" width="1080" height="1920" />
+  <image id="307" name="vid016_frame000008.png" width="1080" height="1920" />
+  <image id="308" name="vid016_frame000009.png" width="1080" height="1920" />
+  <image id="309" name="vid016_frame000010.png" width="1080" height="1920" />
+  <image id="310" name="vid016_frame000011.png" width="1080" height="1920" />
+  <image id="311" name="vid016_frame000012.png" width="1080" height="1920" />
+  <image id="312" name="vid016_frame000013.png" width="1080" height="1920" />
+  <image id="313" name="vid016_frame000014.png" width="1080" height="1920" />
+  <image id="314" name="vid016_frame000015.png" width="1080" height="1920" />
+  <image id="315" name="vid016_frame000016.png" width="1080" height="1920" />
+  <image id="316" name="vid017_frame000001.png" width="1080" height="1920" />
+  <image id="317" name="vid017_frame000002.png" width="1080" height="1920" />
+  <image id="318" name="vid017_frame000003.png" width="1080" height="1920" />
+  <image id="319" name="vid018_frame000001.png" width="480" height="360" />
+  <image id="320" name="vid018_frame000002.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="196.0" ytl="253.0" xbr="220.0" ybr="260.0" z_order="0">
+      <attribute name="text">E62611</attribute>
+    </box>
+  </image>
+  <image id="321" name="vid018_frame000003.png" width="480" height="360" />
+  <image id="322" name="vid018_frame000004.png" width="480" height="360" />
+  <image id="323" name="vid018_frame000005.png" width="480" height="360" />
+  <image id="324" name="vid018_frame000006.png" width="480" height="360" />
+  <image id="325" name="vid018_frame000007.png" width="480" height="360" />
+  <image id="326" name="vid018_frame000008.png" width="480" height="360" />
+  <image id="327" name="vid018_frame000009.png" width="480" height="360" />
+  <image id="328" name="vid018_frame000010.png" width="480" height="360" />
+  <image id="329" name="vid018_frame000011.png" width="480" height="360" />
+  <image id="330" name="vid018_frame000012.png" width="480" height="360" />
+  <image id="331" name="vid018_frame000013.png" width="480" height="360" />
+  <image id="332" name="vid018_frame000014.png" width="480" height="360" />
+  <image id="333" name="vid018_frame000015.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="301.0" ytl="292.0" xbr="324.0" ybr="302.0" z_order="0">
+      <attribute name="text">747810</attribute>
+    </box>
+  </image>
+  <image id="334" name="vid018_frame000016.png" width="480" height="360" />
+  <image id="335" name="vid018_frame000017.png" width="480" height="360" />
+  <image id="336" name="vid018_frame000018.png" width="480" height="360" />
+  <image id="337" name="vid018_frame000019.png" width="480" height="360" />
+  <image id="338" name="vid018_frame000020.png" width="480" height="360" />
+  <image id="339" name="vid018_frame000021.png" width="480" height="360" />
+  <image id="340" name="vid018_frame000022.png" width="480" height="360" />
+  <image id="341" name="vid018_frame000023.png" width="480" height="360" />
+  <image id="342" name="vid018_frame000024.png" width="480" height="360" />
+  <image id="343" name="vid018_frame000025.png" width="480" height="360" />
+  <image id="344" name="vid018_frame000026.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="396.0" ytl="283.0" xbr="411.0" ybr="291.0" z_order="0">
+      <attribute name="text">3RC50B</attribute>
+    </box>
+  </image>
+  <image id="345" name="vid018_frame000027.png" width="480" height="360" />
+  <image id="346" name="vid018_frame000028.png" width="480" height="360" />
+  <image id="347" name="vid018_frame000029.png" width="480" height="360" />
+  <image id="348" name="vid018_frame000030.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="319.0" ytl="267.0" xbr="329.0" ybr="276.0" z_order="0">
+      <attribute name="text">1J83136</attribute>
+    </box>
+  </image>
+  <image id="349" name="vid018_frame000031.png" width="480" height="360" />
+  <image id="350" name="vid018_frame000032.png" width="480" height="360" />
+  <image id="351" name="vid018_frame000033.png" width="480" height="360" />
+  <image id="352" name="vid018_frame000034.png" width="480" height="360" />
+  <image id="353" name="vid018_frame000035.png" width="480" height="360" />
+  <image id="354" name="vid018_frame000036.png" width="480" height="360" />
+  <image id="355" name="vid018_frame000037.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="263.0" ytl="273.0" xbr="277.0" ybr="282.0" z_order="0">
+      <attribute name="text">LJ6413</attribute>
+    </box>
+  </image>
+  <image id="356" name="vid018_frame000038.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="375.0" ytl="339.0" xbr="396.0" ybr="354.0" z_order="0">
+      <attribute name="text">LR3733</attribute>
+    </box>
+  </image>
+  <image id="357" name="vid018_frame000039.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="225.0" ytl="263.0" xbr="237.0" ybr="270.0" z_order="0">
+      <attribute name="text">1J33136</attribute>
+    </box>
+  </image>
+  <image id="358" name="vid018_frame000040.png" width="480" height="360" />
+  <image id="359" name="vid018_frame000041.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="359.0" ytl="333.0" xbr="378.0" ybr="344.0" z_order="0">
+      <attribute name="text">242531</attribute>
+    </box>
+  </image>
+  <image id="360" name="vid018_frame000042.png" width="480" height="360" />
+  <image id="361" name="vid019_frame000001.png" width="480" height="360" />
+  <image id="362" name="vid019_frame000002.png" width="480" height="360" />
+  <image id="363" name="vid019_frame000003.png" width="480" height="360" />
+  <image id="364" name="vid019_frame000004.png" width="480" height="360" />
+  <image id="365" name="vid019_frame000005.png" width="480" height="360" />
+  <image id="366" name="vid019_frame000006.png" width="480" height="360" />
+  <image id="367" name="vid019_frame000007.png" width="480" height="360" />
+  <image id="368" name="vid019_frame000008.png" width="480" height="360" />
+  <image id="369" name="vid019_frame000009.png" width="480" height="360" />
+  <image id="370" name="vid019_frame000010.png" width="480" height="360" />
+  <image id="371" name="vid019_frame000011.png" width="480" height="360" />
+  <image id="372" name="vid019_frame000012.png" width="480" height="360" />
+  <image id="373" name="vid019_frame000013.png" width="480" height="360" />
+  <image id="374" name="vid019_frame000014.png" width="480" height="360" />
+  <image id="375" name="vid019_frame000015.png" width="480" height="360" />
+  <image id="376" name="vid019_frame000016.png" width="480" height="360" />
+  <image id="377" name="vid019_frame000017.png" width="480" height="360" />
+  <image id="378" name="vid019_frame000018.png" width="480" height="360" />
+  <image id="379" name="vid019_frame000019.png" width="480" height="360" />
+  <image id="380" name="vid019_frame000020.png" width="480" height="360" />
+  <image id="381" name="vid019_frame000021.png" width="480" height="360" />
+  <image id="382" name="vid019_frame000022.png" width="480" height="360" />
+  <image id="383" name="vid019_frame000023.png" width="480" height="360" />
+  <image id="384" name="vid019_frame000024.png" width="480" height="360" />
+  <image id="385" name="vid019_frame000025.png" width="480" height="360" />
+  <image id="386" name="vid019_frame000026.png" width="480" height="360" />
+  <image id="387" name="vid019_frame000027.png" width="480" height="360" />
+  <image id="388" name="vid019_frame000028.png" width="480" height="360" />
+  <image id="389" name="vid019_frame000029.png" width="480" height="360" />
+  <image id="390" name="vid019_frame000030.png" width="480" height="360" />
+  <image id="391" name="vid019_frame000031.png" width="480" height="360" />
+  <image id="392" name="vid019_frame000032.png" width="480" height="360" />
+  <image id="393" name="vid019_frame000033.png" width="480" height="360" />
+  <image id="394" name="vid019_frame000034.png" width="480" height="360" />
+  <image id="395" name="vid019_frame000035.png" width="480" height="360" />
+  <image id="396" name="vid019_frame000036.png" width="480" height="360" />
+  <image id="397" name="vid019_frame000037.png" width="480" height="360" />
+  <image id="398" name="vid019_frame000038.png" width="480" height="360" />
+  <image id="399" name="vid019_frame000039.png" width="480" height="360" />
+  <image id="400" name="vid019_frame000040.png" width="480" height="360" />
+  <image id="401" name="vid019_frame000041.png" width="480" height="360" />
+  <image id="402" name="vid019_frame000042.png" width="480" height="360" />
+  <image id="403" name="vid019_frame000043.png" width="480" height="360" />
+  <image id="404" name="vid019_frame000044.png" width="480" height="360" />
+  <image id="405" name="vid019_frame000045.png" width="480" height="360" />
+  <image id="406" name="vid019_frame000046.png" width="480" height="360" />
+  <image id="407" name="vid019_frame000047.png" width="480" height="360" />
+  <image id="408" name="vid019_frame000048.png" width="480" height="360" />
+  <image id="409" name="vid019_frame000049.png" width="480" height="360" />
+  <image id="410" name="vid019_frame000050.png" width="480" height="360" />
+  <image id="411" name="vid019_frame000051.png" width="480" height="360" />
+  <image id="412" name="vid019_frame000052.png" width="480" height="360" />
+  <image id="413" name="vid019_frame000053.png" width="480" height="360" />
+  <image id="414" name="vid019_frame000054.png" width="480" height="360" />
+  <image id="415" name="vid019_frame000055.png" width="480" height="360" />
+  <image id="416" name="vid019_frame000056.png" width="480" height="360" />
+  <image id="417" name="vid019_frame000057.png" width="480" height="360" />
+  <image id="418" name="vid019_frame000058.png" width="480" height="360" />
+  <image id="419" name="vid020_frame000001.png" width="480" height="360" />
+  <image id="420" name="vid020_frame000002.png" width="480" height="360" />
+  <image id="421" name="vid020_frame000003.png" width="480" height="360" />
+  <image id="422" name="vid020_frame000004.png" width="480" height="360" />
+  <image id="423" name="vid020_frame000005.png" width="480" height="360" />
+  <image id="424" name="vid020_frame000006.png" width="480" height="360" />
+  <image id="425" name="vid020_frame000007.png" width="480" height="360" />
+  <image id="426" name="vid020_frame000008.png" width="480" height="360" />
+  <image id="427" name="vid020_frame000009.png" width="480" height="360" />
+  <image id="428" name="vid020_frame000010.png" width="480" height="360" />
+  <image id="429" name="vid020_frame000011.png" width="480" height="360" />
+  <image id="430" name="vid020_frame000012.png" width="480" height="360" />
+  <image id="431" name="vid020_frame000013.png" width="480" height="360" />
+  <image id="432" name="vid020_frame000014.png" width="480" height="360" />
+  <image id="433" name="vid020_frame000015.png" width="480" height="360" />
+  <image id="434" name="vid020_frame000016.png" width="480" height="360" />
+  <image id="435" name="vid020_frame000017.png" width="480" height="360" />
+  <image id="436" name="vid020_frame000018.png" width="480" height="360" />
+  <image id="437" name="vid020_frame000019.png" width="480" height="360" />
+  <image id="438" name="vid020_frame000020.png" width="480" height="360" />
+  <image id="439" name="vid020_frame000021.png" width="480" height="360" />
+  <image id="440" name="vid020_frame000022.png" width="480" height="360" />
+  <image id="441" name="vid020_frame000023.png" width="480" height="360" />
+  <image id="442" name="vid020_frame000024.png" width="480" height="360" />
+  <image id="443" name="vid020_frame000025.png" width="480" height="360" />
+  <image id="444" name="vid020_frame000026.png" width="480" height="360" />
+  <image id="445" name="vid020_frame000027.png" width="480" height="360" />
+  <image id="446" name="vid020_frame000028.png" width="480" height="360" />
+  <image id="447" name="vid020_frame000029.png" width="480" height="360" />
+  <image id="448" name="vid020_frame000030.png" width="480" height="360" />
+  <image id="449" name="vid020_frame000031.png" width="480" height="360" />
+  <image id="450" name="vid020_frame000032.png" width="480" height="360" />
+  <image id="451" name="vid020_frame000033.png" width="480" height="360" />
+  <image id="452" name="vid020_frame000034.png" width="480" height="360" />
+  <image id="453" name="vid020_frame000035.png" width="480" height="360" />
+  <image id="454" name="vid020_frame000036.png" width="480" height="360" />
+  <image id="455" name="vid020_frame000037.png" width="480" height="360" />
+  <image id="456" name="vid020_frame000038.png" width="480" height="360" />
+  <image id="457" name="vid020_frame000039.png" width="480" height="360" />
+  <image id="458" name="vid020_frame000040.png" width="480" height="360" />
+  <image id="459" name="vid020_frame000041.png" width="480" height="360" />
+  <image id="460" name="vid020_frame000042.png" width="480" height="360" />
+  <image id="461" name="vid020_frame000043.png" width="480" height="360" />
+  <image id="462" name="vid020_frame000044.png" width="480" height="360" />
+  <image id="463" name="vid020_frame000045.png" width="480" height="360" />
+  <image id="464" name="vid020_frame000046.png" width="480" height="360" />
+  <image id="465" name="vid020_frame000047.png" width="480" height="360" />
+  <image id="466" name="vid020_frame000048.png" width="480" height="360" />
+  <image id="467" name="vid020_frame000049.png" width="480" height="360" />
+  <image id="468" name="vid020_frame000050.png" width="480" height="360" />
+  <image id="469" name="vid020_frame000051.png" width="480" height="360" />
+  <image id="470" name="vid020_frame000052.png" width="480" height="360" />
+  <image id="471" name="vid020_frame000053.png" width="480" height="360" />
+  <image id="472" name="vid020_frame000054.png" width="480" height="360" />
+  <image id="473" name="vid020_frame000055.png" width="480" height="360" />
+  <image id="474" name="vid020_frame000056.png" width="480" height="360" />
+  <image id="475" name="vid020_frame000057.png" width="480" height="360" />
+  <image id="476" name="vid020_frame000058.png" width="480" height="360" />
+  <image id="477" name="vid021_frame000001.png" width="480" height="360" />
+  <image id="478" name="vid021_frame000002.png" width="480" height="360" />
+  <image id="479" name="vid021_frame000003.png" width="480" height="360" />
+  <image id="480" name="vid021_frame000004.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="351.0" ytl="226.0" xbr="369.0" ybr="236.0" z_order="0">
+      <attribute name="text">BT5R1L1</attribute>
+    </box>
+  </image>
+  <image id="481" name="vid021_frame000005.png" width="480" height="360" />
+  <image id="482" name="vid021_frame000006.png" width="480" height="360" />
+  <image id="483" name="vid021_frame000007.png" width="480" height="360" />
+  <image id="484" name="vid021_frame000008.png" width="480" height="360" />
+  <image id="485" name="vid021_frame000009.png" width="480" height="360" />
+  <image id="486" name="vid021_frame000010.png" width="480" height="360" />
+  <image id="487" name="vid021_frame000011.png" width="480" height="360" />
+  <image id="488" name="vid022_frame000001.png" width="480" height="360" />
+  <image id="489" name="vid022_frame000002.png" width="480" height="360" />
+  <image id="490" name="vid022_frame000003.png" width="480" height="360" />
+  <image id="491" name="vid022_frame000004.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="351.0" ytl="226.0" xbr="369.0" ybr="236.0" z_order="0">
+      <attribute name="text">BT5R1L1</attribute>
+    </box>
+  </image>
+  <image id="492" name="vid022_frame000005.png" width="480" height="360" />
+  <image id="493" name="vid022_frame000006.png" width="480" height="360" />
+  <image id="494" name="vid022_frame000007.png" width="480" height="360" />
+  <image id="495" name="vid022_frame000008.png" width="480" height="360" />
+  <image id="496" name="vid022_frame000009.png" width="480" height="360" />
+  <image id="497" name="vid022_frame000010.png" width="480" height="360" />
+  <image id="498" name="vid022_frame000011.png" width="480" height="360" />
+  <image id="499" name="vid023_frame000001.png" width="480" height="360" />
+  <image id="500" name="vid023_frame000002.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="78.0" ytl="283.0" xbr="92.0" ybr="293.0" z_order="0">
+      <attribute name="text">58641B1</attribute>
+    </box>
+  </image>
+  <image id="501" name="vid023_frame000003.png" width="480" height="360" />
+  <image id="502" name="vid023_frame000004.png" width="480" height="360" />
+  <image id="503" name="vid023_frame000005.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="416.0" ytl="314.0" xbr="431.0" ybr="330.0" z_order="0">
+      <attribute name="text">FC4092</attribute>
+    </box>
+  </image>
+  <image id="504" name="vid023_frame000006.png" width="480" height="360" />
+  <image id="505" name="vid023_frame000007.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="48.0" ytl="283.0" xbr="64.0" ybr="292.0" z_order="0">
+      <attribute name="text">LB2418</attribute>
+    </box>
+  </image>
+  <image id="506" name="vid023_frame000008.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="239.0" ytl="278.0" xbr="267.0" ybr="289.0" z_order="0">
+      <attribute name="text">4721</attribute>
+    </box>
+  </image>
+  <image id="507" name="vid023_frame000009.png" width="480" height="360" />
+  <image id="508" name="vid023_frame000010.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="58.0" ytl="268.0" xbr="70.0" ybr="278.0" z_order="0">
+      <attribute name="text">346712</attribute>
+    </box>
+  </image>
+  <image id="509" name="vid023_frame000011.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="62.0" ytl="263.0" xbr="77.0" ybr="273.0" z_order="0">
+      <attribute name="text">B467136</attribute>
+    </box>
+  </image>
+  <image id="510" name="vid023_frame000012.png" width="480" height="360" />
+  <image id="511" name="vid023_frame000013.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="82.0" ytl="269.0" xbr="95.0" ybr="278.0" z_order="0">
+      <attribute name="text">98S412</attribute>
+    </box>
+  </image>
+  <image id="512" name="vid023_frame000014.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="89.0" ytl="263.0" xbr="103.0" ybr="272.0" z_order="0">
+      <attribute name="text">BSL416</attribute>
+    </box>
+  </image>
+  <image id="513" name="vid023_frame000015.png" width="480" height="360" />
+  <image id="514" name="vid023_frame000016.png" width="480" height="360" />
+  <image id="515" name="vid023_frame000017.png" width="480" height="360" />
+  <image id="516" name="vid023_frame000018.png" width="480" height="360" />
+  <image id="517" name="vid023_frame000019.png" width="480" height="360" />
+  <image id="518" name="vid023_frame000020.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="99.0" ytl="253.0" xbr="114.0" ybr="264.0" z_order="0">
+      <attribute name="text">BG2418</attribute>
+    </box>
+  </image>
+  <image id="519" name="vid023_frame000021.png" width="480" height="360" />
+  <image id="520" name="vid023_frame000022.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="104.0" ytl="262.0" xbr="117.0" ybr="272.0" z_order="0">
+      <attribute name="text">8BL41</attribute>
+    </box>
+  </image>
+  <image id="521" name="vid023_frame000023.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="105.0" ytl="262.0" xbr="118.0" ybr="272.0" z_order="0">
+      <attribute name="text">BA8415</attribute>
+    </box>
+  </image>
+  <image id="522" name="vid023_frame000024.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="108.0" ytl="262.0" xbr="120.0" ybr="273.0" z_order="0">
+      <attribute name="text">34L61B</attribute>
+    </box>
+  </image>
+  <image id="523" name="vid024_frame000001.png" width="480" height="360" />
+  <image id="524" name="vid024_frame000002.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="78.0" ytl="283.0" xbr="92.0" ybr="293.0" z_order="0">
+      <attribute name="text">58641B1</attribute>
+    </box>
+  </image>
+  <image id="525" name="vid024_frame000003.png" width="480" height="360" />
+  <image id="526" name="vid024_frame000004.png" width="480" height="360" />
+  <image id="527" name="vid024_frame000005.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="416.0" ytl="314.0" xbr="431.0" ybr="330.0" z_order="0">
+      <attribute name="text">FC4092</attribute>
+    </box>
+  </image>
+  <image id="528" name="vid024_frame000006.png" width="480" height="360" />
+  <image id="529" name="vid024_frame000007.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="48.0" ytl="283.0" xbr="64.0" ybr="292.0" z_order="0">
+      <attribute name="text">LB2418</attribute>
+    </box>
+  </image>
+  <image id="530" name="vid024_frame000008.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="239.0" ytl="278.0" xbr="267.0" ybr="289.0" z_order="0">
+      <attribute name="text">4721</attribute>
+    </box>
+  </image>
+  <image id="531" name="vid024_frame000009.png" width="480" height="360" />
+  <image id="532" name="vid024_frame000010.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="58.0" ytl="268.0" xbr="70.0" ybr="278.0" z_order="0">
+      <attribute name="text">346712</attribute>
+    </box>
+  </image>
+  <image id="533" name="vid024_frame000011.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="62.0" ytl="263.0" xbr="77.0" ybr="273.0" z_order="0">
+      <attribute name="text">B467136</attribute>
+    </box>
+  </image>
+  <image id="534" name="vid024_frame000012.png" width="480" height="360" />
+  <image id="535" name="vid024_frame000013.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="82.0" ytl="269.0" xbr="95.0" ybr="278.0" z_order="0">
+      <attribute name="text">98S412</attribute>
+    </box>
+  </image>
+  <image id="536" name="vid024_frame000014.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="89.0" ytl="263.0" xbr="103.0" ybr="272.0" z_order="0">
+      <attribute name="text">BSL416</attribute>
+    </box>
+  </image>
+  <image id="537" name="vid024_frame000015.png" width="480" height="360" />
+  <image id="538" name="vid024_frame000016.png" width="480" height="360" />
+  <image id="539" name="vid024_frame000017.png" width="480" height="360" />
+  <image id="540" name="vid024_frame000018.png" width="480" height="360" />
+  <image id="541" name="vid024_frame000019.png" width="480" height="360" />
+  <image id="542" name="vid024_frame000020.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="99.0" ytl="253.0" xbr="114.0" ybr="264.0" z_order="0">
+      <attribute name="text">BG2418</attribute>
+    </box>
+  </image>
+  <image id="543" name="vid024_frame000021.png" width="480" height="360" />
+  <image id="544" name="vid024_frame000022.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="104.0" ytl="262.0" xbr="117.0" ybr="272.0" z_order="0">
+      <attribute name="text">8BL41</attribute>
+    </box>
+  </image>
+  <image id="545" name="vid024_frame000023.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="105.0" ytl="262.0" xbr="118.0" ybr="272.0" z_order="0">
+      <attribute name="text">BA8415</attribute>
+    </box>
+  </image>
+  <image id="546" name="vid024_frame000024.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="108.0" ytl="262.0" xbr="120.0" ybr="273.0" z_order="0">
+      <attribute name="text">34L61B</attribute>
+    </box>
+  </image>
+  <image id="547" name="vid025_frame000001.png" width="480" height="360" />
+  <image id="548" name="vid025_frame000002.png" width="480" height="360" />
+  <image id="549" name="vid025_frame000003.png" width="480" height="360" />
+  <image id="550" name="vid025_frame000004.png" width="480" height="360" />
+  <image id="551" name="vid025_frame000005.png" width="480" height="360" />
+  <image id="552" name="vid025_frame000006.png" width="480" height="360" />
+  <image id="553" name="vid025_frame000007.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="242.0" ytl="256.0" xbr="260.0" ybr="265.0" z_order="0">
+      <attribute name="text">BO24165</attribute>
+    </box>
+  </image>
+  <image id="554" name="vid025_frame000008.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="349.0" ytl="324.0" xbr="374.0" ybr="343.0" z_order="0">
+      <attribute name="text">LZN1306</attribute>
+    </box>
+  </image>
+  <image id="555" name="vid025_frame000009.png" width="480" height="360" />
+  <image id="556" name="vid025_frame000010.png" width="480" height="360" />
+  <image id="557" name="vid025_frame000011.png" width="480" height="360" />
+  <image id="558" name="vid025_frame000012.png" width="480" height="360" />
+  <image id="559" name="vid025_frame000013.png" width="480" height="360" />
+  <image id="560" name="vid025_frame000014.png" width="480" height="360" />
+  <image id="561" name="vid025_frame000015.png" width="480" height="360" />
+  <image id="562" name="vid025_frame000016.png" width="480" height="360" />
+  <image id="563" name="vid025_frame000017.png" width="480" height="360" />
+  <image id="564" name="vid025_frame000018.png" width="480" height="360" />
+  <image id="565" name="vid025_frame000019.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="250.0" ytl="253.0" xbr="271.0" ybr="261.0" z_order="0">
+      <attribute name="text">LD213</attribute>
+    </box>
+  </image>
+  <image id="566" name="vid025_frame000020.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="434.0" ytl="323.0" xbr="460.0" ybr="345.0" z_order="0">
+      <attribute name="text">EA8513</attribute>
+    </box>
+  </image>
+  <image id="567" name="vid025_frame000021.png" width="480" height="360" />
+  <image id="568" name="vid025_frame000022.png" width="480" height="360" />
+  <image id="569" name="vid025_frame000023.png" width="480" height="360" />
+  <image id="570" name="vid025_frame000024.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="201.0" ytl="228.0" xbr="215.0" ybr="236.0" z_order="0">
+      <attribute name="text">EJ6313</attribute>
+    </box>
+  </image>
+  <image id="571" name="vid025_frame000025.png" width="480" height="360" />
+  <image id="572" name="vid025_frame000026.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="272.0" ytl="262.0" xbr="290.0" ybr="273.0" z_order="0">
+      <attribute name="text">F83213</attribute>
+    </box>
+  </image>
+  <image id="573" name="vid025_frame000027.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="303.0" ytl="273.0" xbr="322.0" ybr="287.0" z_order="0">
+      <attribute name="text">F0199</attribute>
+    </box>
+  </image>
+  <image id="574" name="vid025_frame000028.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="356.0" ytl="296.0" xbr="378.0" ybr="314.0" z_order="0">
+      <attribute name="text">AFV4468</attribute>
+    </box>
+  </image>
+  <image id="575" name="vid025_frame000029.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="457.0" ytl="344.0" xbr="480.0" ybr="360.0" z_order="0">
+      <attribute name="text">249211</attribute>
+    </box>
+  </image>
+  <image id="576" name="vid025_frame000030.png" width="480" height="360" />
+  <image id="577" name="vid025_frame000031.png" width="480" height="360" />
+  <image id="578" name="vid025_frame000032.png" width="480" height="360" />
+  <image id="579" name="vid025_frame000033.png" width="480" height="360" />
+  <image id="580" name="vid025_frame000034.png" width="480" height="360" />
+  <image id="581" name="vid025_frame000035.png" width="480" height="360" />
+  <image id="582" name="vid025_frame000036.png" width="480" height="360" />
+  <image id="583" name="vid025_frame000037.png" width="480" height="360" />
+  <image id="584" name="vid025_frame000038.png" width="480" height="360" />
+  <image id="585" name="vid025_frame000039.png" width="480" height="360" />
+  <image id="586" name="vid025_frame000040.png" width="480" height="360" />
+  <image id="587" name="vid026_frame000001.png" width="480" height="360" />
+  <image id="588" name="vid026_frame000002.png" width="480" height="360" />
+  <image id="589" name="vid026_frame000003.png" width="480" height="360" />
+  <image id="590" name="vid026_frame000004.png" width="480" height="360" />
+  <image id="591" name="vid026_frame000005.png" width="480" height="360" />
+  <image id="592" name="vid026_frame000006.png" width="480" height="360" />
+  <image id="593" name="vid026_frame000007.png" width="480" height="360" />
+  <image id="594" name="vid026_frame000008.png" width="480" height="360" />
+  <image id="595" name="vid026_frame000009.png" width="480" height="360" />
+  <image id="596" name="vid026_frame000010.png" width="480" height="360" />
+  <image id="597" name="vid026_frame000011.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="218.0" ytl="271.0" xbr="234.0" ybr="279.0" z_order="0">
+      <attribute name="text">B86735</attribute>
+    </box>
+  </image>
+  <image id="598" name="vid026_frame000012.png" width="480" height="360" />
+  <image id="599" name="vid026_frame000013.png" width="480" height="360" />
+  <image id="600" name="vid026_frame000014.png" width="480" height="360" />
+  <image id="601" name="vid026_frame000015.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="298.0" ytl="339.0" xbr="324.0" ybr="354.0" z_order="0">
+      <attribute name="text">VV18780</attribute>
+    </box>
+  </image>
+  <image id="602" name="vid026_frame000016.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="335.0" ytl="278.0" xbr="350.0" ybr="287.0" z_order="0">
+      <attribute name="text">B169325</attribute>
+    </box>
+  </image>
+  <image id="603" name="vid026_frame000017.png" width="480" height="360" />
+  <image id="604" name="vid026_frame000018.png" width="480" height="360" />
+  <image id="605" name="vid027_frame000001.png" width="480" height="360" />
+  <image id="606" name="vid027_frame000002.png" width="480" height="360" />
+  <image id="607" name="vid027_frame000003.png" width="480" height="360" />
+  <image id="608" name="vid027_frame000004.png" width="480" height="360" />
+  <image id="609" name="vid027_frame000005.png" width="480" height="360" />
+  <image id="610" name="vid027_frame000006.png" width="480" height="360" />
+  <image id="611" name="vid027_frame000007.png" width="480" height="360" />
+  <image id="612" name="vid027_frame000008.png" width="480" height="360" />
+  <image id="613" name="vid027_frame000009.png" width="480" height="360" />
+  <image id="614" name="vid027_frame000010.png" width="480" height="360" />
+  <image id="615" name="vid027_frame000011.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="218.0" ytl="271.0" xbr="234.0" ybr="279.0" z_order="0">
+      <attribute name="text">B86735</attribute>
+    </box>
+  </image>
+  <image id="616" name="vid027_frame000012.png" width="480" height="360" />
+  <image id="617" name="vid027_frame000013.png" width="480" height="360" />
+  <image id="618" name="vid027_frame000014.png" width="480" height="360" />
+  <image id="619" name="vid027_frame000015.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="298.0" ytl="339.0" xbr="324.0" ybr="354.0" z_order="0">
+      <attribute name="text">VV18780</attribute>
+    </box>
+  </image>
+  <image id="620" name="vid027_frame000016.png" width="480" height="360">
+    <box label="LicensePlate" occluded="0" xtl="335.0" ytl="278.0" xbr="350.0" ybr="287.0" z_order="0">
+      <attribute name="text">B169325</attribute>
+    </box>
+  </image>
+  <image id="621" name="vid027_frame000017.png" width="480" height="360" />
+  <image id="622" name="vid027_frame000018.png" width="480" height="360" />
+  <image id="623" name="vid028_frame000001.png" width="3840" height="2160" />
+  <image id="624" name="vid028_frame000002.png" width="3840" height="2160" />
+  <image id="625" name="vid028_frame000003.png" width="3840" height="2160" />
+  <image id="626" name="vid028_frame000004.png" width="3840" height="2160" />
+  <image id="627" name="vid028_frame000005.png" width="3840" height="2160" />
+  <image id="628" name="vid028_frame000006.png" width="3840" height="2160" />
+  <image id="629" name="vid028_frame000007.png" width="3840" height="2160" />
+  <image id="630" name="vid028_frame000008.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2508.0" ytl="2066.0" xbr="2677.0" ybr="2125.0" z_order="0">
+      <attribute name="text">PR6885A</attribute>
+    </box>
+  </image>
+  <image id="631" name="vid028_frame000009.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2524.0" ytl="2075.0" xbr="2639.0" ybr="2140.0" z_order="0">
+      <attribute name="text">SED577</attribute>
+    </box>
+  </image>
+  <image id="632" name="vid028_frame000010.png" width="3840" height="2160" />
+  <image id="633" name="vid028_frame000011.png" width="3840" height="2160" />
+  <image id="634" name="vid028_frame000012.png" width="3840" height="2160" />
+  <image id="635" name="vid028_frame000013.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1367.0" ytl="1734.0" xbr="1489.0" ybr="1783.0" z_order="0">
+      <attribute name="text">H827000</attribute>
+    </box>
+  </image>
+  <image id="636" name="vid029_frame000001.png" width="1920" height="1080" />
+  <image id="637" name="vid029_frame000002.png" width="1920" height="1080" />
+  <image id="638" name="vid029_frame000003.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="951.0" ytl="775.0" xbr="1000.0" ybr="802.0" z_order="0">
+      <attribute name="text">FZ2113</attribute>
+    </box>
+  </image>
+  <image id="639" name="vid029_frame000004.png" width="1920" height="1080" />
+  <image id="640" name="vid029_frame000005.png" width="1920" height="1080" />
+  <image id="641" name="vid030_frame000001.png" width="3840" height="2160" />
+  <image id="642" name="vid030_frame000002.png" width="3840" height="2160" />
+  <image id="643" name="vid030_frame000003.png" width="3840" height="2160" />
+  <image id="644" name="vid030_frame000004.png" width="3840" height="2160" />
+  <image id="645" name="vid030_frame000005.png" width="3840" height="2160" />
+  <image id="646" name="vid030_frame000006.png" width="3840" height="2160" />
+  <image id="647" name="vid030_frame000007.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1923.0" ytl="215.0" xbr="2026.0" ybr="271.0" z_order="0">
+      <attribute name="text">E92133</attribute>
+    </box>
+  </image>
+  <image id="648" name="vid030_frame000008.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1000.0" ytl="1267.0" xbr="1130.0" ybr="1322.0" z_order="0">
+      <attribute name="text">10B110</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="2122.0" ytl="1529.0" xbr="2266.0" ybr="1604.0" z_order="0">
+      <attribute name="text">BOK5225</attribute>
+    </box>
+  </image>
+  <image id="649" name="vid030_frame000009.png" width="3840" height="2160" />
+  <image id="650" name="vid030_frame000010.png" width="3840" height="2160" />
+  <image id="651" name="vid030_frame000011.png" width="3840" height="2160" />
+  <image id="652" name="vid030_frame000012.png" width="3840" height="2160" />
+  <image id="653" name="vid030_frame000013.png" width="3840" height="2160" />
+  <image id="654" name="vid030_frame000014.png" width="3840" height="2160" />
+  <image id="655" name="vid030_frame000015.png" width="3840" height="2160" />
+  <image id="656" name="vid030_frame000016.png" width="3840" height="2160" />
+  <image id="657" name="vid030_frame000017.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2586.0" ytl="1722.0" xbr="2695.0" ybr="1773.0" z_order="0">
+      <attribute name="text">O1271S</attribute>
+    </box>
+  </image>
+  <image id="658" name="vid030_frame000018.png" width="3840" height="2160" />
+  <image id="659" name="vid030_frame000019.png" width="3840" height="2160" />
+  <image id="660" name="vid030_frame000020.png" width="3840" height="2160" />
+  <image id="661" name="vid030_frame000021.png" width="3840" height="2160" />
+  <image id="662" name="vid030_frame000022.png" width="3840" height="2160" />
+  <image id="663" name="vid030_frame000023.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1638.0" ytl="2065.0" xbr="1758.0" ybr="2117.0" z_order="0">
+      <attribute name="text">IZ134CC</attribute>
+    </box>
+  </image>
+  <image id="664" name="vid030_frame000024.png" width="3840" height="2160" />
+  <image id="665" name="vid030_frame000025.png" width="3840" height="2160" />
+  <image id="666" name="vid030_frame000026.png" width="3840" height="2160" />
+  <image id="667" name="vid030_frame000027.png" width="3840" height="2160" />
+  <image id="668" name="vid030_frame000028.png" width="3840" height="2160" />
+  <image id="669" name="vid030_frame000029.png" width="3840" height="2160" />
+  <image id="670" name="vid030_frame000030.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2370.0" ytl="604.0" xbr="2454.0" ybr="647.0" z_order="0">
+      <attribute name="text">B46153</attribute>
+    </box>
+  </image>
+  <image id="671" name="vid030_frame000031.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2417.0" ytl="919.0" xbr="2507.0" ybr="967.0" z_order="0">
+      <attribute name="text">RX5433</attribute>
+    </box>
+  </image>
+  <image id="672" name="vid030_frame000032.png" width="3840" height="2160" />
+  <image id="673" name="vid031_frame000001.png" width="3840" height="2160" />
+  <image id="674" name="vid031_frame000002.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1767.0" ytl="1871.0" xbr="1880.0" ybr="1929.0" z_order="0">
+      <attribute name="text">V923487</attribute>
+    </box>
+  </image>
+  <image id="675" name="vid031_frame000003.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1657.0" ytl="1192.0" xbr="1747.0" ybr="1245.0" z_order="0">
+      <attribute name="text">1J23M61</attribute>
+    </box>
+  </image>
+  <image id="676" name="vid031_frame000004.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1493.0" ytl="1347.0" xbr="1605.0" ybr="1408.0" z_order="0">
+      <attribute name="text">EU517L</attribute>
+    </box>
+  </image>
+  <image id="677" name="vid031_frame000005.png" width="3840" height="2160" />
+  <image id="678" name="vid031_frame000006.png" width="3840" height="2160" />
+  <image id="679" name="vid031_frame000007.png" width="3840" height="2160" />
+  <image id="680" name="vid031_frame000008.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2640.0" ytl="1901.0" xbr="2741.0" ybr="1959.0" z_order="0">
+      <attribute name="text">166353</attribute>
+    </box>
+  </image>
+  <image id="681" name="vid031_frame000009.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2239.0" ytl="1258.0" xbr="2343.0" ybr="1309.0" z_order="0">
+      <attribute name="text">BA13700</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="1597.0" ytl="1988.0" xbr="1720.0" ybr="2055.0" z_order="0">
+      <attribute name="text">64645B</attribute>
+    </box>
+  </image>
+  <image id="682" name="vid031_frame000010.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1547.0" ytl="1406.0" xbr="1670.0" ybr="1461.0" z_order="0">
+      <attribute name="text">1G6925T</attribute>
+    </box>
+  </image>
+  <image id="683" name="vid032_frame000001.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1856.0" ytl="216.0" xbr="1992.0" ybr="277.0" z_order="0">
+      <attribute name="text">EO8418</attribute>
+    </box>
+  </image>
+  <image id="684" name="vid032_frame000002.png" width="3840" height="2160" />
+  <image id="685" name="vid032_frame000003.png" width="3840" height="2160" />
+  <image id="686" name="vid032_frame000004.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1972.0" ytl="751.0" xbr="2092.0" ybr="816.0" z_order="0">
+      <attribute name="text">CG63K</attribute>
+    </box>
+  </image>
+  <image id="687" name="vid032_frame000005.png" width="3840" height="2160" />
+  <image id="688" name="vid032_frame000006.png" width="3840" height="2160" />
+  <image id="689" name="vid032_frame000007.png" width="3840" height="2160" />
+  <image id="690" name="vid032_frame000008.png" width="3840" height="2160" />
+  <image id="691" name="vid032_frame000009.png" width="3840" height="2160" />
+  <image id="692" name="vid032_frame000010.png" width="3840" height="2160" />
+  <image id="693" name="vid032_frame000011.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1879.0" ytl="2005.0" xbr="2039.0" ybr="2085.0" z_order="0">
+      <attribute name="text">GY100</attribute>
+    </box>
+  </image>
+  <image id="694" name="vid032_frame000012.png" width="3840" height="2160" />
+  <image id="695" name="vid032_frame000013.png" width="3840" height="2160" />
+  <image id="696" name="vid032_frame000014.png" width="3840" height="2160" />
+  <image id="697" name="vid032_frame000015.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="3114.0" ytl="933.0" xbr="3246.0" ybr="1008.0" z_order="0">
+      <attribute name="text">ZRA999</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="1771.0" ytl="228.0" xbr="1884.0" ybr="278.0" z_order="0">
+      <attribute name="text">1A20580</attribute>
+    </box>
+  </image>
+  <image id="698" name="vid032_frame000016.png" width="3840" height="2160" />
+  <image id="699" name="vid032_frame000017.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="3101.0" ytl="946.0" xbr="3194.0" ybr="994.0" z_order="0">
+      <attribute name="text">FL3216</attribute>
+    </box>
+  </image>
+  <image id="700" name="vid032_frame000018.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="3448.0" ytl="1488.0" xbr="3601.0" ybr="1561.0" z_order="0">
+      <attribute name="text">KIS899</attribute>
+    </box>
+  </image>
+  <image id="701" name="vid032_frame000019.png" width="3840" height="2160" />
+  <image id="702" name="vid032_frame000020.png" width="3840" height="2160" />
+  <image id="703" name="vid032_frame000021.png" width="3840" height="2160" />
+  <image id="704" name="vid032_frame000022.png" width="3840" height="2160" />
+  <image id="705" name="vid033_frame000001.png" width="3840" height="2160" />
+  <image id="706" name="vid033_frame000002.png" width="3840" height="2160" />
+  <image id="707" name="vid033_frame000003.png" width="3840" height="2160" />
+  <image id="708" name="vid033_frame000004.png" width="3840" height="2160" />
+  <image id="709" name="vid033_frame000005.png" width="3840" height="2160" />
+  <image id="710" name="vid033_frame000006.png" width="3840" height="2160" />
+  <image id="711" name="vid033_frame000007.png" width="3840" height="2160" />
+  <image id="712" name="vid033_frame000008.png" width="3840" height="2160" />
+  <image id="713" name="vid033_frame000009.png" width="3840" height="2160" />
+  <image id="714" name="vid033_frame000010.png" width="3840" height="2160" />
+  <image id="715" name="vid033_frame000011.png" width="3840" height="2160" />
+  <image id="716" name="vid033_frame000012.png" width="3840" height="2160" />
+  <image id="717" name="vid033_frame000013.png" width="3840" height="2160" />
+  <image id="718" name="vid033_frame000014.png" width="3840" height="2160" />
+  <image id="719" name="vid033_frame000015.png" width="3840" height="2160" />
+  <image id="720" name="vid033_frame000016.png" width="3840" height="2160" />
+  <image id="721" name="vid033_frame000017.png" width="3840" height="2160" />
+  <image id="722" name="vid033_frame000018.png" width="3840" height="2160" />
+  <image id="723" name="vid033_frame000019.png" width="3840" height="2160" />
+  <image id="724" name="vid033_frame000020.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1619.0" ytl="2038.0" xbr="1768.0" ybr="2099.0" z_order="0">
+      <attribute name="text">AA0181</attribute>
+    </box>
+  </image>
+  <image id="725" name="vid034_frame000001.png" width="3840" height="2160" />
+  <image id="726" name="vid034_frame000002.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="766.0" ytl="1607.0" xbr="933.0" ybr="1684.0" z_order="0">
+      <attribute name="text">CHF371</attribute>
+    </box>
+  </image>
+  <image id="727" name="vid034_frame000003.png" width="3840" height="2160" />
+  <image id="728" name="vid034_frame000004.png" width="3840" height="2160" />
+  <image id="729" name="vid034_frame000005.png" width="3840" height="2160" />
+  <image id="730" name="vid034_frame000006.png" width="3840" height="2160" />
+  <image id="731" name="vid034_frame000007.png" width="3840" height="2160" />
+  <image id="732" name="vid034_frame000008.png" width="3840" height="2160" />
+  <image id="733" name="vid034_frame000009.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1694.0" ytl="872.0" xbr="1828.0" ybr="933.0" z_order="0">
+      <attribute name="text">F21697</attribute>
+    </box>
+  </image>
+  <image id="734" name="vid034_frame000010.png" width="3840" height="2160" />
+  <image id="735" name="vid034_frame000011.png" width="3840" height="2160" />
+  <image id="736" name="vid034_frame000012.png" width="3840" height="2160" />
+  <image id="737" name="vid034_frame000013.png" width="3840" height="2160" />
+  <image id="738" name="vid034_frame000014.png" width="3840" height="2160" />
+  <image id="739" name="vid034_frame000015.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1973.0" ytl="2085.0" xbr="2112.0" ybr="2166.0" z_order="0">
+      <attribute name="text">NB3110</attribute>
+    </box>
+  </image>
+  <image id="740" name="vid034_frame000016.png" width="3840" height="2160" />
+  <image id="741" name="vid034_frame000017.png" width="3840" height="2160" />
+  <image id="742" name="vid034_frame000018.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1565.0" ytl="362.0" xbr="1682.0" ybr="428.0" z_order="0">
+      <attribute name="text">N2375</attribute>
+    </box>
+  </image>
+  <image id="743" name="vid034_frame000019.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="724.0" ytl="1149.0" xbr="849.0" ybr="1209.0" z_order="0">
+      <attribute name="text">516A</attribute>
+    </box>
+  </image>
+  <image id="744" name="vid034_frame000020.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="907.0" ytl="376.0" xbr="1026.0" ybr="437.0" z_order="0">
+      <attribute name="text">74351</attribute>
+    </box>
+  </image>
+  <image id="745" name="vid034_frame000021.png" width="3840" height="2160" />
+  <image id="746" name="vid034_frame000022.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1167.0" ytl="1916.0" xbr="1343.0" ybr="1994.0" z_order="0">
+      <attribute name="text">NKD459</attribute>
+    </box>
+  </image>
+  <image id="747" name="vid034_frame000023.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1169.0" ytl="597.0" xbr="1326.0" ybr="662.0" z_order="0">
+      <attribute name="text">NX381RA</attribute>
+    </box>
+  </image>
+  <image id="748" name="vid034_frame000024.png" width="3840" height="2160" />
+  <image id="749" name="vid034_frame000025.png" width="3840" height="2160" />
+  <image id="750" name="vid034_frame000026.png" width="3840" height="2160" />
+  <image id="751" name="vid035_frame000001.png" width="1920" height="1080" />
+  <image id="752" name="vid035_frame000002.png" width="1920" height="1080" />
+  <image id="753" name="vid035_frame000003.png" width="1920" height="1080" />
+  <image id="754" name="vid035_frame000004.png" width="1920" height="1080" />
+  <image id="755" name="vid035_frame000005.png" width="1920" height="1080" />
+  <image id="756" name="vid035_frame000006.png" width="1920" height="1080" />
+  <image id="757" name="vid035_frame000007.png" width="1920" height="1080" />
+  <image id="758" name="vid035_frame000008.png" width="1920" height="1080" />
+  <image id="759" name="vid035_frame000009.png" width="1920" height="1080" />
+  <image id="760" name="vid035_frame000010.png" width="1920" height="1080" />
+  <image id="761" name="vid035_frame000011.png" width="1920" height="1080" />
+  <image id="762" name="vid035_frame000012.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="980.0" ytl="950.0" xbr="1031.0" ybr="978.0" z_order="0">
+      <attribute name="text">WL5293</attribute>
+    </box>
+  </image>
+  <image id="763" name="vid035_frame000013.png" width="1920" height="1080" />
+  <image id="764" name="vid035_frame000014.png" width="1920" height="1080" />
+  <image id="765" name="vid035_frame000015.png" width="1920" height="1080" />
+  <image id="766" name="vid035_frame000016.png" width="1920" height="1080" />
+  <image id="767" name="vid036_frame000001.png" width="3840" height="2160" />
+  <image id="768" name="vid036_frame000002.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2922.0" ytl="1189.0" xbr="3086.0" ybr="1255.0" z_order="0">
+      <attribute name="text">AMX7888</attribute>
+    </box>
+  </image>
+  <image id="769" name="vid036_frame000003.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="3189.0" ytl="1787.0" xbr="3428.0" ybr="1864.0" z_order="0">
+      <attribute name="text">TVJ1193</attribute>
+    </box>
+  </image>
+  <image id="770" name="vid036_frame000004.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2873.0" ytl="547.0" xbr="3047.0" ybr="607.0" z_order="0">
+      <attribute name="text">ZN4135</attribute>
+    </box>
+  </image>
+  <image id="771" name="vid036_frame000005.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2889.0" ytl="1859.0" xbr="3055.0" ybr="1928.0" z_order="0">
+      <attribute name="text">PPD486</attribute>
+    </box>
+  </image>
+  <image id="772" name="vid036_frame000006.png" width="3840" height="2160" />
+  <image id="773" name="vid036_frame000007.png" width="3840" height="2160" />
+  <image id="774" name="vid036_frame000008.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2642.0" ytl="989.0" xbr="2767.0" ybr="1056.0" z_order="0">
+      <attribute name="text">LY0680</attribute>
+    </box>
+  </image>
+  <image id="775" name="vid037_frame000001.png" width="3840" height="2160" />
+  <image id="776" name="vid037_frame000002.png" width="3840" height="2160" />
+  <image id="777" name="vid037_frame000003.png" width="3840" height="2160" />
+  <image id="778" name="vid037_frame000004.png" width="3840" height="2160" />
+  <image id="779" name="vid037_frame000005.png" width="3840" height="2160" />
+  <image id="780" name="vid037_frame000006.png" width="3840" height="2160" />
+  <image id="781" name="vid037_frame000007.png" width="3840" height="2160" />
+  <image id="782" name="vid037_frame000008.png" width="3840" height="2160" />
+  <image id="783" name="vid037_frame000009.png" width="3840" height="2160" />
+  <image id="784" name="vid037_frame000010.png" width="3840" height="2160" />
+  <image id="785" name="vid037_frame000011.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1291.0" ytl="697.0" xbr="1412.0" ybr="756.0" z_order="0">
+      <attribute name="text">E05598</attribute>
+    </box>
+  </image>
+  <image id="786" name="vid037_frame000012.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="822.0" ytl="548.0" xbr="1046.0" ybr="606.0" z_order="0">
+      <attribute name="text">P85895</attribute>
+    </box>
+  </image>
+  <image id="787" name="vid037_frame000013.png" width="3840" height="2160" />
+  <image id="788" name="vid037_frame000014.png" width="3840" height="2160" />
+  <image id="789" name="vid037_frame000015.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1954.0" ytl="701.0" xbr="2188.0" ybr="755.0" z_order="0">
+      <attribute name="text">XRM8991</attribute>
+    </box>
+  </image>
+  <image id="790" name="vid037_frame000016.png" width="3840" height="2160" />
+  <image id="791" name="vid037_frame000017.png" width="3840" height="2160" />
+  <image id="792" name="vid037_frame000018.png" width="3840" height="2160" />
+  <image id="793" name="vid037_frame000019.png" width="3840" height="2160" />
+  <image id="794" name="vid037_frame000020.png" width="3840" height="2160" />
+  <image id="795" name="vid037_frame000021.png" width="3840" height="2160" />
+  <image id="796" name="vid037_frame000022.png" width="3840" height="2160" />
+  <image id="797" name="vid037_frame000023.png" width="3840" height="2160" />
+  <image id="798" name="vid037_frame000024.png" width="3840" height="2160" />
+  <image id="799" name="vid037_frame000025.png" width="3840" height="2160" />
+  <image id="800" name="vid037_frame000026.png" width="3840" height="2160" />
+  <image id="801" name="vid037_frame000027.png" width="3840" height="2160" />
+  <image id="802" name="vid037_frame000028.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1668.0" ytl="1183.0" xbr="1796.0" ybr="1231.0" z_order="0">
+      <attribute name="text">2716X1</attribute>
+    </box>
+  </image>
+  <image id="803" name="vid037_frame000029.png" width="3840" height="2160" />
+  <image id="804" name="vid037_frame000030.png" width="3840" height="2160" />
+  <image id="805" name="vid037_frame000031.png" width="3840" height="2160" />
+  <image id="806" name="vid037_frame000032.png" width="3840" height="2160" />
+  <image id="807" name="vid037_frame000033.png" width="3840" height="2160" />
+  <image id="808" name="vid037_frame000034.png" width="3840" height="2160" />
+  <image id="809" name="vid037_frame000035.png" width="3840" height="2160" />
+  <image id="810" name="vid037_frame000036.png" width="3840" height="2160" />
+  <image id="811" name="vid037_frame000037.png" width="3840" height="2160" />
+  <image id="812" name="vid037_frame000038.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1241.0" ytl="1549.0" xbr="1367.0" ybr="1607.0" z_order="0">
+      <attribute name="text">K2741</attribute>
+    </box>
+  </image>
+  <image id="813" name="vid037_frame000039.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="942.0" ytl="1180.0" xbr="1043.0" ybr="1237.0" z_order="0">
+      <attribute name="text">HJE193</attribute>
+    </box>
+  </image>
+  <image id="814" name="vid037_frame000040.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2121.0" ytl="1354.0" xbr="2223.0" ybr="1407.0" z_order="0">
+      <attribute name="text">8487HF</attribute>
+    </box>
+  </image>
+  <image id="815" name="vid037_frame000041.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1186.0" ytl="1708.0" xbr="1290.0" ybr="1766.0" z_order="0">
+      <attribute name="text">M4Z886C</attribute>
+    </box>
+  </image>
+  <image id="816" name="vid037_frame000042.png" width="3840" height="2160" />
+  <image id="817" name="vid037_frame000043.png" width="3840" height="2160" />
+  <image id="818" name="vid038_frame000001.png" width="3840" height="2160" />
+  <image id="819" name="vid038_frame000002.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1554.0" ytl="1841.0" xbr="1764.0" ybr="1938.0" z_order="0">
+      <attribute name="text">DU1419</attribute>
+    </box>
+  </image>
+  <image id="820" name="vid038_frame000003.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1570.0" ytl="265.0" xbr="1733.0" ybr="346.0" z_order="0">
+      <attribute name="text">BB283C5</attribute>
+    </box>
+  </image>
+  <image id="821" name="vid038_frame000004.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="2024.0" ytl="972.0" xbr="2168.0" ybr="1049.0" z_order="0">
+      <attribute name="text">613492</attribute>
+    </box>
+  </image>
+  <image id="822" name="vid038_frame000005.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1205.0" ytl="2103.0" xbr="1392.0" ybr="2172.0" z_order="0">
+      <attribute name="text">AONL16</attribute>
+    </box>
+  </image>
+  <image id="823" name="vid038_frame000006.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1477.0" ytl="1048.0" xbr="1607.0" ybr="1128.0" z_order="0">
+      <attribute name="text">EL211G</attribute>
+    </box>
+  </image>
+  <image id="824" name="vid038_frame000007.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1771.0" ytl="286.0" xbr="1903.0" ybr="343.0" z_order="0">
+      <attribute name="text">BJ269</attribute>
+    </box>
+  </image>
+  <image id="825" name="vid038_frame000008.png" width="3840" height="2160" />
+  <image id="826" name="vid038_frame000009.png" width="3840" height="2160" />
+  <image id="827" name="vid038_frame000010.png" width="3840" height="2160" />
+  <image id="828" name="vid038_frame000011.png" width="3840" height="2160" />
+  <image id="829" name="vid038_frame000012.png" width="3840" height="2160" />
+  <image id="830" name="vid038_frame000013.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1030.0" ytl="1376.0" xbr="1177.0" ybr="1454.0" z_order="0">
+      <attribute name="text">XZ3593</attribute>
+    </box>
+  </image>
+  <image id="831" name="vid038_frame000014.png" width="3840" height="2160" />
+  <image id="832" name="vid038_frame000015.png" width="3840" height="2160" />
+  <image id="833" name="vid038_frame000016.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1926.0" ytl="1779.0" xbr="2093.0" ybr="1864.0" z_order="0">
+      <attribute name="text">FA1538</attribute>
+    </box>
+  </image>
+  <image id="834" name="vid038_frame000017.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1755.0" ytl="371.0" xbr="1896.0" ybr="438.0" z_order="0">
+      <attribute name="text">F35973</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="695.0" ytl="2082.0" xbr="864.0" ybr="2164.0" z_order="0">
+      <attribute name="text">FAB7589</attribute>
+    </box>
+  </image>
+  <image id="835" name="vid039_frame000001.png" width="1920" height="1080" />
+  <image id="836" name="vid039_frame000002.png" width="1920" height="1080" />
+  <image id="837" name="vid039_frame000003.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1526.0" ytl="698.0" xbr="1582.0" ybr="740.0" z_order="0">
+      <attribute name="text">AIE722</attribute>
+    </box>
+  </image>
+  <image id="838" name="vid039_frame000004.png" width="1920" height="1080" />
+  <image id="839" name="vid039_frame000005.png" width="1920" height="1080" />
+  <image id="840" name="vid039_frame000006.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1151.0" ytl="659.0" xbr="1208.0" ybr="693.0" z_order="0">
+      <attribute name="text">FZ32131</attribute>
+    </box>
+  </image>
+  <image id="841" name="vid039_frame000007.png" width="1920" height="1080" />
+  <image id="842" name="vid039_frame000008.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1267.0" ytl="675.0" xbr="1336.0" ybr="712.0" z_order="0">
+      <attribute name="text">BBX699</attribute>
+    </box>
+  </image>
+  <image id="843" name="vid039_frame000009.png" width="1920" height="1080" />
+  <image id="844" name="vid039_frame000010.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1667.0" ytl="673.0" xbr="1748.0" ybr="723.0" z_order="0">
+      <attribute name="text">BJK329</attribute>
+    </box>
+  </image>
+  <image id="845" name="vid039_frame000011.png" width="1920" height="1080" />
+  <image id="846" name="vid039_frame000012.png" width="1920" height="1080" />
+  <image id="847" name="vid039_frame000013.png" width="1920" height="1080" />
+  <image id="848" name="vid039_frame000014.png" width="1920" height="1080">
+    <box label="LicensePlate" occluded="0" xtl="1886.0" ytl="666.0" xbr="1919.0" ybr="716.0" z_order="0">
+      <attribute name="text">4C111</attribute>
+    </box>
+  </image>
+  <image id="849" name="vid039_frame000015.png" width="1920" height="1080" />
+  <image id="850" name="vid039_frame000016.png" width="1920" height="1080" />
+  <image id="851" name="vid039_frame000017.png" width="1920" height="1080" />
+  <image id="852" name="vid039_frame000018.png" width="1920" height="1080" />
+  <image id="853" name="vid039_frame000019.png" width="1920" height="1080" />
+  <image id="854" name="vid039_frame000020.png" width="1920" height="1080" />
+  <image id="855" name="vid039_frame000021.png" width="1920" height="1080" />
+  <image id="856" name="vid039_frame000022.png" width="1920" height="1080" />
+  <image id="857" name="vid039_frame000023.png" width="1920" height="1080" />
+  <image id="858" name="vid039_frame000024.png" width="1920" height="1080" />
+  <image id="859" name="vid039_frame000025.png" width="1920" height="1080" />
+  <image id="860" name="vid039_frame000026.png" width="1920" height="1080" />
+  <image id="861" name="vid039_frame000027.png" width="1920" height="1080" />
+  <image id="862" name="vid039_frame000028.png" width="1920" height="1080" />
+  <image id="863" name="vid039_frame000029.png" width="1920" height="1080" />
+  <image id="864" name="vid039_frame000030.png" width="1920" height="1080" />
+  <image id="865" name="vid040_frame000001.png" width="3840" height="2160" />
+  <image id="866" name="vid040_frame000002.png" width="3840" height="2160" />
+  <image id="867" name="vid040_frame000003.png" width="3840" height="2160" />
+  <image id="868" name="vid040_frame000004.png" width="3840" height="2160" />
+  <image id="869" name="vid040_frame000005.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1282.0" ytl="1339.0" xbr="1401.0" ybr="1406.0" z_order="0">
+      <attribute name="text">BGD50</attribute>
+    </box>
+  </image>
+  <image id="870" name="vid040_frame000006.png" width="3840" height="2160" />
+  <image id="871" name="vid040_frame000007.png" width="3840" height="2160" />
+  <image id="872" name="vid040_frame000008.png" width="3840" height="2160" />
+  <image id="873" name="vid040_frame000009.png" width="3840" height="2160" />
+  <image id="874" name="vid040_frame000010.png" width="3840" height="2160" />
+  <image id="875" name="vid040_frame000011.png" width="3840" height="2160" />
+  <image id="876" name="vid040_frame000012.png" width="3840" height="2160" />
+  <image id="877" name="vid040_frame000013.png" width="3840" height="2160" />
+  <image id="878" name="vid040_frame000014.png" width="3840" height="2160" />
+  <image id="879" name="vid040_frame000015.png" width="3840" height="2160" />
+  <image id="880" name="vid040_frame000016.png" width="3840" height="2160" />
+  <image id="881" name="vid040_frame000017.png" width="3840" height="2160" />
+  <image id="882" name="vid040_frame000018.png" width="3840" height="2160" />
+  <image id="883" name="vid040_frame000019.png" width="3840" height="2160" />
+  <image id="884" name="vid040_frame000020.png" width="3840" height="2160" />
+  <image id="885" name="vid040_frame000021.png" width="3840" height="2160" />
+  <image id="886" name="vid040_frame000022.png" width="3840" height="2160" />
+  <image id="887" name="vid040_frame000023.png" width="3840" height="2160" />
+  <image id="888" name="vid040_frame000024.png" width="3840" height="2160" />
+  <image id="889" name="vid040_frame000025.png" width="3840" height="2160" />
+  <image id="890" name="vid041_frame000001.png" width="3840" height="2160" />
+  <image id="891" name="vid041_frame000002.png" width="3840" height="2160" />
+  <image id="892" name="vid041_frame000003.png" width="3840" height="2160" />
+  <image id="893" name="vid041_frame000004.png" width="3840" height="2160" />
+  <image id="894" name="vid041_frame000005.png" width="3840" height="2160" />
+  <image id="895" name="vid041_frame000006.png" width="3840" height="2160" />
+  <image id="896" name="vid041_frame000007.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1196.0" ytl="1472.0" xbr="1327.0" ybr="1543.0" z_order="0">
+      <attribute name="text">BNX732</attribute>
+    </box>
+  </image>
+  <image id="897" name="vid041_frame000008.png" width="3840" height="2160" />
+  <image id="898" name="vid041_frame000009.png" width="3840" height="2160" />
+  <image id="899" name="vid041_frame000010.png" width="3840" height="2160" />
+  <image id="900" name="vid041_frame000011.png" width="3840" height="2160" />
+  <image id="901" name="vid041_frame000012.png" width="3840" height="2160" />
+  <image id="902" name="vid041_frame000013.png" width="3840" height="2160" />
+  <image id="903" name="vid041_frame000014.png" width="3840" height="2160">
+    <box label="LicensePlate" occluded="0" xtl="1682.0" ytl="1422.0" xbr="1814.0" ybr="1471.0" z_order="0">
+      <attribute name="text">MQ811</attribute>
+    </box>
+    <box label="LicensePlate" occluded="0" xtl="580.0" ytl="1274.0" xbr="699.0" ybr="1327.0" z_order="0">
+      <attribute name="text">1OA330</attribute>
+    </box>
+  </image>
+  <image id="904" name="vid041_frame000015.png" width="3840" height="2160" />
+  <image id="905" name="vid041_frame000016.png" width="3840" height="2160" />
+  <image id="906" name="vid041_frame000017.png" width="3840" height="2160" />
+  <image id="907" name="vid042_frame000001.png" width="2160" height="3840" />
+  <image id="908" name="vid042_frame000002.png" width="2160" height="3840" />
+  <image id="909" name="vid042_frame000003.png" width="2160" height="3840" />
+  <image id="910" name="vid042_frame000004.png" width="2160" height="3840" />
+  <image id="911" name="vid042_frame000005.png" width="2160" height="3840" />
+  <image id="912" name="vid042_frame000006.png" width="2160" height="3840" />
+  <image id="913" name="vid042_frame000007.png" width="2160" height="3840" />
+  <image id="914" name="vid043_frame000001.png" width="1080" height="1920" />
+  <image id="915" name="vid043_frame000002.png" width="1080" height="1920" />
+  <image id="916" name="vid043_frame000003.png" width="1080" height="1920" />
+  <image id="917" name="vid043_frame000004.png" width="1080" height="1920" />
+  <image id="918" name="vid043_frame000005.png" width="1080" height="1920" />
+  <image id="919" name="vid043_frame000006.png" width="1080" height="1920" />
+  <image id="920" name="vid043_frame000007.png" width="1080" height="1920">
+    <box label="LicensePlate" occluded="0" xtl="960.0" ytl="1355.0" xbr="1082.0" ybr="1471.0" z_order="0">
+      <attribute name="text">2AS321</attribute>
+    </box>
+  </image>
+  <image id="921" name="vid043_frame000008.png" width="1080" height="1920" />
+  <image id="922" name="vid043_frame000009.png" width="1080" height="1920" />
+  <image id="923" name="vid043_frame000010.png" width="1080" height="1920" />
+  <image id="924" name="vid043_frame000011.png" width="1080" height="1920" />
+  <image id="925" name="vid043_frame000012.png" width="1080" height="1920" />
+  <image id="926" name="vid043_frame000013.png" width="1080" height="1920" />
+  <image id="927" name="vid043_frame000014.png" width="1080" height="1920" />
+  <image id="928" name="vid043_frame000015.png" width="1080" height="1920" />
+  <image id="929" name="vid043_frame000016.png" width="1080" height="1920" />
+  <image id="930" name="vid043_frame000017.png" width="1080" height="1920">
+    <box label="LicensePlate" occluded="0" xtl="367.0" ytl="1114.0" xbr="442.0" ybr="1156.0" z_order="0">
+      <attribute name="text">ACH125</attribute>
+    </box>
+  </image>
+  <image id="931" name="vid043_frame000018.png" width="1080" height="1920">
+    <box label="LicensePlate" occluded="0" xtl="377.0" ytl="1192.0" xbr="475.0" ybr="1250.0" z_order="0">
+      <attribute name="text">ACH125</attribute>
+    </box>
+  </image>
+  <image id="932" name="vid043_frame000019.png" width="1080" height="1920">
+    <box label="LicensePlate" occluded="0" xtl="788.0" ytl="1454.0" xbr="1002.0" ybr="1579.0" z_order="0">
+      <attribute name="text">ACH125</attribute>
+    </box>
+  </image>
+  <image id="933" name="vid043_frame000020.png" width="1080" height="1920" />
+  <image id="934" name="vid043_frame000021.png" width="1080" height="1920" />
+  <image id="935" name="vid043_frame000022.png" width="1080" height="1920" />
+  <image id="936" name="vid043_frame000023.png" width="1080" height="1920" />
+  <image id="937" name="vid043_frame000024.png" width="1080" height="1920" />
+  <image id="938" name="vid043_frame000025.png" width="1080" height="1920" />
+  <image id="939" name="vid043_frame000026.png" width="1080" height="1920" />
+  <image id="940" name="vid043_frame000027.png" width="1080" height="1920" />
+  <image id="941" name="vid043_frame000028.png" width="1080" height="1920" />
+  <image id="942" name="vid044_frame000001.png" width="1080" height="1920" />
+  <image id="943" name="vid044_frame000002.png" width="1080" height="1920" />
+  <image id="944" name="vid044_frame000003.png" width="1080" height="1920" />
+</annotations>

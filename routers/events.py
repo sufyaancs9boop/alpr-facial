@@ -62,12 +62,21 @@ async def stream_events():
     queue = notifications.events.subscribe()
 
     async def event_generator():
+        consecutive_timeouts = 0
         try:
             while True:
+                # Slow-client protection: if queue grows too large, unsubscribe
+                if queue.qsize() > 400:
+                    break
                 try:
                     msg = await asyncio.wait_for(queue.get(), timeout=30)
+                    consecutive_timeouts = 0
                     yield f"event: {msg['type']}\ndata: {json.dumps(msg['data'])}\n\n"
                 except asyncio.TimeoutError:
+                    consecutive_timeouts += 1
+                    # send one keepalive, disconnect after 2 consecutive timeouts (~60s)
+                    if consecutive_timeouts > 2:
+                        break
                     yield ": keepalive\n\n"
         except asyncio.CancelledError:
             pass

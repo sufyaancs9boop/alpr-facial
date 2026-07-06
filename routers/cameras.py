@@ -4,6 +4,7 @@ import uuid
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, UploadFile, File
+from schemas import CameraCreate, CameraUpdate, CameraOut
 from sqlalchemy import select
 
 from dependencies import get_db_factory, get_camera_worker_service
@@ -24,13 +25,13 @@ async def list_cameras():
         return [_to_dict(c, worker_svc.is_streaming(c.id)) for c in result.scalars()]
 
 
-@router.post("/")
-async def create_camera(body: dict):
+@router.post("/", response_model=CameraOut)
+async def create_camera(body: CameraCreate):
     from models.camera import Camera
     db_factory = get_db_factory()
     worker_svc = get_camera_worker_service()
     async with db_factory() as db:
-        cam = Camera(**{k: v for k, v in body.items() if k != "id"})
+        cam = Camera(**body.model_dump())
         db.add(cam)
         await db.commit()
         await db.refresh(cam)
@@ -39,8 +40,8 @@ async def create_camera(body: dict):
         return _to_dict(cam, worker_svc.is_streaming(cam.id))
 
 
-@router.patch("/{camera_id}")
-async def update_camera(camera_id: str, body: dict):
+@router.patch("/{camera_id}", response_model=CameraOut)
+async def update_camera(camera_id: str, body: CameraUpdate):
     from models.camera import Camera
     db_factory = get_db_factory()
     worker_svc = get_camera_worker_service()
@@ -49,7 +50,8 @@ async def update_camera(camera_id: str, body: dict):
         if not cam:
             raise HTTPException(404, "Camera not found")
         was_active = cam.active
-        for k, v in body.items():
+        updates = body.model_dump(exclude_unset=True)
+        for k, v in updates.items():
             if hasattr(cam, k):
                 setattr(cam, k, v)
         await db.commit()

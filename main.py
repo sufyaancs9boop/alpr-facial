@@ -9,6 +9,7 @@ from config import settings
 from database import init_db, AsyncSessionLocal
 from dependencies import init_dependencies
 from auth import verify_api_key
+from fastapi import Request
 
 logging.basicConfig(
     level=logging.INFO,
@@ -98,6 +99,21 @@ app = FastAPI(
     openapi_url=f"/{settings.API_PREFIX}/openapi.json",
 )
 
+
+@app.middleware("http")
+async def json_size_limit_middleware(request: Request, call_next):
+    # Reject large JSON bodies early to avoid OOM. Multipart/form-data (uploads) are not affected.
+    content_type = request.headers.get("content-type", "")
+    if "application/json" in content_type:
+        try:
+            length = int(request.headers.get("content-length", "0") or 0)
+        except ValueError:
+            length = 0
+        if length and length > (10 * 1024 * 1024):
+            from fastapi.responses import JSONResponse
+            return JSONResponse(status_code=413, content={"detail": "JSON body too large"})
+    return await call_next(request)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -136,6 +152,18 @@ app.include_router(cameras.router, prefix=_prefix, dependencies=_deps)
 app.include_router(face_events.router, prefix=_prefix, dependencies=_deps)
 app.include_router(journeys.router, prefix=_prefix, dependencies=_deps)
 app.include_router(reports.router, prefix=_prefix, dependencies=_deps)
+
+# Backwards-compatible API versioning: mount same routers under /api/v1
+v1_prefix = f"/{settings.API_PREFIX}/v1"
+app.include_router(alpr.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(events.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(persons.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(watchlist.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(alerts.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(cameras.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(face_events.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(journeys.router, prefix=v1_prefix, dependencies=_deps)
+app.include_router(reports.router, prefix=v1_prefix, dependencies=_deps)
 
 
 if __name__ == "__main__":

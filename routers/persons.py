@@ -2,6 +2,7 @@ import logging
 from typing import Optional
 
 from fastapi import APIRouter, HTTPException, UploadFile, File
+from schemas import PersonCreate, PersonUpdate, PersonOut
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -13,7 +14,7 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/persons", tags=["Persons"])
 
 
-@router.get("/")
+@router.get("/", response_model=list[PersonOut])
 async def list_persons():
     db_factory = get_db_factory()
     async with db_factory() as db:
@@ -21,7 +22,7 @@ async def list_persons():
         return [_to_dict(p) for p in result.scalars()]
 
 
-@router.get("/{person_id}")
+@router.get("/{person_id}", response_model=PersonOut)
 async def get_person(person_id: str):
     db_factory = get_db_factory()
     async with db_factory() as db:
@@ -31,14 +32,14 @@ async def get_person(person_id: str):
         return _to_dict(person)
 
 
-@router.post("/")
-async def create_person(body: dict):
+@router.post("/", response_model=PersonOut)
+async def create_person(body: PersonCreate):
     db_factory = get_db_factory()
     async with db_factory() as db:
         person = Person(
-            name=body["name"],
-            notes=body.get("notes"),
-            plateNumbers=body.get("plateNumbers", []),
+            name=body.name,
+            notes=body.notes,
+            plateNumbers=body.plateNumbers or [],
             faceEmbeddings=[],
         )
         db.add(person)
@@ -47,19 +48,19 @@ async def create_person(body: dict):
         return _to_dict(person)
 
 
-@router.put("/{person_id}")
-async def update_person(person_id: str, body: dict):
+@router.put("/{person_id}", response_model=PersonOut)
+async def update_person(person_id: str, body: PersonUpdate):
     db_factory = get_db_factory()
     async with db_factory() as db:
         person = await db.get(Person, person_id)
         if not person:
             raise HTTPException(404, "Person not found")
-        if "name" in body:
-            person.name = body["name"]
-        if "notes" in body:
-            person.notes = body["notes"]
-        if "plateNumbers" in body:
-            person.plateNumbers = body["plateNumbers"]
+        if body.name is not None:
+            person.name = body.name
+        if body.notes is not None:
+            person.notes = body.notes
+        if body.plateNumbers is not None:
+            person.plateNumbers = body.plateNumbers
         await db.commit()
         await db.refresh(person)
         # Refresh gallery
