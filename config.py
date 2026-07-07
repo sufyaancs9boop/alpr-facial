@@ -16,6 +16,14 @@ class Settings(BaseSettings):
     DEFAULT_PLATE_REGION: str = "PAKISTAN"
     ALPR_DEDUP_IOU_THRESHOLD: float = 0.5
     ALPR_DEDUP_CENTER_DISTANCE_RATIO: float = 0.25
+    ALPR_FLAG_LOW_CONFIDENCE_CHARS: bool = False
+    ALPR_LOW_CHAR_CONFIDENCE_THRESHOLD: float = 0.70
+    ALPR_ENABLE_OCR_CORRECTION: bool = False
+    ALPR_OCR_CORRECTION_MAX_DISTANCE: int = 1
+    ALPR_OCR_CORRECTION_MAX_QUALITY: float = 0.85
+    ALPR_ENABLE_WATCHLIST_MULTI_READ: bool = False
+    ALPR_WATCHLIST_MULTI_READ_PASSES: int = 3
+    ALPR_WATCHLIST_NEAR_MATCH_DISTANCE: int = 1
     
     # Database Configuration (PostgreSQL)
     # TESTING: defaults to localhost PostgreSQL (docker-compose)

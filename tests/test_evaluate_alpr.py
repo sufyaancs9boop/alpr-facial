@@ -67,3 +67,8 @@ def test_evaluate_alpr_detection_and_ocr_metrics():
     assert report["detection"]["f1"] == 0.8
     assert report["ocr"]["exact_match_accuracy"] == 0.5
     assert report["ocr"]["char_level_accuracy"] == 12 / 13
+    assert report["ocr"]["cer"] == 1 / 14
+    assert report["ocr"]["wer"] == 0.5
+    assert report["calibration"] == [
+        {"bucket": "0.9-1.0", "samples": 2, "accuracy": 0.5, "avg_cer": 1 / 14}
+    ]

@@ -16,6 +16,12 @@ class Plate(BaseModel):
     quality: float
     bounding_box: BoundingBox
     thumbnail: Optional[str] = None
+    low_confidence_chars: Optional[List[dict]] = None
+    manual_review_required: Optional[bool] = False
+    original_text: Optional[str] = None
+    corrected: Optional[bool] = False
+    correction_distance: Optional[int] = None
+    correction_source: Optional[str] = None
     direction: Optional[str] = None
     vehicle_make: Optional[str] = None
     vehicle_model: Optional[str] = None

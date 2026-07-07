@@ -11,6 +11,12 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from ml.ocr_quality import (
+    calibration_report,
+    character_error_rate,
+    levenshtein,
+    word_error_rate,
+)
 from ml.plate_detector import BoundingBox, PlateDetector, normalize_plate, passes_pre_filters
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
@@ -47,22 +53,6 @@ def _iou(a: BoundingBox, b: BoundingBox) -> float:
     intersection = max(0.0, ix2 - ix1) * max(0.0, iy2 - iy1)
     union = a.width * a.height + b.width * b.height - intersection
     return intersection / union if union > 0 else 0.0
-
-
-def _levenshtein(a: str, b: str) -> int:
-    if a == b:
-        return 0
-    if not a:
-        return len(b)
-    if not b:
-        return len(a)
-    prev = list(range(len(b) + 1))
-    for i, ca in enumerate(a, 1):
-        curr = [i]
-        for j, cb in enumerate(b, 1):
-            curr.append(min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + (ca != cb)))
-        prev = curr
-    return prev[-1]
 
 
 def _create_template(dataset: Path, gt_path: Path) -> None:
@@ -127,7 +117,10 @@ def evaluate(dataset: Path, gt_path: Path, region: str | None, iou_threshold: fl
         "ocr_samples": 0,
         "edit_distance": 0,
         "gt_chars": 0,
+        "cer_total": 0.0,
+        "wer_total": 0.0,
     }
+    calibration_samples = []
     per_image = []
 
     for row in rows:
@@ -155,8 +148,18 @@ def evaluate(dataset: Path, gt_path: Path, region: str | None, iou_threshold: fl
             pred_text = normalize_plate(pred.text)
             totals["ocr_samples"] += 1
             totals["ocr_matches"] += int(gt_text == pred_text)
-            totals["edit_distance"] += _levenshtein(gt_text, pred_text)
+            edit_distance = levenshtein(gt_text, pred_text)
+            cer = character_error_rate(gt_text, pred_text)
+            wer = word_error_rate(gt_text, pred_text)
+            totals["edit_distance"] += edit_distance
             totals["gt_chars"] += len(gt_text)
+            totals["cer_total"] += cer
+            totals["wer_total"] += wer
+            calibration_samples.append({
+                "confidence": pred.quality,
+                "correct": gt_text == pred_text,
+                "cer": cer,
+            })
 
         totals["images"] += 1
         totals["ground_truth"] += len(gt_plates)
@@ -179,12 +182,20 @@ def evaluate(dataset: Path, gt_path: Path, region: str | None, iou_threshold: fl
     f1 = _safe_div(2 * precision * recall, precision + recall)
     exact = _safe_div(totals["ocr_matches"], totals["ocr_samples"])
     char_accuracy = 1.0 - _safe_div(totals["edit_distance"], totals["gt_chars"])
+    cer = _safe_div(totals["cer_total"], totals["ocr_samples"])
+    wer = _safe_div(totals["wer_total"], totals["ocr_samples"])
 
     return {
         "iou_threshold": iou_threshold,
         "region": region or "default",
         "detection": {"precision": precision, "recall": recall, "f1": f1},
-        "ocr": {"exact_match_accuracy": exact, "char_level_accuracy": max(0.0, char_accuracy)},
+        "ocr": {
+            "exact_match_accuracy": exact,
+            "char_level_accuracy": max(0.0, char_accuracy),
+            "cer": cer,
+            "wer": wer,
+        },
+        "calibration": calibration_report(calibration_samples),
         "counts": totals,
         "per_image": per_image,
     }
@@ -201,6 +212,8 @@ def _print_table(report: dict[str, Any]) -> None:
         ("Detection F1", report["detection"]["f1"]),
         ("OCR exact match", report["ocr"]["exact_match_accuracy"]),
         ("OCR char accuracy", report["ocr"]["char_level_accuracy"]),
+        ("OCR CER", report["ocr"]["cer"]),
+        ("OCR WER", report["ocr"]["wer"]),
     ]
     print("+---------------------+----------+")
     print("| Metric              | Value    |")
@@ -212,8 +225,8 @@ def _print_table(report: dict[str, Any]) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Evaluate ALPR detection and OCR metrics.")
-    parser.add_argument("--dataset", required=True, type=Path)
-    parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--dataset", type=Path, default=Path("data/test_plates"))
+    parser.add_argument("--output", type=Path, default=Path("eval/reports/ocr_quality_report.json"))
     parser.add_argument("--ground-truth", type=Path, default=None)
     parser.add_argument("--region", default=None)
     parser.add_argument("--iou", type=float, default=DEFAULT_IOU_THRESHOLD)

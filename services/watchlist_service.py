@@ -24,6 +24,17 @@ class WatchlistService:
             result = await db.execute(q)
             return [self._to_dict(e) for e in result.scalars()]
 
+    async def get_plate_texts(self, active_only: bool = True) -> list[str]:
+        """Return normalized watchlist plate strings for matching/correction."""
+        from ml.plate_detector import normalize_plate
+
+        entries = await self.get_all(active_only=active_only)
+        return sorted({
+            normalize_plate(str(entry.get("plateText", "")))
+            for entry in entries
+            if entry.get("plateText")
+        })
+
     async def create(self, data: dict) -> dict:
         async with self._db_factory() as db:
             entry = WatchlistEntry(**data)

@@ -42,6 +42,12 @@ class _PlateInput:
     quality: float
     bounding_box: _BBox
     thumbnail: Optional[str] = None
+    low_confidence_chars: Optional[list[dict]] = None
+    manual_review_required: bool = False
+    original_text: Optional[str] = None
+    corrected: bool = False
+    correction_distance: Optional[int] = None
+    correction_source: Optional[str] = None
     direction: Optional[str] = None
     # vehicle enrichment
     vehicle_make: Optional[str] = None

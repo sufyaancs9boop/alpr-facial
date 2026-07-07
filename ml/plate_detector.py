@@ -57,6 +57,7 @@ class PlateResult:
     quality: float
     bounding_box: BoundingBox
     thumbnail: Optional[str] = None  # base64 JPEG data URI
+    char_confidences: Optional[list[float]] = None
 
 
 def normalize_plate(text: str) -> str:
@@ -232,8 +233,10 @@ class PlateDetector:
             if r.ocr and r.ocr.confidence:
                 conf_vals = r.ocr.confidence
                 ocr_quality = float(sum(conf_vals) / len(conf_vals)) if isinstance(conf_vals, list) else float(conf_vals)
+                char_confidences = [float(v) for v in conf_vals] if isinstance(conf_vals, list) else None
             else:
                 ocr_quality = 0.0
+                char_confidences = None
 
             text = normalize_plate(ocr_text)
             plate = PlateResult(
@@ -242,6 +245,7 @@ class PlateDetector:
                 quality=ocr_quality,
                 bounding_box=bb,
                 thumbnail=_crop_thumbnail(image_np, bb) if generate_thumbnail else None,
+                char_confidences=char_confidences,
             )
             results.append(plate)
 

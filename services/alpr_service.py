@@ -12,9 +12,16 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from config import settings
 from ml.plate_detector import PlateResult, passes_pre_filters, normalize_plate
+from ml.ocr_quality import (
+    OcrReading,
+    best_fuzzy_match,
+    levenshtein,
+    low_confidence_characters,
+    vote_ocr_readings,
+)
 from ml.face_analyzer import FaceResult
 from ml.vehicle_classifier import VehicleResult
-from services.inference_service import detect_image, detect_video_frames, detect_stream_frames
+from services.inference_service import detect_image, detect_video_frames, detect_stream_frames, get_plate_detector
 from services.plate_tracker import PlateTracker, _PlateInput as TrackerPlate, _BBox as TrackerBBox
 from services.vehicle_tracker import VehicleTracker, _PlateInput as VTrackerPlate, _BBox as VTrackerBBox
 from services.notifications import notifications
@@ -32,6 +39,13 @@ class PlateOut:
     quality: float
     bounding_box: dict
     thumbnail: Optional[str] = None
+    char_confidences: Optional[list[float]] = None
+    low_confidence_chars: Optional[list[dict]] = None
+    manual_review_required: bool = False
+    original_text: Optional[str] = None
+    corrected: bool = False
+    correction_distance: Optional[int] = None
+    correction_source: Optional[str] = None
     direction: Optional[str] = None
     vehicle_make: Optional[str] = None
     vehicle_model: Optional[str] = None
@@ -141,6 +155,7 @@ class AlprService:
 
         best_vehicle = (max(vehicles_raw, key=lambda v: v.confidence) if vehicles_raw else None)
         plates_out = [self._enrich_plate(p, best_vehicle) for p in plates_raw]
+        plates_out = await self._apply_ocr_postprocessing(plates_out, image_bytes)
         faces_out = await self._enrich_faces(faces_raw)
         vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
 
@@ -202,6 +217,7 @@ class AlprService:
         ):
             best_vehicle = max(vehicles_raw, key=lambda v: v.confidence) if vehicles_raw else None
             plates_out = [self._enrich_plate(p, best_vehicle) for p in plates_raw]
+            plates_out = await self._apply_ocr_postprocessing(plates_out, None)
             faces_out = await self._enrich_faces(faces_raw)
             vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
             for plate in plates_out:
@@ -234,6 +250,7 @@ class AlprService:
         ):
             best_vehicle = max(vehicles_raw, key=lambda v: v.confidence) if vehicles_raw else None
             plates_out = [self._enrich_plate(p, best_vehicle) for p in plates_raw]
+            plates_out = await self._apply_ocr_postprocessing(plates_out, None)
             faces_out = await self._enrich_faces(faces_raw)
             vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
             for plate in plates_out:
@@ -265,11 +282,119 @@ class AlprService:
             quality=p.quality,
             bounding_box={"x": bb.x, "y": bb.y, "width": bb.width, "height": bb.height, "rotation": bb.rotation},
             thumbnail=p.thumbnail,
+            char_confidences=p.char_confidences,
             vehicle_make=best_vehicle.make if best_vehicle else None,
             vehicle_model=best_vehicle.model if best_vehicle else None,
             vehicle_color=best_vehicle.color if best_vehicle else None,
             vehicle_thumbnail=best_vehicle.thumbnail if best_vehicle else None,
         )
+
+    async def _apply_ocr_postprocessing(
+        self,
+        plates: list[PlateOut],
+        image_bytes: Optional[bytes],
+    ) -> list[PlateOut]:
+        if not plates:
+            return plates
+
+        known_plates = await self._known_plate_texts() if settings.ALPR_ENABLE_OCR_CORRECTION else []
+        watchlist_plates = (
+            await self._watchlist_plate_texts()
+            if settings.ALPR_ENABLE_WATCHLIST_MULTI_READ
+            else []
+        )
+
+        processed = []
+        for plate in plates:
+            if settings.ALPR_ENABLE_WATCHLIST_MULTI_READ and image_bytes and self._near_watchlist(plate.text, watchlist_plates):
+                plate = self._multi_read_plate(plate, image_bytes)
+            if settings.ALPR_ENABLE_OCR_CORRECTION and plate.quality < settings.ALPR_OCR_CORRECTION_MAX_QUALITY:
+                plate = self._correct_plate_text(plate, known_plates)
+            if settings.ALPR_FLAG_LOW_CONFIDENCE_CHARS:
+                flagged = low_confidence_characters(
+                    plate.text,
+                    plate.char_confidences,
+                    settings.ALPR_LOW_CHAR_CONFIDENCE_THRESHOLD,
+                )
+                plate.low_confidence_chars = flagged
+                plate.manual_review_required = bool(flagged)
+            processed.append(plate)
+        return processed
+
+    async def _known_plate_texts(self) -> list[str]:
+        known: set[str] = set()
+        try:
+            if hasattr(self._persons, "get_known_plate_texts"):
+                known.update(await self._persons.get_known_plate_texts())
+        except Exception as exc:
+            logger.warning("Known person plate lookup failed: %s", exc)
+        try:
+            known.update(await self._watchlist_plate_texts())
+        except Exception as exc:
+            logger.warning("Known watchlist plate lookup failed: %s", exc)
+        return sorted(known)
+
+    async def _watchlist_plate_texts(self) -> list[str]:
+        try:
+            if hasattr(self._watchlist, "get_plate_texts"):
+                return await self._watchlist.get_plate_texts(active_only=True)
+        except Exception as exc:
+            logger.warning("Watchlist plate lookup failed: %s", exc)
+        return []
+
+    def _near_watchlist(self, plate_text: str, watchlist_plates: list[str]) -> bool:
+        return any(
+            levenshtein(plate_text, watchlist_plate) <= settings.ALPR_WATCHLIST_NEAR_MATCH_DISTANCE
+            for watchlist_plate in watchlist_plates
+        )
+
+    def _multi_read_plate(self, plate: PlateOut, image_bytes: bytes) -> PlateOut:
+        readings = [OcrReading(plate.text, plate.confidence, plate.quality)]
+        detector = get_plate_detector()
+        passes = max(0, settings.ALPR_WATCHLIST_MULTI_READ_PASSES - 1)
+        for _ in range(passes):
+            try:
+                candidates = detector.detect(image_bytes, generate_thumbnail=False)
+            except Exception as exc:
+                logger.warning("Watchlist multi-read OCR pass failed: %s", exc)
+                break
+            nearest = self._nearest_candidate(plate, candidates)
+            if nearest:
+                readings.append(OcrReading(nearest.text, nearest.confidence, nearest.quality))
+        voted = vote_ocr_readings(readings)
+        if voted:
+            plate.text = normalize_plate(voted.text)
+            plate.confidence = voted.confidence
+            plate.quality = voted.quality
+        return plate
+
+    def _nearest_candidate(self, plate: PlateOut, candidates: list[PlateResult]) -> Optional[PlateResult]:
+        if not candidates:
+            return None
+        px = plate.bounding_box.get("x", 0) + plate.bounding_box.get("width", 0) / 2
+        py = plate.bounding_box.get("y", 0) + plate.bounding_box.get("height", 0) / 2
+        return min(
+            candidates,
+            key=lambda c: (
+                abs((c.bounding_box.x + c.bounding_box.width / 2) - px)
+                + abs((c.bounding_box.y + c.bounding_box.height / 2) - py)
+            ),
+        )
+
+    def _correct_plate_text(self, plate: PlateOut, known_plates: list[str]) -> PlateOut:
+        match, distance = best_fuzzy_match(
+            plate.text,
+            known_plates,
+            max_distance=settings.ALPR_OCR_CORRECTION_MAX_DISTANCE,
+        )
+        if not match or match == plate.text:
+            return plate
+        plate.original_text = plate.text
+        plate.text = match
+        plate.corrected = True
+        plate.correction_distance = distance
+        plate.correction_source = "known_plate_db"
+        return plate
 
     async def _enrich_faces(self, faces_raw: list[FaceResult]) -> list[FaceOut]:
         out = []
@@ -388,7 +513,14 @@ class AlprService:
         return TrackerPlate(
             text=p.text, confidence=p.confidence, quality=p.quality,
             bounding_box=TrackerBBox(x=bb["x"], y=bb["y"], width=bb["width"], height=bb["height"]),
-            thumbnail=p.thumbnail, direction=p.direction,
+            thumbnail=p.thumbnail,
+            low_confidence_chars=p.low_confidence_chars,
+            manual_review_required=p.manual_review_required,
+            original_text=p.original_text,
+            corrected=p.corrected,
+            correction_distance=p.correction_distance,
+            correction_source=p.correction_source,
+            direction=p.direction,
             vehicle_make=p.vehicle_make, vehicle_model=p.vehicle_model,
             vehicle_color=p.vehicle_color, person_id=p.person_id, person_name=p.person_name,
         )
@@ -398,7 +530,14 @@ class AlprService:
         return PlateOut(
             text=tp.text, confidence=tp.confidence, quality=tp.quality,
             bounding_box={"x": bb.x, "y": bb.y, "width": bb.width, "height": bb.height, "rotation": 0},
-            thumbnail=tp.thumbnail, direction=tp.direction,
+            thumbnail=tp.thumbnail,
+            low_confidence_chars=tp.low_confidence_chars,
+            manual_review_required=tp.manual_review_required,
+            original_text=tp.original_text,
+            corrected=tp.corrected,
+            correction_distance=tp.correction_distance,
+            correction_source=tp.correction_source,
+            direction=tp.direction,
             vehicle_make=tp.vehicle_make, vehicle_model=tp.vehicle_model,
             vehicle_color=tp.vehicle_color, person_id=tp.person_id, person_name=tp.person_name,
         )
@@ -408,6 +547,12 @@ class AlprService:
         return {
             "text": p.text, "confidence": p.confidence, "quality": p.quality,
             "boundingBox": p.bounding_box, "thumbnail": p.thumbnail,
+            "lowConfidenceChars": p.low_confidence_chars,
+            "manualReviewRequired": p.manual_review_required,
+            "originalText": p.original_text,
+            "corrected": p.corrected,
+            "correctionDistance": p.correction_distance,
+            "correctionSource": p.correction_source,
             "direction": p.direction, "vehicleMake": p.vehicle_make,
             "vehicleModel": p.vehicle_model, "vehicleColor": p.vehicle_color,
             "vehicleThumbnail": p.vehicle_thumbnail, "personId": p.person_id,
