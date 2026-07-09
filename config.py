@@ -24,6 +24,11 @@ class Settings(BaseSettings):
     ALPR_ENABLE_WATCHLIST_MULTI_READ: bool = False
     ALPR_WATCHLIST_MULTI_READ_PASSES: int = 3
     ALPR_WATCHLIST_NEAR_MATCH_DISTANCE: int = 1
+    ALPR_FEED_DEDUP_WINDOW_FRAMES: int = 5
+    ALPR_FEED_MIN_OBSERVATIONS: int = 1
+    ALPR_FEED_MAX_EDIT_DISTANCE: int = 2
+    ALPR_FEED_COOLDOWN_FRAMES: int = 30
+    ALPR_FEED_SPATIAL_DISTANCE_RATIO: float = 999
     
     # Database Configuration (PostgreSQL)
     # TESTING: defaults to localhost PostgreSQL (docker-compose)

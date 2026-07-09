@@ -3,10 +3,12 @@ Detection orchestration — replaces alpr.service.ts.
 Handles pre-filters, session management, enrichment, DB logging, alerts.
 """
 import asyncio
+import hashlib
 import logging
 import time
 from typing import Optional, AsyncGenerator
 from dataclasses import dataclass
+from uuid import uuid4
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -22,7 +24,12 @@ from ml.ocr_quality import (
 from ml.face_analyzer import FaceResult
 from ml.vehicle_classifier import VehicleResult
 from services.inference_service import detect_image, detect_video_frames, detect_stream_frames, get_plate_detector
-from services.plate_tracker import PlateTracker, _PlateInput as TrackerPlate, _BBox as TrackerBBox
+from services.plate_tracker import (
+    PlateTracker,
+    PlateFeedDeduplicator,
+    _PlateInput as TrackerPlate,
+    _BBox as TrackerBBox,
+)
 from services.vehicle_tracker import VehicleTracker, _PlateInput as VTrackerPlate, _BBox as VTrackerBBox
 from services.notifications import notifications
 
@@ -111,6 +118,7 @@ class AlprService:
         self._journeys = journeys_service
         # Shared tracker for camera/stream SSE mode (minObs=1, same as TS version)
         self._tracker = PlateTracker(commit_after_ms=8_000, max_edit_distance=2, min_observations=1)
+        self._feed_trackers: dict[str, PlateFeedDeduplicator] = {}
         self._recently_logged: dict[str, float] = {}
         self._sessions: dict[str, _VideoSession] = {}
 
@@ -212,32 +220,49 @@ class AlprService:
     async def detect_video_stream(
         self, video_bytes: bytes, frame_step: int = 5, camera_region: Optional[str] = None,
     ) -> AsyncGenerator[dict, None]:
-        async for frame_idx, plates_raw, faces_raw, vehicles_raw in detect_video_frames(
-            video_bytes, frame_step
-        ):
-            best_vehicle = max(vehicles_raw, key=lambda v: v.confidence) if vehicles_raw else None
-            plates_out = [self._enrich_plate(p, best_vehicle) for p in plates_raw]
-            plates_out = await self._apply_ocr_postprocessing(plates_out, None)
-            faces_out = await self._enrich_faces(faces_raw)
-            vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
-            for plate in plates_out:
-                if not self._passes_pre_filters_out(plate, camera_region):
-                    continue
-                committed = self._tracker.observe(self._out_to_tracker_plate(plate))
-                for winner in committed:
-                    await self._log_committed(winner, "video")
-            if settings.PERSIST_FACE_EVENTS:
-                for face in faces_out:
-                    await self._save_face_event(face)
-            yield {
-                "frameIndex": frame_idx,
-                "plates": [self._plate_out_to_dict(p) for p in plates_out],
-                "faces": [self._face_out_to_dict(f) for f in faces_out],
-                "vehicles": [self._vehicle_out_to_dict(v) for v in vehicles_out],
-                "gunDetected": False,
-            }
-        for winner in self._tracker.flush_all():
-            await self._log_committed(winner, "video")
+        scope_key = f"video:{uuid4().hex}"
+        feed_tracker = self._get_feed_tracker(scope_key)
+        try:
+            async for frame_idx, plates_raw, faces_raw, vehicles_raw in detect_video_frames(
+                video_bytes, frame_step
+            ):
+                best_vehicle = max(vehicles_raw, key=lambda v: v.confidence) if vehicles_raw else None
+                plates_out = [self._enrich_plate(p, best_vehicle) for p in plates_raw]
+                plates_out = await self._apply_ocr_postprocessing(plates_out, None)
+                faces_out = await self._enrich_faces(faces_raw)
+                vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
+                feed_plate_events: list[dict] = []
+                for plate in plates_out:
+                    tracker_plate = self._out_to_tracker_plate(plate)
+                    committed_feed = feed_tracker.observe(frame_idx, tracker_plate) or []
+                    for winner in committed_feed:
+                        feed_plate_events.append(
+                            self._plate_out_to_dict(self._tracker_plate_to_out(winner))
+                        )
+                    if not self._passes_pre_filters_out(plate, camera_region):
+                        continue
+                    committed = self._tracker.observe(tracker_plate) or []
+                    for winner in committed:
+                        await self._log_committed(winner, "video")
+                if settings.PERSIST_FACE_EVENTS:
+                    for face in faces_out:
+                        await self._save_face_event(face)
+                yield {
+                    "frameIndex": frame_idx,
+                    "plates": [self._plate_out_to_dict(p) for p in plates_out],
+                    "feedPlateEvents": feed_plate_events,
+                    "feedPlates": [
+                        self._plate_out_to_dict(self._tracker_plate_to_out(p))
+                        for p in feed_tracker.get_feed_state()
+                    ],
+                    "faces": [self._face_out_to_dict(f) for f in faces_out],
+                    "vehicles": [self._vehicle_out_to_dict(v) for v in vehicles_out],
+                    "gunDetected": False,
+                }
+            for winner in self._tracker.flush_all():
+                await self._log_committed(winner, "video")
+        finally:
+            self._feed_trackers.pop(scope_key, None)
 
     async def detect_live_stream(
         self, url: str, frame_step: int = 5,
@@ -245,6 +270,8 @@ class AlprService:
         camera_region: Optional[str] = None, should_continue=None,
     ) -> AsyncGenerator[dict, None]:
         source = "camera" if camera_id else "stream"
+        scope_key = self._build_feed_scope_key(url=url, camera_id=camera_id)
+        feed_tracker = self._get_feed_tracker(scope_key)
         async for frame_idx, plates_raw, faces_raw, vehicles_raw in detect_stream_frames(
             url, frame_step, should_continue=should_continue
         ):
@@ -253,10 +280,17 @@ class AlprService:
             plates_out = await self._apply_ocr_postprocessing(plates_out, None)
             faces_out = await self._enrich_faces(faces_raw)
             vehicles_out = [self._map_vehicle(v) for v in vehicles_raw]
+            feed_plate_events: list[dict] = []
             for plate in plates_out:
+                tracker_plate = self._out_to_tracker_plate(plate)
+                committed_feed = feed_tracker.observe(frame_idx, tracker_plate) or []
+                for winner in committed_feed:
+                    feed_plate_events.append(
+                        self._plate_out_to_dict(self._tracker_plate_to_out(winner))
+                    )
                 if not self._passes_pre_filters_out(plate, camera_region):
                     continue
-                committed = self._tracker.observe(self._out_to_tracker_plate(plate))
+                committed = self._tracker.observe(tracker_plate) or []
                 for winner in committed:
                     await self._log_committed(winner, source, camera_id, camera_name)
             if settings.PERSIST_FACE_EVENTS:
@@ -265,6 +299,11 @@ class AlprService:
             yield {
                 "frameIndex": frame_idx,
                 "plates": [self._plate_out_to_dict(p) for p in plates_out],
+                "feedPlateEvents": feed_plate_events,
+                "feedPlates": [
+                    self._plate_out_to_dict(self._tracker_plate_to_out(p))
+                    for p in feed_tracker.get_feed_state()
+                ],
                 "faces": [self._face_out_to_dict(f) for f in faces_out],
                 "vehicles": [self._vehicle_out_to_dict(v) for v in vehicles_out],
                 "gunDetected": False,
@@ -576,3 +615,17 @@ class AlprService:
             "confidence": v.confidence, "boundingBox": v.bounding_box,
             "thumbnail": v.thumbnail,
         }
+
+    def _get_feed_tracker(self, scope_key: str) -> PlateFeedDeduplicator:
+        tracker = self._feed_trackers.get(scope_key)
+        if tracker is None:
+            tracker = PlateFeedDeduplicator()
+            self._feed_trackers[scope_key] = tracker
+        return tracker
+
+    @staticmethod
+    def _build_feed_scope_key(url: str, camera_id: Optional[str] = None) -> str:
+        if camera_id:
+            return f"camera:{camera_id}"
+        url_hash = hashlib.sha1(url.encode("utf-8")).hexdigest()
+        return f"stream:{url_hash}"
