@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Optional
 
 
@@ -11,10 +11,11 @@ class BoundingBox(BaseModel):
 
 
 class Plate(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
     text: str
     confidence: float
     quality: float
-    bounding_box: BoundingBox
+    bounding_box: BoundingBox = Field(alias="boundingBox")
     thumbnail: Optional[str] = None
     low_confidence_chars: Optional[List[dict]] = None
     manual_review_required: Optional[bool] = False
@@ -29,12 +30,15 @@ class Plate(BaseModel):
     vehicle_thumbnail: Optional[str] = None
     person_id: Optional[str] = None
     person_name: Optional[str] = None
+    
 
 
 class Face(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
     confidence: float
     quality: float
-    bounding_box: BoundingBox
+    bounding_box: BoundingBox = Field(alias="boundingBox")
     thumbnail: Optional[str] = None
     person_id: Optional[str] = None
     person_name: Optional[str] = None
@@ -45,12 +49,14 @@ class Face(BaseModel):
 
 
 class Vehicle(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
     make: Optional[str]
     model: Optional[str]
     color: Optional[str]
     type: Optional[str]
     confidence: float
-    bounding_box: BoundingBox
+    bounding_box: BoundingBox = Field(alias="boundingBox")
     thumbnail: Optional[str] = None
 
 
