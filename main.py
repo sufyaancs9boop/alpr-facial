@@ -136,7 +136,6 @@ async def public_health():
             "lpr": True,
             "face": s.ENABLE_FACE_DETECTION,
             "vehicle": s.ENABLE_VEHICLE_DETECTION,
-            "gun": False,
         },
     }
 

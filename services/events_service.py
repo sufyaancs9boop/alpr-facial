@@ -28,7 +28,6 @@ class EventsService:
                 direction=data.get("direction"),
                 cameraId=data.get("cameraId"),
                 cameraName=data.get("cameraName"),
-                gunDetected=data.get("gunDetected", False),
                 timestamp=datetime.utcnow(),
             )
             db.add(event)
@@ -46,5 +45,5 @@ def _to_dict(e: DetectionEvent) -> dict:
         "vehicleMake": e.vehicleMake, "vehicleModel": e.vehicleModel,
         "vehicleColor": e.vehicleColor, "vehicleThumbnail": e.vehicleThumbnail,
         "direction": e.direction, "cameraId": e.cameraId, "cameraName": e.cameraName,
-        "gunDetected": e.gunDetected, "timestamp": e.timestamp.isoformat(),
+        "timestamp": e.timestamp.isoformat(),
     }

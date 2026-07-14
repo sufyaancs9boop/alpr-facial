@@ -95,7 +95,6 @@ class DetectionResult:
     faces: list[FaceOut]
     vehicles: list[VehicleOut]
     processing_time_ms: int
-    gun_detected: bool = False
 
 
 @dataclass
@@ -257,7 +256,6 @@ class AlprService:
                     ],
                     "faces": [self._face_out_to_dict(f) for f in faces_out],
                     "vehicles": [self._vehicle_out_to_dict(v) for v in vehicles_out],
-                    "gunDetected": False,
                 }
             for winner in self._tracker.flush_all():
                 await self._log_committed(winner, "video")
@@ -306,7 +304,7 @@ class AlprService:
                 ],
                 "faces": [self._face_out_to_dict(f) for f in faces_out],
                 "vehicles": [self._vehicle_out_to_dict(v) for v in vehicles_out],
-                "gunDetected": False,
+                
             }
         for winner in self._tracker.flush_all():
             await self._log_committed(winner, source, camera_id, camera_name)
@@ -509,7 +507,7 @@ class AlprService:
             "direction": plate.direction,
             "cameraId": camera_id,
             "cameraName": camera_name,
-            "gunDetected": False,
+
         })
         notifications.emit_detection(event)
         await self._watchlist.check_and_alert(plate.text, event["id"], plate.thumbnail)

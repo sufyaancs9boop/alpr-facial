@@ -236,5 +236,5 @@ def _to_dict(e: DetectionEvent) -> dict:
         "vehicleMake": e.vehicleMake, "vehicleModel": e.vehicleModel,
         "vehicleColor": e.vehicleColor, "vehicleThumbnail": e.vehicleThumbnail,
         "direction": e.direction, "cameraId": e.cameraId, "cameraName": e.cameraName,
-        "gunDetected": e.gunDetected, "timestamp": e.timestamp.isoformat(),
+        "timestamp": e.timestamp.isoformat(),
     }

@@ -25,7 +25,6 @@ async def health():
             "lpr": True,
             "face": settings.ENABLE_FACE_DETECTION,
             "vehicle": settings.ENABLE_VEHICLE_DETECTION,
-            "gun": False,
         },
     }
 
@@ -161,7 +160,6 @@ def _result_to_dict(result) -> dict:
         "faces": [AlprService._face_out_to_dict(f) for f in result.faces],
         "vehicles": [AlprService._vehicle_out_to_dict(v) for v in result.vehicles],
         "processingTimeMs": result.processing_time_ms,
-        "gunDetected": result.gun_detected,
     }
 
 

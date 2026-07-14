@@ -27,7 +27,6 @@ class DetectionEvent(Base):
     direction: Mapped[str | None] = mapped_column(String, nullable=True)  # left|right|stationary
     cameraId: Mapped[str | None] = mapped_column(String, nullable=True)
     cameraName: Mapped[str | None] = mapped_column(String, nullable=True)
-    gunDetected: Mapped[bool] = mapped_column(Boolean, default=False)
     timestamp: Mapped[datetime] = mapped_column(
     DateTime(timezone=True),  # Store timezone info
     default=lambda: datetime.now(timezone.utc)  # UTC timezone

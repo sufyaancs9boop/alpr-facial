@@ -66,8 +66,7 @@ class DetectionResponse(BaseModel):
     plates: List[Plate]
     faces: List[Face]
     vehicles: List[Vehicle]
-    processingTimeMs: int
-    gunDetected: Optional[bool] = False
+    processingTimeMs: int=Field(alias="processingTimeMs")
 
 
 class DetectURLRequest(BaseModel):
